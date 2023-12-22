@@ -1,0 +1,5 @@
+NET "CP" LOC = "p184";
+NET "Q0" LOC = "p194";
+NET "Q1" LOC = "p196";
+NET "Q2" LOC = "p197";
+NET "Q3" LOC = "p198";
