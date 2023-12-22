@@ -8,13 +8,13 @@ int main()
 		for (b = 1; b <= n; b++) {
 			for (c = 1; c <= n; c++) {
 				if ((a*a) + (b*b) == c*c || (a*a) + (c*c) == b*b || (c*c) + (b*b) == a*a) {
-					if (a <= b && b <= c){
-						a == n - b - c;
-						b == n - a - c;
-						c == n - a - b;
-						if (a + b + c == n){
+					if (a + b + c == n) {
 						cout << a << " " << b << " " << c << endl;
-						}
+					}
+					else {
+						a += n;
+						b += n;
+						cout << "Impossible";
 					}
 				}
 			}
