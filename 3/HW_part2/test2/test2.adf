@@ -1,0 +1,46 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=test2
+
+[Library]
+test2=.\test2\test2.lib
+
+[$LibMap$]
+test2=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Groups]
+TestBench=1
+
+[Files]
+/hal2.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+TestBench/hal2_TB.vhd=-1
+TestBench/hal2_TB_runtest.do=-1
+
+[Files.Data]
+.\src\hal2.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\hal2_TB.vhd=VHDL Test Bench
+.\src\TestBench\hal2_TB_runtest.do=Macro
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=hal2_tb|testbench_for_hal2|1  
+ShowHide=ShowTopLevel
+Selected=

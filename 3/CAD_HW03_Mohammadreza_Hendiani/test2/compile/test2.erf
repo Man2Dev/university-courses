@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:/my_designs/CAD_HW03_Mohammadreza_Hendiani/test2/src/TestBench/hal2_TB.vhd" 
+MESSAGE "Compile Entity "hal2_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "hal2_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_hal2"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

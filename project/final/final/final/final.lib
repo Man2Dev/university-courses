@@ -1,0 +1,59 @@
+timestamp=1625116826822
+
+[~A]
+ModifyID=82
+Version=74
+
+[~MFT]
+0=4|0final.mgf|72138|62158
+1=4|1final.mgf|268939|259714
+3=2|3final.mgf|85781|82580
+
+[counter]
+A/counter=21|../src/counter.vhd|21|1*259714
+BinW64/counter=3*82580
+I=0*5261
+I/counter=0*71106
+M=11|2|ve8|1624886827714|../src/counter.vhd|0*4860*0xbcc3cac55a6dd1171de2a12208423f36c318dbb0|0*5182*0x23b75c12e3e89f2ef000564498faa8c2
+M/counter=21|2|ve8|1625116826278|../src/counter.vhd|0*6738*0xfbefe3b27e777e970553a976a0d96821efafe34a|0*7138*0x20116f55b147878295aeff36dce7fc50
+R=../src/counter.vhd|14
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973abf69a2348f7cd2516bb283d74fca8b97
+Version/counter=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a0431ed5cff622def7d3f0aeccc8b7c84
+
+[testbench_for_top]
+Configures=top_tb.TB_ARCHITECTURE
+E=1*268939
+I=0*72138
+M=2|2|ve8|1625116826815|../src/TestBench/top_TB.vhd|0*15113*0x6a661cb186ceb303e45e3088216595c709ac1b15|0*15360*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/top_TB.vhd|93
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5af072de0eb681d575b392f1023b48c733e31141e55814191af8a84f290af1324
+
+[top]
+A/top=21|../src/top.vhd|33|1*260727
+BinW64/top=3*83295
+I=0*1052
+I/top=0*71429
+M=11|2|ve8|1624886670765|../src/top.vhd|0*283*0x21d9345452f34a0a4d50d4912185779d7efc5c98|0*981*0x23b75c12e3e89f2ef000564498faa8c2
+M/top=21|2|ve8|1625116826499|../src/top.vhd|0*63449*0x8d1df3e17aed92cf44c6a27224303a8c09c6863d|0*66580*0x20116f55b147878295aeff36dce7fc50
+R=../src/top.vhd|14
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c722ef88110e67eb090cdbf95d045e4601
+Version/top=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c7e913ba4d9778787ef3471e6dbe023901
+
+[top_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/top_TB.vhd|9|1*265452
+BinW64/tb_architecture=3*85781
+I=0*26484
+I/tb_architecture=I/TB_ARCHITECTURE 0*71778
+M=11|2|ve8|1625044534921|../src/TestBench/top_TB.vhd|0*26171*0x7b6e7b95d149b4ab684bd2dbefaedadcec8caef3|0*26397*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|2|ve8|1625116826812|../src/TestBench/top_TB.vhd|0*67007*0xcdf6a0bee6660d1797e35a4018bfe62050b4a99c|0*68780*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/top_TB.vhd|6
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|b0d2e10044441fefc12247a6f126cc0caa3c72a8f35df353396a982f91d81b18
+Version/tb_architecture=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beaa1674e3022e51cb1896cad7951b8442a
+
+[~U]
+counter=11|0*4667|
+testbench_for_top=TESTBENCH_FOR_top 2||
+top=11|0*0|
+top_tb=11|0*26053|
+
+

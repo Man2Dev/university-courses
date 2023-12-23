@@ -1,0 +1,6 @@
+8
+~E 1 "../src/test.vhd" 15 test
+~A 1 "../src/test.vhd" 27 test
+~E 1 "../src/TestBench/test_TB.vhd" 6 test_tb
+~A 1 "../src/TestBench/test_TB.vhd" 11 TB_ARCHITECTURE
+~C 1 "../src/TestBench/test_TB.vhd" 60 testbench_for_test

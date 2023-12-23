@@ -1,0 +1,11 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+final=1
+Built-in symbols=0
+[COMPILESTATUS|.\src\top.vhd]
+FileTimeLow=30895138
+Status=Modified
+[CACHEDOC|Aldec.Project.Generic.7|.\final\final.adf|]
+Path=/top
+[COMPILESTATUS|.\src\counter.vhd]
+FileTimeLow=30895137
+Status=Compiled

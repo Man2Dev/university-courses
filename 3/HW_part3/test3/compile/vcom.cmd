@@ -1,0 +1,1 @@
+-w -erf d:/my_designs/HW_part3/test3/compile/test3.erf -d d:/my_designs/HW_part3/test3/compile -s d:/my_designs/HW_part3/library.cfg -j d:/my_designs/HW_part3/test3/projlib.cfg -work test3 -O3 -e 100 -work test3 -2002 d:/my_designs/HW_part3/test3/src/TestBench/hal3_TB.vhd 

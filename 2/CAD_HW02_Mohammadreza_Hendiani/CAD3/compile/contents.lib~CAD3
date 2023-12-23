@@ -1,0 +1,11 @@
+125
+~E 1 "../src/subModule.vhd" 15 subModule
+~A 1 "../src/subModule.vhd" 23 subModule
+~E 1 "../src/TestBench/submodule_TB.vhd" 7 submodule_tb
+~A 1 "../src/TestBench/submodule_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/submodule_TB.vhd" 47 testbench_for_submodule
+~C 1 "../src/TestBench/top_TB.vhd" 68 testbench_for_top
+~E 1 "../src/top.vhd" 15 top
+~A 1 "../src/top.vhd" 24 top
+~E 1 "../src/TestBench/top_TB.vhd" 6 top_tb
+~A 1 "../src/TestBench/top_TB.vhd" 9 TB_ARCHITECTURE
