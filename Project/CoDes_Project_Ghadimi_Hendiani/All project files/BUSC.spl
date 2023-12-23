@@ -1,0 +1,7 @@
+[Inputs]
+SEL
+=MDATA[5:0]=
+=ALURES[5:0]=
+[Outputs]
+=DBUS[5:0]=
+[BiDir]

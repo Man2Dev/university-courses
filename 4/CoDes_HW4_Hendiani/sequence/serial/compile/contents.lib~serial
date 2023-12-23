@@ -1,0 +1,6 @@
+203
+~E 1 "../src/serial.vhd" 4 serial
+~A 1 "../src/serial.vhd" 9 serial
+~E 1 "../src/TestBench/serial_TB.vhd" 4 serial_tb
+~A 1 "../src/TestBench/serial_TB.vhd" 7 TB_ARCHITECTURE
+~C 1 "../src/TestBench/serial_TB.vhd" 87 testbench_for_serial

@@ -1,0 +1,40 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=serial
+
+[Library]
+serial=.\serial\serial.lib
+
+[$LibMap$]
+serial=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Groups]
+TestBench=1
+
+[Files]
+/serial.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+TestBench/serial_TB.vhd=-1
+TestBench/serial_TB_runtest.do=-1
+
+[Files.Data]
+.\src\serial.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\serial_TB.vhd=VHDL Test Bench
+.\src\TestBench\serial_TB_runtest.do=Macro
+

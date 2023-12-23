@@ -1,0 +1,2 @@
+vhdtdtfi -lib work MUX4.vhd -prj Codes_Project -o MUX4.spl -module MUX4 -template D:/Xilinx/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 MUX4.spl {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.sym} 
