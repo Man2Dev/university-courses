@@ -1,0 +1,38 @@
+Dec 11 01:01:44.357 HYPERVISOR: Release 0.2.14-amd64/Linux (tag 2014092320)
+Dec 11 01:01:44.357 HYPERVISOR: Started on IP = localhost, TCP port = 56655.
+Dec 11 01:01:44.366 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips 
+Dec 11 01:01:44.367 GENERAL: working_dir=/home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/48d7ac75-fac7-4edd-8c41-ee684d3dbc50 
+Dec 11 01:01:44.367 GENERAL: working_dir=/home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/48d7ac75-fac7-4edd-8c41-ee684d3dbc50
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Dec 11 01:01:44.367 VM: VM R2 created.
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Dec 11 01:01:44.367 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x608724c0 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: vm set_ios R2 /home/kali/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 11 01:01:44.368 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.daa4.0000 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-FE-TX 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-FE-TX 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:01:44.369 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 PA-FE-TX 
+Dec 11 01:01:45.230 HYPERVISOR: exec_cmd: nio create_udp udp-cda56907-d48a-43f5-b4f6-9c44ea9d415b 10016 127.0.0.1 10017 
+Dec 11 01:01:45.443 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-cda56907-d48a-43f5-b4f6-9c44ea9d415b 
+Dec 11 01:01:45.444 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:04:20.227 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 11 01:04:20.229 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 11 01:04:20.230 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:04:20.231 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Dec 11 01:04:20.232 HYPERVISOR: exec_cmd: vm start R2 
+Dec 11 01:04:39.565 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 11 01:04:39.566 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 11 01:04:39.669 VM: VM R2 shutdown.
+Dec 11 01:04:39.669 HYPERVISOR: exec_cmd: vm extract_config R2 
