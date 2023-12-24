@@ -18,7 +18,7 @@ string str3; //name of player in single player mode.
 string a[9] = { { "0" },{ "1" },{ "2" },{ "3" },{ "4" },{ "5" },{ "6" },{ "7" },{ "8" } }; //the board used in single mode for seeing 0 to 8 on board.
 string b[9] = { { "0" },{ "1" },{ "2" },{ "3" },{ "4" },{ "5" },{ "6" },{ "7" },{ "8" } }; //just a copy used for furning the board to default mode.
 
-int random() { //random player.
+long random() { //random player.
 	srand(time(0));
 	return 1 + rand() % 2;
 }
