@@ -1,0 +1,220 @@
+#include "DHT.h"
+
+#define DHT0PIN 7
+#define DHT1PIN 8
+#define DHT2PIN 9
+
+#define Cooler_Low_PIN 13
+#define Cooler_High_PIN 14
+#define Heater_Low_PIN 15
+#define Heater_High_PIN 16
+#define Humidifier_Low_PIN 17
+#define Humidifier_High_PIN 18
+
+#define DHTTYPE DHT22 // DHT 22 (AM2302)
+
+int PS_T = 0;
+int PS_H = 0;
+int NS_T = 0;
+int NS_H = 0;
+
+DHT dht0(DHT0PIN, DHTTYPE, 4);
+DHT dht1(DHT1PIN, DHTTYPE, 4);
+DHT dht2(DHT2PIN, DHTTYPE, 4);
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(Cooler_Low_PIN, OUTPUT);
+  pinMode(Cooler_High_PIN, OUTPUT);
+  pinMode(Heater_Low_PIN, OUTPUT);
+  pinMode(Heater_High_PIN, OUTPUT);
+  pinMode(Humidifier_Low_PIN, OUTPUT);
+  pinMode(Humidifier_High_PIN, OUTPUT);
+
+  dht0.begin();
+  dht1.begin();
+  dht2.begin();
+}
+
+void loop() {
+  delay(1500);
+  //get tempeture
+  float t0 = dht0.readTemperature();
+  float t1 = dht1.readTemperature();
+  float t2 = dht2.readTemperature();
+  //get Humidity
+  float h0 = dht0.readHumidity();
+  float h1 = dht1.readHumidity();
+  float h2 = dht2.readHumidity();
+  //check All DHT to see if they are working
+  if (isnan(h0) || isnan(t0)) {
+    Serial.println("Failed to read from DHT0 sensor!");
+    return;
+  }
+  if (isnan(h1) || isnan(t1)) {
+    Serial.println("Failed to read from DHT1 sensor!");
+    return;
+  }
+  if (isnan(h2) || isnan(t2)) {
+    Serial.println("Failed to read from DHT2 sensor!");
+    return;
+  }
+  // Average tempeture & Humidity
+  float Temp_Avg = (t0 + t1 + t2) / 3;
+  float Humidity_Avg = (h0 + h1 + h2) / 3;
+
+  // Tempeture of Cooler & Heater
+  switch(PS_T){
+
+    // Cooler & Heater OFF
+    case 0:
+      if (Temp_Avg < 20) {
+        NS_T= 11;
+      }
+      if (Temp_Avg > 32) {
+        NS_T= 21;
+      }
+
+      digitalWrite(Cooler_Low_PIN,LOW);
+      digitalWrite(Cooler_High_PIN,LOW);
+      Serial.println("Cooler => OFF");
+      digitalWrite(Heater_Low_PIN,LOW);
+      digitalWrite(Heater_High_PIN,LOW);
+      Serial.println("Heater => OFF");
+    break;
+
+    // Heater state
+    // Heater Low
+    case 11:
+      if (Temp_Avg < 15) {
+        NS_T= 12;
+      }
+      if (Temp_Avg > 23) {
+        NS_T= 0;
+      }
+
+      digitalWrite(Heater_Low_PIN,HIGH);
+      digitalWrite(Heater_High_PIN,LOW);
+      Serial.println("Heater LOW => ON");
+    break;
+
+    // Heater High
+    case 12:
+      if (Temp_Avg > 17) {
+        NS_T= 11;
+      }
+
+      digitalWrite(Heater_Low_PIN,LOW);
+      digitalWrite(Heater_High_PIN,HIGH);
+      Serial.println("Heater HIGH => ON");
+    break;
+
+    // Cooler state
+    // Cooler Low
+    case 21:
+      if (Temp_Avg > 38) {
+        NS_T= 22;
+      }
+      if (Temp_Avg < 28) {
+        NS_T= 0;
+      }
+
+      digitalWrite(Cooler_Low_PIN,HIGH);
+      digitalWrite(Cooler_High_PIN,LOW);
+      Serial.println("Cooler LOW => ON");
+    break;
+
+    // Cooler High
+    case 22:
+      if (Temp_Avg < 35) {
+        NS_T= 21;
+      }
+
+      digitalWrite(Cooler_Low_PIN,LOW);
+      digitalWrite(Cooler_High_PIN,HIGH);
+      Serial.println("Cooler HIGH => ON");
+    break;
+
+    default:
+      Serial.println("Err!!!");
+    break;
+  }
+  PS_T = NS_T;
+
+
+  // Humidity of Humidifier
+  switch(PS_H) {
+
+    // Humidifier OFF
+    case 0:
+      if (Humidity_Avg < 80) {
+        NS_H= 11;
+      }
+
+      digitalWrite(Humidifier_Low_PIN,LOW);
+      digitalWrite(Humidifier_High_PIN,LOW);
+      digitalWrite(Humidifier_Low_PIN,LOW);
+      digitalWrite(Humidifier_High_PIN,LOW);
+      Serial.println("Humidifier => OFF");
+    break;
+
+    // Humidity Low
+    case 11:
+      if (Humidity_Avg < 75) {
+        NS_H= 12;
+      }
+      if (Humidity_Avg > 85) {
+        NS_H= 0;
+      }
+
+      digitalWrite(Humidifier_Low_PIN,HIGH);
+      digitalWrite(Humidifier_High_PIN,LOW);
+      Serial.println("Humidifier LOW => ON");
+    break;
+
+    // Humidity High
+    case 12:
+      if (Humidity_Avg > 75) {
+        NS_H= 11;
+      }
+
+      digitalWrite(Humidifier_Low_PIN,LOW);
+      digitalWrite(Humidifier_High_PIN,HIGH);
+      Serial.println("Humidifier HIGH => ON");
+    break;
+
+    default:
+      Serial.println("Err!!!");
+    break;
+  }
+  PS_H = NS_H;
+
+  Serial.println("");
+  Serial.println("*======================================================*");
+  Serial.print("| Humidity AVG:    ");
+  Serial.print("(");
+  Serial.print(h0);
+  Serial.print(" + ");
+  Serial.print(h1);
+  Serial.print(" + ");
+  Serial.print(h2);
+  Serial.print(")/3 = ");
+  Serial.print(Humidity_Avg);
+  Serial.println(" % |");
+  Serial.print("| Temperature AVG: ");
+  Serial.print("(");
+  Serial.print(t0);
+  Serial.print(" + ");
+  Serial.print(t1);
+  Serial.print(" + ");
+  Serial.print(t2);
+  Serial.print(")/3 = ");
+  Serial.print(Temp_Avg);
+  Serial.println(" C |");
+  Serial.println("*======================================================*");
+
+  for (int i = 1; i < 8; i++) { //clear screen
+    Serial.println();
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<FIRMWARE FAMILY="AVR" COMPILER="Arduino AVR" TYPE="ATmega328P">
+ <PROJECTS>
+  <STRING>ATmega328P</STRING>
+ </PROJECTS>
+</FIRMWARE>
