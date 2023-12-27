@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.syr" 

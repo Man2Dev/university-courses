@@ -1,0 +1,3 @@
+vhdl work "HA.vhd"
+vhdl work "Top.vhd"
+vhdl work "t.vhd"

@@ -1,0 +1,5 @@
+MESSAGE "File: D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD3/src/TestBench/top_TB.vhd" 
+MESSAGE "Compile Entity "top_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "top_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_top"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

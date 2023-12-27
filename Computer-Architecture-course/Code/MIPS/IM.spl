@@ -1,0 +1,6 @@
+[Inputs]
+I_ROM_T
+=I_ROM_ADDRESS[31:0]=
+[Outputs]
+=O_ROM_DATA[31:0]=
+[BiDir]

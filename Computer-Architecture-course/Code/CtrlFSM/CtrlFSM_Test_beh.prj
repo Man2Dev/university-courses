@@ -1,0 +1,2 @@
+vhdl work "CtrlFSM.vhd"
+vhdl work "CtrlFSM_Test.vhd"

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../PC/PC.vhd -prj MIPS -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/PC.sym} 

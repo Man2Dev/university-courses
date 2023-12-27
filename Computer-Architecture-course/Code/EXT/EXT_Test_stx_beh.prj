@@ -1,0 +1,2 @@
+vhdl isim_temp "EXT.vhd"
+vhdl isim_temp "EXT_Test.vhd"

@@ -1,0 +1,103 @@
+Dec 10 21:40:13.555 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 10 21:40:13.555 HYPERVISOR: Started on IP = localhost, TCP port = 5013.
+Dec 10 21:40:13.560 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 10 21:40:13.560 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips 
+Dec 10 21:40:13.560 GENERAL: working_dir=C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips
+Dec 10 21:40:13.560 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\98323315-033b-4ef2-938e-3f167248c1fa 
+Dec 10 21:40:13.561 GENERAL: working_dir=C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\98323315-033b-4ef2-938e-3f167248c1fa
+Dec 10 21:40:13.561 HYPERVISOR: exec_cmd: vm create Border2 4 c7200 
+Dec 10 21:40:13.562 VM: VM Border2 created.
+Dec 10 21:40:13.562 HYPERVISOR: exec_cmd: vm set_con_tcp_port Border2 5002 
+Dec 10 21:40:13.562 HYPERVISOR: exec_cmd: c7200 get_mac_addr Border2 
+Dec 10 21:40:13.562 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:40:13.562 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 0 0 C7200-IO-FE 
+Dec 10 21:40:13.562 HYPERVISOR: exec_cmd: vm set_disk0 Border2 0 
+Dec 10 21:40:13.563 HYPERVISOR: exec_cmd: vm set_exec_area Border2 64 
+Dec 10 21:40:13.563 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:40:13.563 HYPERVISOR: exec_cmd: c7200 set_mac_addr Border2 ca04.5af4.0000 
+Dec 10 21:40:13.564 HYPERVISOR: exec_cmd: vm set_nvram Border2 512 
+Dec 10 21:40:13.564 HYPERVISOR: exec_cmd: vm set_ram Border2 512 
+Dec 10 21:40:13.564 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:40:13.564 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 1 0 PA-FE-TX 
+Dec 10 21:40:14.681 HYPERVISOR: exec_cmd: nio create_udp udp-59d5ccbc-92b3-47d4-ac8f-e20362682754 10010 127.0.0.1 10011 
+Dec 10 21:40:14.916 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 0 0 udp-59d5ccbc-92b3-47d4-ac8f-e20362682754 
+Dec 10 21:40:14.917 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:40:14.942 HYPERVISOR: exec_cmd: nio create_udp udp-a9ace18f-c55f-47c2-9144-c2a1d37f6be7 10014 127.0.0.1 10015 
+Dec 10 21:40:14.952 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 1 0 udp-a9ace18f-c55f-47c2-9144-c2a1d37f6be7 
+Dec 10 21:40:14.952 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:40:54.871 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:40:54.905 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:41:37.220 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:42:18.187 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:42:55.978 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:43:26.189 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:48:24.430 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:48:24.463 HYPERVISOR: exec_cmd: vm set_ios Border2 C:/Users/MH/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 10 21:50:46.759 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 10 21:50:46.760 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 10 21:50:46.760 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:50:46.761 HYPERVISOR: exec_cmd: vm set_config Border2 configs\i4_startup-config.cfg 
+Dec 10 21:50:46.762 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 10 21:51:11.687 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:51:11.687 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 10 21:51:11.765 VM: VM Border2 shutdown.
+Dec 10 21:51:11.766 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 21:51:36.244 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 10 21:51:36.245 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 10 21:51:36.245 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:51:36.246 HYPERVISOR: exec_cmd: vm set_config Border2 configs\i4_startup-config.cfg 
+Dec 10 21:51:36.246 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 10 21:51:50.882 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:51:50.883 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 10 21:51:51.001 VM: VM Border2 shutdown.
+Dec 10 21:51:51.002 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 21:52:33.522 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 10 21:52:33.522 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 10 21:52:33.523 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:52:33.523 HYPERVISOR: exec_cmd: vm set_config Border2 configs\i4_startup-config.cfg 
+Dec 10 21:52:33.524 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 10 21:53:03.804 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 21:53:28.485 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:53:28.485 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 10 21:53:28.592 VM: VM Border2 shutdown.
+Dec 10 21:53:28.593 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 21:53:53.137 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 10 21:53:53.138 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 10 21:53:53.139 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:53:53.139 HYPERVISOR: exec_cmd: vm set_config Border2 configs\i4_startup-config.cfg 
+Dec 10 21:53:53.140 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 10 21:54:19.890 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 21:54:19.891 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 10 21:54:19.968 VM: VM Border2 shutdown.
+Dec 10 21:54:19.969 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 22:16:19.983 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 10 22:16:19.984 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 C:\Users\MH\GNS3\projects\Mohammadreza_Hendiani_Group2_tamrin3.4\project-files\dynamips\c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 10 22:16:19.984 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 22:16:19.985 HYPERVISOR: exec_cmd: vm set_config Border2 configs\i4_startup-config.cfg 
+Dec 10 22:16:19.986 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 10 22:16:50.327 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 10 22:19:05.995 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 10 22:19:05.995 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 10 22:19:06.101 VM: VM Border2 shutdown.
+Dec 10 22:19:06.102 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 11 05:02:48.914 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:02:48.914 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Border2 0 0 
+Dec 11 05:02:48.916 HYPERVISOR: exec_cmd: nio delete udp-59d5ccbc-92b3-47d4-ac8f-e20362682754 
+Dec 11 05:03:12.350 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:03:12.350 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Border2 1 0 
+Dec 11 05:03:12.351 HYPERVISOR: exec_cmd: nio delete udp-a9ace18f-c55f-47c2-9144-c2a1d37f6be7 
+Dec 11 05:03:37.993 HYPERVISOR: exec_cmd: nio create_udp udp-fab5bd6f-38ad-4c95-9af2-b8ded0849186 10010 127.0.0.1 10011 
+Dec 11 05:03:37.997 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 1 0 udp-fab5bd6f-38ad-4c95-9af2-b8ded0849186 
+Dec 11 05:03:37.997 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:03:51.541 HYPERVISOR: exec_cmd: nio create_udp udp-46ee7ab7-fa9d-44c9-91db-6569b900d66f 10014 127.0.0.1 10015 
+Dec 11 05:03:51.544 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 0 0 udp-46ee7ab7-fa9d-44c9-91db-6569b900d66f 
+Dec 11 05:03:51.545 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:08:23.392 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:08:23.393 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 11 05:08:23.778 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 05:08:23.779 HYPERVISOR: exec_cmd: vm extract_config Border2 
+Dec 11 05:08:23.783 HYPERVISOR: exec_cmd: vm delete Border2 
+Dec 11 05:08:23.783 VM: VM Border2 destroyed.
+Dec 11 05:08:23.785 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 05:08:24.288 HYPERVISOR: Stopped.
+Dec 11 05:08:24.288 GENERAL: reset done.

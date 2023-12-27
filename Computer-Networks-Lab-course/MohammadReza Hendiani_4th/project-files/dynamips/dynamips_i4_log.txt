@@ -1,0 +1,41 @@
+Dec 11 01:01:44.403 HYPERVISOR: Release 0.2.14-amd64/Linux (tag 2014092320)
+Dec 11 01:01:44.403 HYPERVISOR: Started on IP = localhost, TCP port = 45475.
+Dec 11 01:01:44.415 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 01:01:44.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips 
+Dec 11 01:01:44.416 GENERAL: working_dir=/home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips
+Dec 11 01:01:44.416 HYPERVISOR: exec_cmd: hypervisor working_dir /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/551af633-3650-4ab7-b2ec-1833633b6c7c 
+Dec 11 01:01:44.416 GENERAL: working_dir=/home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/551af633-3650-4ab7-b2ec-1833633b6c7c
+Dec 11 01:01:44.417 HYPERVISOR: exec_cmd: vm create Border2 4 c7200 
+Dec 11 01:01:44.417 VM: VM Border2 created.
+Dec 11 01:01:44.418 HYPERVISOR: exec_cmd: vm set_con_tcp_port Border2 5003 
+Dec 11 01:01:44.418 HYPERVISOR: exec_cmd: c7200 get_mac_addr Border2 
+Dec 11 01:01:44.419 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:44.419 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 0 0 C7200-IO-FE 
+Dec 11 01:01:44.420 HYPERVISOR: exec_cmd: vm set_disk0 Border2 0 
+Dec 11 01:01:44.421 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:44.421 HYPERVISOR: exec_cmd: vm set_idle_pc Border2 0x608724c0 
+Dec 11 01:01:44.422 HYPERVISOR: exec_cmd: vm set_ios Border2 /home/kali/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Dec 11 01:01:44.423 HYPERVISOR: exec_cmd: c7200 set_mac_addr Border2 ca04.dacc.0000 
+Dec 11 01:01:44.424 HYPERVISOR: exec_cmd: vm set_nvram Border2 512 
+Dec 11 01:01:44.425 HYPERVISOR: exec_cmd: vm set_ram Border2 512 
+Dec 11 01:01:44.426 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:44.427 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 1 0 PA-FE-TX 
+Dec 11 01:01:44.427 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:44.428 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 2 0 PA-FE-TX 
+Dec 11 01:01:44.428 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:44.429 HYPERVISOR: exec_cmd: vm slot_add_binding Border2 3 0 PA-FE-TX 
+Dec 11 01:01:44.986 HYPERVISOR: exec_cmd: nio create_udp udp-22ed7e37-d825-42ec-b48a-fcd14b73721f 10010 127.0.0.1 10011 
+Dec 11 01:01:45.199 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 0 0 udp-22ed7e37-d825-42ec-b48a-fcd14b73721f 
+Dec 11 01:01:45.200 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:01:45.225 HYPERVISOR: exec_cmd: nio create_udp udp-793c3c86-7781-4075-adc2-a593a127f14a 10014 127.0.0.1 10015 
+Dec 11 01:01:45.225 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Border2 1 0 udp-793c3c86-7781-4075-adc2-a593a127f14a 
+Dec 11 01:01:45.226 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:04:20.445 HYPERVISOR: exec_cmd: vm set_ghost_status Border2 2 
+Dec 11 01:04:20.446 HYPERVISOR: exec_cmd: vm set_ghost_file Border2 /home/kali/GNS3/projects/MohammadReza Hendiani_4th/project-files/dynamips/c7200-jk9s-mz.124-13b.image-512.ghost 
+Dec 11 01:04:20.447 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:04:20.448 HYPERVISOR: exec_cmd: vm set_config Border2 configs/i4_startup-config.cfg 
+Dec 11 01:04:20.449 HYPERVISOR: exec_cmd: vm start Border2 
+Dec 11 01:04:39.676 HYPERVISOR: exec_cmd: vm get_status Border2 
+Dec 11 01:04:39.676 HYPERVISOR: exec_cmd: vm stop Border2 
+Dec 11 01:04:39.801 VM: VM Border2 shutdown.
+Dec 11 01:04:39.802 HYPERVISOR: exec_cmd: vm extract_config Border2 

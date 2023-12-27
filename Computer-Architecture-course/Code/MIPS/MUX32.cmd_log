@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../MUX32/MUX32.vhd -prj MIPS -o MUX32.spl -module MUX32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MUX32.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/MUX32.sym} 

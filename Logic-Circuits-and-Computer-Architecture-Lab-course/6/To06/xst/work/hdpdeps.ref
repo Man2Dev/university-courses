@@ -1,0 +1,6 @@
+V3 3
+FL C:/Users/home/To06/m.vhd 2020/12/07.11:57:45 P.20131013
+EN work/TriBuffer 1607371096 FL C:/Users/home/To06/m.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/TriBuffer/Behavioral 1607371097 \
+      FL C:/Users/home/To06/m.vhd EN work/TriBuffer 1607371096

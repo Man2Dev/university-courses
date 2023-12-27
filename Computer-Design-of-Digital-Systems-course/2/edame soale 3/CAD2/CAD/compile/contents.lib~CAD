@@ -1,0 +1,6 @@
+21
+~C 1 "../src/TestBench/top_TB.vhd" 66 testbench_for_top
+~E 1 "../src/top.vhd" 15 top
+~A 1 "../src/top.vhd" 24 top
+~E 1 "../src/TestBench/top_TB.vhd" 6 top_tb
+~A 1 "../src/TestBench/top_TB.vhd" 9 TB_ARCHITECTURE

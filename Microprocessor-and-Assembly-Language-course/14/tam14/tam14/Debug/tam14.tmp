@@ -1,0 +1,27 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\tam14.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include\m32def.inc</FILE>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\Debug/tam14.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\Debug/tam14.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\Debug\tam14.map</FILE>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\Debug\tam14.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\tam14.asm</FILE><LINE>5</LINE></main>
+  <wait><FILE>C:\Users\MH\Documents\Atmel Studio\tam14\tam14\tam14.asm</FILE><LINE>13</LINE></wait>
+ </LABELS>
+</ASSEMBLER_INFO>

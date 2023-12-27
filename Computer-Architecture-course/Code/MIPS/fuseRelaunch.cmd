@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/home/Desktop/temp/MIPS/REG_isim_beh.exe" -prj "C:/Users/home/Desktop/temp/MIPS/REG_beh.prj" "work.REG" 

@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=final
+[Library]
+final=.\final\final.lib
+[$LibMap$]
+final=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/top.vhd=-1
+/counter.vhd=-1
+TestBench/top_TB.vhd=-1
+TestBench/top_TB_runtest.do=-1
+[Files.Data]
+.\src\top.vhd=VHDL Source Code
+.\src\counter.vhd=VHDL Source Code
+.\src\TestBench\top_TB.vhd=VHDL Test Bench
+.\src\TestBench\top_TB_runtest.do=Macro
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=top|top|0  
+ShowHide=ShowTopLevel
+Selected=
+[Groups]
+TestBench=1

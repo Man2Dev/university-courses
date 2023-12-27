@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../CTL/CTL.vhd -prj MIPS -o CTL.spl -module CTL -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CTL.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/CTL.sym} 

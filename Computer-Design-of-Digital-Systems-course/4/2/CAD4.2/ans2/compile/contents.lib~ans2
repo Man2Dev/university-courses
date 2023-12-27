@@ -1,0 +1,6 @@
+19
+~E 1 "../src/ans2.vhd" 13 ans2
+~A 1 "../src/ans2.vhd" 20 ans2
+~E 1 "../src/TestBench/ans2_TB.vhd" 6 ans2_tb
+~A 1 "../src/TestBench/ans2_TB.vhd" 7 TB_ARCHITECTURE
+~C 1 "../src/TestBench/ans2_TB.vhd" 67 testbench_for_ans2

@@ -1,0 +1,7 @@
+[Files List]
+C:\Aldec\Active-HDL-12-x64\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/std_logic_1164-body.vhdl=S
+d:\my_designs\sequence\serial/src/serial.vhd=S
+d:\my_designs\sequence\serial/src/TestBench/serial_TB.vhd=S

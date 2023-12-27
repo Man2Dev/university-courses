@@ -1,0 +1,46 @@
+timestamp=1617816010474
+
+[~A]
+ModifyID=21
+Version=74
+
+[~MFT]
+0=6|0CAD.mgf|11382|7998
+1=6|1CAD.mgf|21631|19096
+3=4|3CAD.mgf|4582|4004
+
+[test]
+A/arch=*21|../src/test.vhd|12|
+A/test=21|../src/test.vhd|23|1*19096
+BinW64/test=3*4004
+I=0*512
+I/test=0*10934
+M=11|2|ve8|1617798255336|../src/test.vhd|0*193*0x5796ff37f80568fa9c2965259d84a3f63c38216c|0*439*0x23b75c12e3e89f2ef000564498faa8c2
+M/test=21|2|ve8|1617816010439|../src/test.vhd|0*8277*0x08545fcdd5d8b2850ccaa3c465ca525b5f3fe0d7|0*8678*0x20116f55b147878295aeff36dce7fc50
+R=../src/test.vhd|25
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|e1f76c805e2c0a9a3d36a8be8882f206db1da45b516d43d42765fcf7c43c0fb7
+Version/test=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|e1f76c805e2c0a9a3d36a8be8882f20604dda8f103116abd04e3144b8be6788a
+
+[test_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/test_TB.vhd|6|1*20117
+BinW64/tb_architecture=3*4582
+I=0*1773
+I/tb_architecture=I/TB_ARCHITECTURE 0*11136
+M=11|2|ve8|1617798613149|../src/TestBench/test_TB.vhd|0*1513*0x486fa2d900d438a3d879f3031a26108b78b836e1|0*1684*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|2|ve8|1617816010462|../src/TestBench/test_TB.vhd|0*8961*0x5324a557448c73acc65ddfef11752791262526b6|0*9652*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/test_TB.vhd|6
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|42c85fc2b5765b016c09131feb31810a26527262ddaa47cb266f3a3c4d9b973abc04f4ccf550404343ebda94cc7ec1b4
+Version/tb_architecture=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beabe77de83da87f323418ca1011a474e4a
+
+[testbench_for_test]
+Configures=test_tb.TB_ARCHITECTURE
+E=1*21631
+I=0*11382
+M=2|2|ve8|1617816010466|../src/TestBench/test_TB.vhd|0*10006*0x87498f873c71450060bf9c4ea951330902a7713b|0*10262*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/test_TB.vhd|51
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5224e72d7e60c152058f01f3100215daab99f1b167a013dcba91fa2a3c4c55f29
+
+[~U]
+test=11|0*0|
+test_tb=11|0*1393|
+testbench_for_test=TESTBENCH_FOR_test 2||

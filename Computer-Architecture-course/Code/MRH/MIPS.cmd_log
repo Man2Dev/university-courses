@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/home/Desktop/temp/MRH/MIPS.xst" -ofn "C:/Users/home/Desktop/temp/MRH/MIPS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 MIPS.ngc MIPS.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o MIPS_map.ncd MIPS.ngd MIPS.pcf 
+xst -intstyle ise -ifn "C:/Users/home/Desktop/temp/MRH/MIPS.xst" -ofn "C:/Users/home/Desktop/temp/MRH/MIPS.syr" 
+xst -intstyle ise -ifn "C:/Users/home/Desktop/temp/MRH/MIPS.xst" -ofn "C:/Users/home/Desktop/temp/MRH/MIPS.syr" 

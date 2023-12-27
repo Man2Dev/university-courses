@@ -1,0 +1,6 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" 2021/01/13.18:51:57 P.20131013
+EN work/PC 1610551322 FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/PC/Behavioral 1610551323 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" EN work/PC 1610551322

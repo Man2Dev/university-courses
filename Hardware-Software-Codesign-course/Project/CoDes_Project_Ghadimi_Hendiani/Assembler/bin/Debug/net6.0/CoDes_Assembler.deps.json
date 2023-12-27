@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CoDes_Assembler/1.0.0": {
+        "runtime": {
+          "CoDes_Assembler.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoDes_Assembler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

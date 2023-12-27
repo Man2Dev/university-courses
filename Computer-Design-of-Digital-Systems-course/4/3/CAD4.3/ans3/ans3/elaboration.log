@@ -1,0 +1,41 @@
+Active-HDL 12.0.118.7745 2021-05-19 08:41:46
+
+Elaboration top modules:
+VHDL Configuration            testbench_for_ans3
+
+
+----------------------------------------------------------------------------------------------
+Entity   | Architecture    | Library | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------
+ans3_tb  | TB_ARCHITECTURE | ans3    |      | 12.0.118.7745 (Windows64) | -O3
+ans3     | ans3            | ans3    |      | 12.0.118.7745 (Windows64) | -O3
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+VHDL Configuration         | Library | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------
+testbench_for_ans3         | ans3    |      |                           | <unavailable>
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+VHDL Package               | Library | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------
+standard                   | std     |      |                           | <unavailable>
+TEXTIO                     | std     |      |                           | <unavailable>
+std_logic_1164             | ieee    |      |                           | <unavailable>
+NUMERIC_STD                | ieee    |      |                           | <unavailable>
+std_logic_arith            | ieee    |      |                           | <unavailable>
+STD_LOGIC_UNSIGNED         | ieee    |      |                           | <unavailable>
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+Library                    | Comment
+----------------------------------------------------------------------------------------------
+ans3                       | None
+ieee                       | Standard IEEE packages library
+std                        | Standard VHDL library
+----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim +access +r TESTBENCH_FOR_ans3
+

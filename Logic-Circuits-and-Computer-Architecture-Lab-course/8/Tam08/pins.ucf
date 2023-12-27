@@ -1,0 +1,12 @@
+NET "E" LOC = "p51";
+NET "S[2]" LOC = "p56";
+NET "S[1]" LOC = "p55";
+NET "S[0]" LOC = "p48";
+NET "Q[7]" LOC = "p132";
+NET "Q[6]" LOC = "p131";
+NET "Q[5]" LOC = "p127";
+NET "Q[4]" LOC = "p126";
+NET "Q[3]" LOC = "p124";
+NET "Q[2]" LOC = "p123";
+NET "Q[1]" LOC = "p121";
+NET "Q[0]" LOC = "p120";

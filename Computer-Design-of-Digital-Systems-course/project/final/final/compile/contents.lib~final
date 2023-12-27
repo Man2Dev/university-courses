@@ -1,0 +1,8 @@
+82
+~E 1 "../src/counter.vhd" 14 counter
+~A 1 "../src/counter.vhd" 21 counter
+~C 1 "../src/TestBench/top_TB.vhd" 93 testbench_for_top
+~E 1 "../src/top.vhd" 14 top
+~A 1 "../src/top.vhd" 33 top
+~E 1 "../src/TestBench/top_TB.vhd" 6 top_tb
+~A 1 "../src/TestBench/top_TB.vhd" 9 TB_ARCHITECTURE

@@ -1,0 +1,2 @@
+vhdl isim_temp "ALUCTR.vhd"
+vhdl isim_temp "ALUCTR_Test.vhd"

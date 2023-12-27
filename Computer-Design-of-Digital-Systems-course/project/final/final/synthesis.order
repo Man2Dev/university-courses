@@ -1,0 +1,3 @@
+i<>.\src\top.vhd
+i<>.\src\counter.vhd
+i<>.\src\TestBench\top_TB.vhd

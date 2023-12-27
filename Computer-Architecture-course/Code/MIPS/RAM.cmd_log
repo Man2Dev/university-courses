@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../RAM/RAM.vhd -prj MIPS -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RAM.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/RAM.sym} 

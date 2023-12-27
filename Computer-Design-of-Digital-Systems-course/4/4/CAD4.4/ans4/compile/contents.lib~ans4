@@ -1,0 +1,8 @@
+5
+~E 1 "../src/prob4.vhd" 15 prob4
+~A 1 "../src/prob4.vhd" 26 prob4
+~E 1 "../src/TestBench/prob4_TB.vhd" 6 prob4_tb
+~A 1 "../src/TestBench/prob4_TB.vhd" 9 TB_ARCHITECTURE
+~E 1 "../src/RAM.vhd" 15 RAM
+~A 1 "../src/RAM.vhd" 25 RAM
+~C 1 "../src/TestBench/prob4_TB.vhd" 74 testbench_for_prob4

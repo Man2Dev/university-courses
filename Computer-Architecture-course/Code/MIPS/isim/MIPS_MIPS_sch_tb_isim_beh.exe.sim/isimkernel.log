@@ -1,0 +1,40 @@
+Command line:
+   MIPS_MIPS_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50345
+
+Fri Jan 15 00:24:31 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.37 Meg
+
+ Total Signals          : 138
+ Total Nets             : 2590
+ Total Signal Drivers   : 38
+ Total Blocks           : 24
+ Total Primitive Blocks : 22
+ Total Processes        : 27
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 4116
+
+** Failure:Sim stops.
+User(VHDL) Code Called Simulation Stop
+In process MIPS_Test.vhd:tb 
+ 
+
+
+** Failure:Sim stops.
+User(VHDL) Code Called Simulation Stop
+In process MIPS_Test.vhd:tb 
+ 
+
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5154.37 Meg
+
+Fri Jan 15 00:24:47 2021
+

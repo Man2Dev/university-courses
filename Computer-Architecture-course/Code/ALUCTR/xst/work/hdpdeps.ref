@@ -1,0 +1,8 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" 2021/01/14.01:50:51 P.20131013
+EN work/ALUCTR 1610576455 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ALUCTR/Behavioral 1610576456 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" \
+      EN work/ALUCTR 1610576455

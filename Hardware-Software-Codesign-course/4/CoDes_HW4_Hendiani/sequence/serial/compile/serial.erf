@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: d:/my_designs/sequence/serial/src/TestBench/serial_TB.vhd" 
+MESSAGE "Compile Entity "serial_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "serial_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_serial"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

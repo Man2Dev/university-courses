@@ -1,0 +1,3 @@
+.\src\subModule.vhd
+.\src\top.vhd
+.\src\TestBench\top_TB.vhd

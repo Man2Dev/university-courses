@@ -1,0 +1,9 @@
+[Inputs]
+I_ALU_T
+=I_ALU_CTR[3:0]=
+=I_ALU_1[31:0]=
+=I_ALU_2[31:0]=
+[Outputs]
+O_ALU_ZERO
+=O_ALU[31:0]=
+[BiDir]

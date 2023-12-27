@@ -1,0 +1,9 @@
+net "input_0" loc ="p51";
+net "input_1" loc ="p52";
+net "input_2" loc ="p57";
+net "input_3" loc ="p58";
+
+net "output_0" loc ="p194";
+net "output_1" loc ="p196";
+net "output_2" loc ="p203";
+net "output_3" loc ="p204";

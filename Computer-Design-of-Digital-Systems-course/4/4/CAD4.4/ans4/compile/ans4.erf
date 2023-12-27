@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: d:/my_designs/CAD4.4/ans4/src/TestBench/prob4_TB.vhd" 
+MESSAGE "Compile Entity "prob4_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "prob4_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_prob4"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

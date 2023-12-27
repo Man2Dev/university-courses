@@ -1,0 +1,505 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/IR.vhd" in Library work.
+Architecture behavioral of Entity ir is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MEM.vhd" in Library work.
+Architecture behavioral of Entity mem is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.vhd" in Library work.
+Architecture behavioral of Entity mux4 is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd" in Library work.
+Architecture controlunit of Entity controlunit is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.vhd" in Library work.
+Architecture behavioral of Entity busc is up to date.
+Compiling vhdl file "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhf" in Library work.
+Entity <cpu> compiled.
+Entity <cpu> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CPU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REG> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MEM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ControlUnit> in library <work> (architecture <controlunit>).
+
+Analyzing hierarchy for entity <BUSC> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CPU> in library <work> (Architecture <behavioral>).
+Entity <CPU> analyzed. Unit <CPU> generated.
+
+Analyzing Entity <REG> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd" line 17: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <tmp>
+Entity <REG> analyzed. Unit <REG> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <IR> in library <work> (Architecture <behavioral>).
+Entity <IR> analyzed. Unit <IR> generated.
+
+Analyzing Entity <MEM> in library <work> (Architecture <behavioral>).
+Entity <MEM> analyzed. Unit <MEM> generated.
+
+Analyzing Entity <MUX4> in library <work> (Architecture <behavioral>).
+Entity <MUX4> analyzed. Unit <MUX4> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <ControlUnit> in library <work> (Architecture <controlunit>).
+WARNING:Xst:790 - "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd" line 115: Index value(s) does not match array range, simulation mismatch.
+Entity <ControlUnit> analyzed. Unit <ControlUnit> generated.
+
+Analyzing Entity <BUSC> in library <work> (Architecture <behavioral>).
+Entity <BUSC> analyzed. Unit <BUSC> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <REG>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd".
+    Found 6-bit register for signal <tmp>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <REG> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/PC.vhd".
+    Found 6-bit up counter for signal <tmp>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <IR>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/IR.vhd".
+    Found 6-bit register for signal <tmp>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <IR> synthesized.
+
+
+Synthesizing Unit <MEM>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MEM.vhd".
+    Found 64x6-bit ROM for signal <DATA$rom0000> created at line 85.
+    Summary:
+	inferred   1 ROM(s).
+Unit <MEM> synthesized.
+
+
+Synthesizing Unit <MUX4>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.vhd".
+Unit <MUX4> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ALU.vhd".
+    Found 6-bit addsub for signal <temp>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd".
+WARNING:Xst:646 - Signal <HLT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <PSTATE>.
+WARNING:Xst:737 - Found 9-bit latch for signal <NSTATE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <INC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD0$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD1$mux0001>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD2$mux0002>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LD3$mux0003>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 9-bit register for signal <PSTATE>.
+    Found 1-bit 4-to-1 multiplexer for signal <R$mux0000> created at line 115.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ControlUnit> synthesized.
+
+
+Synthesizing Unit <BUSC>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.vhd".
+Unit <BUSC> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhf".
+Unit <CPU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 6-bit addsub                                          : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 6
+ 6-bit register                                        : 5
+ 9-bit register                                        : 1
+# Latches                                              : 6
+ 1-bit latch                                           : 5
+ 9-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <XLXI_1> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_2> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_3> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_4> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_5> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_6> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_7> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_8> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_9> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_10> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_12> is unconnected in block <CPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_53> is unconnected in block <CPU>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 6-bit addsub                                          : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+# Latches                                              : 6
+ 1-bit latch                                           : 5
+ 9-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block LPM_LATCH_1.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <LD2_mux0002> (without init value) has a constant value of 1 in block <ControlUnit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <ControlUnit> ...
+WARNING:Xst:1294 - Latch <NSTATE_0> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_1> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_2> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_3> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_4> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_5> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_6> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_7> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:1294 - Latch <NSTATE_8> is equivalent to a wire in block <ControlUnit>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_4/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_3/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_2/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_1/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_6/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_5/tmp_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/PSTATE_8> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/INC> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/LD0_mux0000> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/LD1_mux0001> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <XLXI_12/LD3_mux0003> of sequential type is unconnected in block <CPU>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPU.ngr
+Top Level Output File Name         : CPU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                        0  out of    768     0%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    124     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.87 secs
+ 
+--> 
+
+Total memory usage is 4514552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   81 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

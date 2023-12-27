@@ -1,0 +1,1 @@
+-w -erf D:/my_designs/CAD4.3/ans3/compile/ans3.erf -d D:/my_designs/CAD4.3/ans3/compile -s D:/my_designs/CAD4.3/library.cfg -j D:/my_designs/CAD4.3/ans3/projlib.cfg -work ans3 -O3 -e 100 -work ans3 -2002 D:/my_designs/CAD4.3/ans3/src/TestBench/ans3_TB.vhd 

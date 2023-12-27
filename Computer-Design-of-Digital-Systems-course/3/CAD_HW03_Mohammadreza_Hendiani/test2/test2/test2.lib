@@ -1,0 +1,45 @@
+timestamp=1618938030892
+
+[~A]
+ModifyID=6
+Version=74
+
+[~MFT]
+0=4|0test2.mgf|6430|1672
+1=4|1test2.mgf|12592|8690
+3=2|3test2.mgf|4565|3516
+
+[hal2]
+A/hal2=21|../src/hal2.vhd|24|1*8690
+BinW64/hal2=3*3516
+I=0*708
+I/hal2=0*5752
+M=11|2|ve8|1618937307765|../src/hal2.vhd|0*221*0xf61a47cf58c212b4402c79589992cad7b93e4d5a|0*635*0x23b75c12e3e89f2ef000564498faa8c2
+M/hal2=21|2|ve8|1618938030659|../src/hal2.vhd|0*1020*0xaade06688219b93c802ed68fdd5336aa70643d1e|0*1674*0x20116f55b147878295aeff36dce7fc50
+R=../src/hal2.vhd|15
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|6ab019a8ed1ebdb851ba62b3df1b7612335fd0935ededf96d80c960403794b4d
+Version/hal2=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|6ab019a8ed1ebdb851ba62b3df1b7612e17f85ebc9fab5e7b6e00c8688012a15
+
+[hal2_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/hal2_TB.vhd|9|1*10507
+BinW64/tb_architecture=3*4565
+I=0*2511
+I/tb_architecture=I/TB_ARCHITECTURE 0*6069
+M=11|2|ve8|1618937871658|../src/TestBench/hal2_TB.vhd|0*2192*0x1a8082cc77df725eab5f2fd9ca7cb9064552287e|0*2422*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|2|ve8|1618938030888|../src/TestBench/hal2_TB.vhd|0*2825*0x2d43e3fdef74a0e951369215bf8109a6fa31d9be|0*3923*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/hal2_TB.vhd|6
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|dd3446ab182ea50449d6b61c8c769ed026527262ddaa47cb266f3a3c4d9b973ad5e7e34d738d072a08a5f31e7077f9d4
+Version/tb_architecture=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea42823cd06eda2f497337404071c9fc42
+
+[testbench_for_hal2]
+Configures=hal2_tb.TB_ARCHITECTURE
+E=1*12592
+I=0*6430
+M=2|2|ve8|1618938030891|../src/TestBench/hal2_TB.vhd|0*4392*0xb184b8f4da11da575ce605ad7501543ff8efcadc|0*4648*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/hal2_TB.vhd|70
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5ccaf570ab89c5ecbaf3661374fde639d77ac4893b791ecc22008b14ef28c2eb5
+
+[~U]
+hal2=11|0*0|
+hal2_tb=11|0*2072|
+testbench_for_hal2=TESTBENCH_FOR_hal2 2||

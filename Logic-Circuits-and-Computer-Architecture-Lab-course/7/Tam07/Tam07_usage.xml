@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="2">
+<DesignStatistics TimeStamp="Sat Dec 19 12:00:01 2020"><group name="NetStatistics">
+<item name="NumNets_Active" rev="2">
+<attrib name="value" value="9"/></item>
+<item name="NumNets_Vcc" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_CNTRLPIN" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_DUMMY" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_DUMMYESC" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="2">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_OMUX" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_CNTRLPIN" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_VCCOUT" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-DIFFM" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="IOB-DIFFS" rev="2">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="1">
+<attrib name="value" value="5"/></item>
+<item name="AGG_IO" rev="1">
+<attrib name="value" value="5"/></item>
+<item name="NUM_BONDED_IOB" rev="1">
+<attrib name="value" value="5"/></item>
+<item name="NUM_BUFGMUX" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_IOB_FF" rev="1">
+<attrib name="value" value="2"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Sat Dec 19 12:00:01 2020"><group name="SiteSummary">
+<item name="BUFGMUX" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLKMUX" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLK_BUFFER" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="5"/></item>
+<item name="IOB_INBUF" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="IOB_OFF1" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IOB_OUTBUF" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IOB_PAD" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="5"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Sat Dec 19 12:00:01 2020"><group name="IOB_OFF1">
+<item name="CK" rev="2">
+<attrib name="CK" value="2"/><attrib name="CK_INV" value="0"/></item>
+<item name="D" rev="2">
+<attrib name="D" value="1"/><attrib name="D_INV" value="1"/></item>
+<item name="LATCH_OR_FF" rev="2">
+<attrib name="FF" value="2"/></item>
+<item name="OFF1_INIT_ATTR" rev="2">
+<attrib name="INIT0" value="1"/><attrib name="INIT1" value="1"/></item>
+<item name="OFF1_SR_ATTR" rev="2">
+<attrib name="SRLOW" value="1"/><attrib name="SRHIGH" value="1"/></item>
+<item name="OFFATTRBOX" rev="2">
+<attrib name="ASYNC" value="2"/></item>
+<item name="SR" rev="2">
+<attrib name="SR" value="2"/><attrib name="SR_INV" value="0"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="2">
+<attrib name="IN_INV" value="0"/><attrib name="IN" value="2"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="DISABLE_ATTR" rev="2">
+<attrib name="LOW" value="1"/></item>
+<item name="S" rev="2">
+<attrib name="S_INV" value="1"/><attrib name="S" value="0"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="DRIVEATTRBOX" rev="2">
+<attrib name="12" value="2"/></item>
+<item name="IOATTRBOX" rev="2">
+<attrib name="LVCMOS25" value="5"/></item>
+<item name="SLEW" rev="2">
+<attrib name="SLOW" value="2"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="2">
+<attrib name="O1_INV" value="1"/><attrib name="O1" value="1"/></item>
+<item name="OTCLK1" rev="2">
+<attrib name="OTCLK1_INV" value="0"/><attrib name="OTCLK1" value="2"/></item>
+<item name="SR" rev="2">
+<attrib name="SR" value="2"/><attrib name="SR_INV" value="0"/></item>
+</group>
+<group name="BUFGMUX">
+<item name="S" rev="2">
+<attrib name="S_INV" value="1"/><attrib name="S" value="0"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Sat Dec 19 12:00:01 2020"><group name="BUFGMUX_GCLK_BUFFER">
+<item name="IN" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OFF1">
+<item name="CK" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="D" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="Q" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="SR" rev="2">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="IOB_INBUF">
+<item name="IN" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="I0" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="PAD" rev="2">
+<attrib name="value" value="5"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="O1" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="OTCLK1" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="PAD" rev="2">
+<attrib name="value" value="5"/></item>
+<item name="SR" rev="2">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="BUFGMUX">
+<item name="I0" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/home/FA/test_isim_beh.exe -prj C:/Users/home/FA/test_beh.prj test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/home/FA/HA.vhd" into library work
+Parsing VHDL file "C:/Users/home/FA/Top.vhd" into library work
+Parsing VHDL file "C:/Users/home/FA/t.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity HA [ha_default]
+Compiling architecture behavioral of entity Top [top_default]
+Compiling architecture behavior of entity test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\test_isim_beh.exe.sim\libPortability.dll".
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/home/FA/test_isim_beh.exe
+Fuse Memory Usage: 29528 KB
+Fuse CPU Usage: 655 ms

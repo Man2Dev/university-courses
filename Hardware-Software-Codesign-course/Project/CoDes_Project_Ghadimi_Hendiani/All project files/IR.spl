@@ -1,0 +1,7 @@
+[Inputs]
+CLK
+LD
+=RIN[5:0]=
+[Outputs]
+=ROUT[5:0]=
+[BiDir]

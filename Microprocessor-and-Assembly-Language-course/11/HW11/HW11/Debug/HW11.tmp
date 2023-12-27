@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include\m32def.inc</FILE>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRAssembler\2.1.51.24\AvrAssembler/Include\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\Debug/HW11.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\Debug/HW11.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\Debug\HW11.map</FILE>
+  <FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\Debug\HW11.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</FILE><LINE>9</LINE></main>
+  <l1><FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</FILE><LINE>19</LINE></l1>
+  <l3><FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</FILE><LINE>24</LINE></l3>
+  <exit><FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</FILE><LINE>29</LINE></exit>
+  <l2><FILE>C:\Users\MH\Documents\Atmel Studio\HW11\HW11\HW11.asm</FILE><LINE>36</LINE></l2>
+ </LABELS>
+</ASSEMBLER_INFO>

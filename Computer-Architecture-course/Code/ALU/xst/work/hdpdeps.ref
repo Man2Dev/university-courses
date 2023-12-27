@@ -1,0 +1,7 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" 2021/01/14.02:06:51 P.20131013
+EN work/ALU 1610577420 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU/Behavioral 1610577421 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" EN work/ALU 1610577420

@@ -1,0 +1,18 @@
+sch2sym -intstyle ise -family spartan3 -refsym CPU {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sym} 
+sch2sym -intstyle ise -family spartan3 -refsym CPU {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sym} 
+xst -intstyle ise -ifn "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.xst" -ofn "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "CPU.ngc" CPU.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.xst" -ofn "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "CPU.ngc" CPU.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 
+sch2vhdl -intstyle ise -family spartan3 -tionly -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} CPU.vhi 
+sch2vhdl -intstyle ise -family spartan3 -tionly -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} CPU.vhi 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU_drc.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 
+sch2sym -intstyle ise -family spartan3 -refsym CPU {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sym} 
+sch2hdl -intstyle ise -family spartan3 -flat -suppress -vhdl CPU.vhf -w {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.sch} 

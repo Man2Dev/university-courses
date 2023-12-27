@@ -1,0 +1,13 @@
+[Files List]
+C:\Aldec\Active-HDL-12-x64\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/numeric_std.vhdl=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/arith_p.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/arith_b.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/unsigned_p.vhd=S
+C:\Aldec\Active-HDL-12-x64\vlib\ieee/src/unsigned_b.vhd=S
+D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test2/src/hal2.vhd=S
+D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test2/src/TestBench/hal2_TB.vhd=S

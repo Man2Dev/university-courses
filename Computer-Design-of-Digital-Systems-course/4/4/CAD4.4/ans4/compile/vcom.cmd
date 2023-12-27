@@ -1,0 +1,1 @@
+-w -erf d:/my_designs/CAD4.4/ans4/compile/ans4.erf -d d:/my_designs/CAD4.4/ans4/compile -s d:/my_designs/CAD4.4/library.cfg -j d:/my_designs/CAD4.4/ans4/projlib.cfg -work ans4 -O3 -e 100 -work ans4 -2002 d:/my_designs/CAD4.4/ans4/src/TestBench/prob4_TB.vhd 

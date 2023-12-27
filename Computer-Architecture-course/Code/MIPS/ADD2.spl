@@ -1,0 +1,6 @@
+[Inputs]
+=I_ADD2_1[31:0]=
+=I_ADD2_2[31:0]=
+[Outputs]
+=O_ADD2[31:0]=
+[BiDir]

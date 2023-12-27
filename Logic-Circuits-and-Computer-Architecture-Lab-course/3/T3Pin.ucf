@@ -1,0 +1,8 @@
+NET "LED1" LOC = "p194";
+NET "LED2" LOC = "p196";
+NET "LED3" LOC = "p197";
+NET "LED4" LOC = "p198";
+NET "LED5" LOC = "p199";
+NET "LED6" LOC = "p200";
+NET "LED7" LOC = "p203";
+NET "LED8" LOC = "p204";

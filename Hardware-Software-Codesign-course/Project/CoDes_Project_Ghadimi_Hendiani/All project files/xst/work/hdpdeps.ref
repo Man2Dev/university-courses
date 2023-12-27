@@ -1,0 +1,68 @@
+V3 38
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ALU.vhd" 2022/07/01.14:04:44 P.20131013
+EN work/ALU 1656690041 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU/Behavioral 1656690042 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ALU.vhd" \
+      EN work/ALU 1656690041
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.vhd" 2022/06/30.01:59:07 P.20131013
+EN work/BUSC 1656690043 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/BUSC/Behavioral 1656690044 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.vhd" \
+      EN work/BUSC 1656690043
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd" 2022/07/01.17:20:23 P.20131013
+EN work/ControlUnit 1656690045 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ControlUnit/ControlUnit 1656690046 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/ControlUnit.vhd" \
+      EN work/ControlUnit 1656690045
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhd" 2022/07/01.20:10:26 P.20131013
+EN work/CPU 1656690057 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CPU/BEHAVIORAL 1656690058 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhd" \
+      EN work/CPU 1656690057 CP ALU CP BUSC CP ControlUnit CP IR CP MEM CP MUX4 CP PC \
+      CP REG
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/CPU.vhf" 2022/07/01.19:56:23 P.20131013
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/IR.vhd" 2022/06/30.00:28:56 P.20131013
+EN work/IR 1656690047 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/IR.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/IR/Behavioral 1656690048 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/IR.vhd" \
+      EN work/IR 1656690047
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MEM.vhd" 2022/06/30.01:38:38 P.20131013
+EN work/MEM 1656690049 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MEM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/MEM/Behavioral 1656690050 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MEM.vhd" \
+      EN work/MEM 1656690049
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.vhd" 2022/07/01.16:04:53 P.20131013
+EN work/MUX4 1656690051 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX4/Behavioral 1656690052 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/MUX4.vhd" \
+      EN work/MUX4 1656690051
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/PC.vhd" 2022/06/30.01:17:53 P.20131013
+EN work/PC 1656690053 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/PC.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC/Behavioral 1656690054 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/PC.vhd" \
+      EN work/PC 1656690053
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd" 2022/06/30.00:11:05 P.20131013
+EN work/REG 1656690055 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/REG/Behavioral 1656690056 \
+      FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/REG.vhd" \
+      EN work/REG 1656690055
+FL "D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/Register.vhd" 2022/06/29.23:34:35 P.20131013

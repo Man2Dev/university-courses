@@ -1,0 +1,46 @@
+timestamp=1650679802704
+
+[~A]
+ModifyID=203
+Version=74
+
+[~MFT]
+0=4|0serial.mgf|149016|145089
+1=4|1serial.mgf|332571|330261
+3=2|3serial.mgf|176574|175752
+
+[serial]
+A/serial=21|../src/serial.vhd|9|1*330261
+BinW64/serial=3*175752
+I=0*477
+I/serial=0*148559
+M=11|2|ve8|1650667158547|../src/serial.vhd|0*186*0xdec319451432355e867e66fc5825a1e326807ab0|0*400*0x23b75c12e3e89f2ef000564498faa8c2
+M/serial=21|2|ve8|1650679802473|../src/serial.vhd|0*26205*0x681267fd48d54d9d9f84a3f2b2e33be2f4e664ce|0*26896*0x20116f55b147878295aeff36dce7fc50
+R=../src/serial.vhd|4
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|a417bc24ddb4455a73c7f6a783277d0940dacc251f6d0eaeb001eac0f675890a
+Version/serial=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|a417bc24ddb4455a73c7f6a783277d0931223634ffd2bbedaec07260517f6276
+
+[serial_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/serial_TB.vhd|7|1*331244
+BinW64/tb_architecture=3*176574
+I=0*2056
+I/tb_architecture=I/TB_ARCHITECTURE 0*148765
+M=11|2|ve8|1650667195186|../src/TestBench/serial_TB.vhd|0*1784*0xd860294cbcb1046e5e31f8eea223e19fbe0cf429|0*1963*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|2|ve8|1650679802698|../src/TestBench/serial_TB.vhd|0*147118*0xfc71b7941d89b6147695f045cfd6b0b5cd00e342|0*148034*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/serial_TB.vhd|4
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|3afc21307f0b50c26a18a7a8bfb7994d3b7fd6471a083072b1d7305c6137d6730f2064fdb4cec11d595267a386c669e2
+Version/tb_architecture=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beaa3699bec53cb8ea58eeb6c7a5d649422
+
+[testbench_for_serial]
+Configures=serial_tb.TB_ARCHITECTURE
+E=1*332571
+I=0*149016
+M=2|2|ve8|1650679802701|../src/TestBench/serial_TB.vhd|0*136677*0x9b61ebafdc8fa054dc85bf29093619141ebabc49|0*136951*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/serial_TB.vhd|87
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5d51089a3656763059ccc448c6cd498579db44c30b9f2ada3d5a02a1efc8881ca
+
+[~U]
+serial=11|0*0|
+serial_tb=11|0*1660|
+testbench_for_serial=TESTBENCH_FOR_serial 2||
+

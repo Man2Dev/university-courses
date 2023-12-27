@@ -1,0 +1,113 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work ans1 -2002  $dsn/src/TestBench/ans1_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD4/ans1/src/TestBench/ans1_TB.vhd
+# Compile Entity "ans1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ans1_tb"
+# Compile Configuration "TESTBENCH_FOR_ans1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\ans1.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD4/ans1/src/ans1.vhd
+# Compile Entity "ans1"
+# Compile Architecture "ans1" of Entity "ans1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\ans1_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD4/ans1/src/TestBench/ans1_TB.vhd
+# Compile Entity "ans1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ans1_tb"
+# Compile Configuration "TESTBENCH_FOR_ans1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim +access +r TESTBENCH_FOR_ans1 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6422 kB (elbread=427 elab2=5856 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\my_designs\CAD4\ans1\src\wave.asdb
+#  07:00, 19 May, 2021
+#  Simulation has been initialized
+wave 
+wave -noreg qin
+wave -noreg y1
+wave -noreg y2
+wave -noreg y3
+wave -noreg y4
+wave -noreg y5
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\ans1_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_ans1 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/my_designs/CAD4/ans1/src/wave.asdb'.
+SetActiveLib -work
+comp -include "$dsn\src\ans1.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD4/ans1/src/ans1.vhd
+# Compile Entity "ans1"
+# Compile Architecture "ans1" of Entity "ans1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\ans1_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD4/ans1/src/TestBench/ans1_TB.vhd
+# Compile Entity "ans1_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ans1_tb"
+# Compile Configuration "TESTBENCH_FOR_ans1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim +access +r TESTBENCH_FOR_ans1 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6422 kB (elbread=427 elab2=5856 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\my_designs\CAD4\ans1\src\wave.asdb
+#  07:00, 19 May, 2021
+#  Simulation has been initialized
+wave 
+wave -noreg qin
+wave -noreg y1
+wave -noreg y2
+wave -noreg y3
+wave -noreg y4
+wave -noreg y5
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\ans1_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_ans1 
+# 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/my_designs/CAD4/ans1/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'untitled.awc' connected to 'D:/my_designs/CAD4/ans1/src/untitled.asdb'.
+# Adding file D:\my_designs\CAD4\ans1\src\untitled.asdb ... Done
+# Adding file D:\my_designs\CAD4\ans1\src\untitled.awc ... Done

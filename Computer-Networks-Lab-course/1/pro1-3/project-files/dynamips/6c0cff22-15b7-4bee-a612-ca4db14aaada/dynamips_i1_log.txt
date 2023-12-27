@@ -1,0 +1,19 @@
+Oct 24 19:41:56.722 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 24 19:41:56.723 HYPERVISOR: Started on IP = localhost, TCP port = 52743.
+Oct 24 19:41:56.846 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 24 19:41:56.848 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\EMPIRE\GNS3\projects\pro1\project-files\dynamips 
+Oct 24 19:41:56.880 GENERAL: working_dir=C:\Users\EMPIRE\GNS3\projects\pro1\project-files\dynamips
+Oct 24 19:41:56.881 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Oct 24 19:41:59.216 HYPERVISOR: exec_cmd: nio create_udp udp-f31cf9cf-29df-4cec-b3cc-ead64d53b172 10001 127.0.0.1 10000 
+Oct 24 19:41:59.226 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-f31cf9cf-29df-4cec-b3cc-ead64d53b172 
+Oct 24 19:41:59.241 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-f31cf9cf-29df-4cec-b3cc-ead64d53b172 1 
+Oct 24 19:41:59.287 HYPERVISOR: exec_cmd: nio create_udp udp-51e4b306-24ed-4081-a0a9-17d4f5107166 10003 127.0.0.1 10002 
+Oct 24 19:41:59.287 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-51e4b306-24ed-4081-a0a9-17d4f5107166 
+Oct 24 19:41:59.303 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-51e4b306-24ed-4081-a0a9-17d4f5107166 1 
+Oct 24 19:41:59.498 HYPERVISOR: exec_cmd: nio create_udp udp-2e5d71d8-906c-4ed6-b6c5-a8e3cee7eeec 10008 127.0.0.1 10009 
+Oct 24 19:41:59.498 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-2e5d71d8-906c-4ed6-b6c5-a8e3cee7eeec 
+Oct 24 19:41:59.507 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-2e5d71d8-906c-4ed6-b6c5-a8e3cee7eeec 1 
+Oct 24 19:44:45.660 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Oct 24 19:44:45.705 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 24 19:44:46.097 HYPERVISOR: Stopped.
+Oct 24 19:44:46.097 GENERAL: reset done.

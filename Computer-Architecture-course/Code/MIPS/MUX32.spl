@@ -1,0 +1,7 @@
+[Inputs]
+I_MUX_SELECT
+=I_MUX_0[31:0]=
+=I_MUX_1[31:0]=
+[Outputs]
+=O_MUX[31:0]=
+[BiDir]

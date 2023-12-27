@@ -1,0 +1,5 @@
+NET "D" LOC = "p58";
+NET "CP" LOC = "p58";
+NET "Q" LOC = "p194";
+NET "NQ" LOC = "p194";
+NET "R" LOC = "p58";

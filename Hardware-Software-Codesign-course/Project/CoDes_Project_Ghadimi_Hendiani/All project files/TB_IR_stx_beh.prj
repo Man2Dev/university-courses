@@ -1,0 +1,2 @@
+vhdl isim_temp "IR.vhd"
+vhdl isim_temp "TB_IR.vhd"
