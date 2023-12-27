@@ -1,0 +1,13 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'MIPS'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c
+100 -o MIPS_map.ncd MIPS.ngd MIPS.pcf 
+Target Device  : xc3s50
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 19 15:17:08 2021
+

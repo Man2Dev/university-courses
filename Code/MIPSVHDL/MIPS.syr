@@ -1,0 +1,2412 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: MIPS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : MIPS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd" in Library work.
+Entity <CtrlFSM> compiled.
+Entity <CtrlFSM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" in Library work.
+Entity <PC> compiled.
+Entity <PC> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd" in Library work.
+Entity <IM> compiled.
+Entity <IM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/ADD1/ADD1.vhd" in Library work.
+Entity <ADD1> compiled.
+Entity <ADD1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2.vhd" in Library work.
+Entity <ADD2> compiled.
+Entity <ADD2> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" in Library work.
+Entity <MUX32> compiled.
+Entity <MUX32> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/CTL/CTL.vhd" in Library work.
+Entity <CTL> compiled.
+Entity <CTL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/MUX5/MUX5.vhd" in Library work.
+Entity <MUX5> compiled.
+Entity <MUX5> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" in Library work.
+Entity <REG> compiled.
+Entity <REG> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" in Library work.
+Entity <ALU> compiled.
+Entity <ALU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" in Library work.
+Entity <ALUCTR> compiled.
+Entity <ALUCTR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/EXT/EXT.vhd" in Library work.
+Entity <EXT> compiled.
+Entity <EXT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" in Library work.
+Entity <RAM> compiled.
+Entity <RAM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/MIPSVHDL/MIPS.vhd" in Library work.
+Entity <MIPS> compiled.
+Entity <MIPS> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MIPS> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <CtrlFSM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <IM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ADD1> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ADD2> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX32> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <CTL> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MUX5> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <REG> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALUCTR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <EXT> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RAM> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MIPS> in library <work> (Architecture <BEHAVIORAL>).
+Entity <MIPS> analyzed. Unit <MIPS> generated.
+
+Analyzing Entity <CtrlFSM> in library <work> (Architecture <Behavioral>).
+Entity <CtrlFSM> analyzed. Unit <CtrlFSM> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <Behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <IM> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd" line 82: Index value(s) does not match array range, simulation mismatch.
+Entity <IM> analyzed. Unit <IM> generated.
+
+Analyzing Entity <ADD1> in library <work> (Architecture <Behavioral>).
+Entity <ADD1> analyzed. Unit <ADD1> generated.
+
+Analyzing Entity <ADD2> in library <work> (Architecture <Behavioral>).
+Entity <ADD2> analyzed. Unit <ADD2> generated.
+
+Analyzing Entity <MUX32> in library <work> (Architecture <Behavioral>).
+Entity <MUX32> analyzed. Unit <MUX32> generated.
+
+Analyzing Entity <CTL> in library <work> (Architecture <Behavioral>).
+Entity <CTL> analyzed. Unit <CTL> generated.
+
+Analyzing Entity <MUX5> in library <work> (Architecture <Behavioral>).
+Entity <MUX5> analyzed. Unit <MUX5> generated.
+
+Analyzing Entity <REG> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 64: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 68: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 69: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:819 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 54: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <temp>
+Entity <REG> analyzed. Unit <REG> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <ALUCTR> in library <work> (Architecture <Behavioral>).
+Entity <ALUCTR> analyzed. Unit <ALUCTR> generated.
+
+Analyzing Entity <EXT> in library <work> (Architecture <Behavioral>).
+Entity <EXT> analyzed. Unit <EXT> generated.
+
+Analyzing Entity <RAM> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" line 57: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <ram> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" line 60: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <ram> may be accessed with an index that does not cover the full array size.
+Entity <RAM> analyzed. Unit <RAM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CtrlFSM>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | I_FSM_CLK                 (rising_edge)        |
+    | Reset              | I_FSM_T                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_if                                           |
+    | Power Up State     | s_if                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <O_FSM_RAM>.
+    Found 1-bit register for signal <O_FSM_ALU>.
+    Found 1-bit register for signal <O_FSM_IM>.
+    Found 1-bit register for signal <O_FSM_CTL>.
+    Found 1-bit register for signal <O_FSM_PCREG>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   5 D-type flip-flop(s).
+Unit <CtrlFSM> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd".
+    Found 32-bit register for signal <O_PC>.
+    Found 32-bit register for signal <temp>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <IM>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <O_ROM_DATA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32x32-bit ROM for signal <O_ROM_DATA$mux0000> created at line 82.
+    Summary:
+	inferred   1 ROM(s).
+Unit <IM> synthesized.
+
+
+Synthesizing Unit <ADD1>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/ADD1/ADD1.vhd".
+    Found 32-bit adder for signal <O_ADD1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD1> synthesized.
+
+
+Synthesizing Unit <ADD2>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2.vhd".
+    Found 32-bit adder for signal <O_ADD2>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD2> synthesized.
+
+
+Synthesizing Unit <MUX32>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd".
+Unit <MUX32> synthesized.
+
+
+Synthesizing Unit <CTL>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/CTL/CTL.vhd".
+WARNING:Xst:737 - Found 7-bit latch for signal <val>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <op>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <CTL> synthesized.
+
+
+Synthesizing Unit <MUX5>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/MUX5/MUX5.vhd".
+Unit <MUX5> synthesized.
+
+
+Synthesizing Unit <REG>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 33-to-1 multiplexer for signal <O_REG_DATA_A>.
+    Found 32-bit 33-to-1 multiplexer for signal <O_REG_DATA_B>.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <REG> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <O_ALU_ZERO>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator equal for signal <O_ALU_ZERO$cmp_eq0003> created at line 57.
+    Found 32-bit addsub for signal <temp$share0000> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <ALUCTR>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <O_ALU_CTR>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit 4-to-1 multiplexer for signal <O_ALU_CTR$mux0001>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <ALUCTR> synthesized.
+
+
+Synthesizing Unit <EXT>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/EXT/EXT.vhd".
+Unit <EXT> synthesized.
+
+
+Synthesizing Unit <RAM>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd".
+WARNING:Xst:647 - Input <I_RAM_ADDR<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 32-bit latch for signal <O_RAM_DATA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <ram_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 57.
+    Summary:
+	inferred  32 Multiplexer(s).
+Unit <RAM> synthesized.
+
+
+Synthesizing Unit <MIPS>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/MIPSVHDL/MIPS.vhd".
+Unit <MIPS> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 7
+ 1-bit register                                        : 5
+ 32-bit register                                       : 2
+# Latches                                              : 72
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 68
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 4
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 33-to-1 multiplexer                            : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_1/state/FSM> on signal <state[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s_if  | 000001
+ s_id  | 000010
+ s_ex  | 001000
+ s_me  | 010000
+ s_wr  | 100000
+ s_end | 000100
+-------------------
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <MIPS>.
+INFO:Xst:3044 - The ROM <XLXI_3/Mrom_O_ROM_DATA_mux0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <XLXI_2/O_PC>.
+INFO:Xst:3225 - The RAM <XLXI_3/Mrom_O_ROM_DATA_mux0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <XLXN_84>       | fall     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <XLXI_2/temp>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MIPS> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port block RAM                       : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+# Latches                                              : 72
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 68
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 33-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <val_2> in Unit <CTL> is equivalent to the following FF/Latch, which will be removed : <val_3> 
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <1> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <2> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <3> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <4> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <5> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <6> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <8> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <9> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <10> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <11> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <12> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <13> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <14> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <15> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <16> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <17> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <18> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <19> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <20> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <21> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <22> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <23> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <24> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <25> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <26> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <27> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <28> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <29> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <30> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_1101>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <O_ALU_CTR_3> (without init value) has a constant value of 0 in block <ALUCTR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_5> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_6> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_7> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_8> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_9> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_10> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_11> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_12> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_13> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_14> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_15> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_16> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_17> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_18> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_19> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_20> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_21> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_22> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_23> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_24> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_25> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_26> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_27> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_28> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_29> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_30> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/O_PC_31> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_5> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_6> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_7> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_8> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_9> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_10> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_11> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_12> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_13> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_14> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_15> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_16> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_17> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_18> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_19> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_20> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_21> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_22> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_23> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_24> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_25> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_26> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_27> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_28> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_29> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_30> of sequential type is unconnected in block <MIPS>.
+WARNING:Xst:2677 - Node <XLXI_2/temp_31> of sequential type is unconnected in block <MIPS>.
+
+Optimizing unit <MIPS> ...
+
+Optimizing unit <CTL> ...
+
+Optimizing unit <REG> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <RAM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPS, actual ratio is 47.
+FlipFlop XLXI_1/O_FSM_PCREG has been replicated 2 time(s)
+Latch XLXI_14/temp_0 has been replicated 1 time(s)
+Latch XLXI_3/O_ROM_DATA_16 has been replicated 1 time(s)
+Latch XLXI_3/O_ROM_DATA_21 has been replicated 1 time(s)
+Latch XLXI_7/val_4 has been replicated 2 time(s)
+Latch XLXI_7/val_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MIPS.ngr
+Top Level Output File Name         : MIPS
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+# BELS                             : 5497
+#      AND2                        : 1
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 3
+#      LUT2                        : 19
+#      LUT3                        : 3723
+#      LUT4                        : 169
+#      MUXCY                       : 55
+#      MUXF5                       : 808
+#      MUXF6                       : 384
+#      MUXF7                       : 192
+#      MUXF8                       : 96
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 2185
+#      FD                          : 5
+#      FD_1                        : 5
+#      FDC                         : 4
+#      FDE                         : 7
+#      FDP                         : 1
+#      LD                          : 83
+#      LDE                         : 2048
+#      LDE_1                       : 32
+# RAMS                             : 1
+#      RAMB16_S36                  : 1
+# Clock Buffers                    : 24
+#      BUFG                        : 24
+# IO Buffers                       : 2
+#      IBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     2162  out of   4656    46%  
+ Number of Slice Flip Flops:           2185  out of   9312    23%  
+ Number of 4 input LUTs:               3917  out of   9312    42%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of    232     0%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                        24  out of     24   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------+-------------------------------------+-------+
+Clock Signal                                            | Clock buffer(FF name)               | Load  |
+--------------------------------------------------------+-------------------------------------+-------+
+XLXI_1/O_FSM_PCREG                                      | NONE(XLXI_2/O_PC_0)                 | 10    |
+Clk                                                     | IBUF                                | 12    |
+XLXI_1/O_FSM_IM1                                        | BUFG                                | 34    |
+XLXI_15/O_ALU_CTR_not0001(XLXI_15/O_ALU_CTR_not000139:O)| NONE(*)(XLXI_15/O_ALU_CTR_2)        | 3     |
+XLXI_1/O_FSM_CTL                                        | NONE(XLXI_7/val_6)                  | 12    |
+XLXI_9/temp_0_cmp_eq00001(XLXI_9/temp_0_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_0_31)           | 32    |
+XLXI_9/temp_1_cmp_eq00001(XLXI_9/temp_1_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_1_31)           | 32    |
+XLXI_9/temp_2_cmp_eq00001(XLXI_9/temp_2_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_2_31)           | 32    |
+XLXI_9/temp_3_cmp_eq00001(XLXI_9/temp_3_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_3_31)           | 32    |
+XLXI_9/temp_4_cmp_eq00001(XLXI_9/temp_4_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_4_31)           | 32    |
+XLXI_9/temp_5_cmp_eq00001(XLXI_9/temp_5_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_5_31)           | 32    |
+XLXI_9/temp_6_cmp_eq00001(XLXI_9/temp_6_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_6_31)           | 32    |
+XLXI_9/temp_7_cmp_eq00001(XLXI_9/temp_7_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_7_31)           | 32    |
+XLXI_9/temp_8_cmp_eq00001(XLXI_9/temp_8_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_8_31)           | 32    |
+XLXI_9/temp_9_cmp_eq00001(XLXI_9/temp_9_cmp_eq00001:O)  | BUFG(*)(XLXI_9/temp_9_31)           | 32    |
+XLXI_9/temp_10_cmp_eq00001(XLXI_9/temp_10_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_10_31)          | 32    |
+XLXI_9/temp_11_cmp_eq00001(XLXI_9/temp_11_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_11_31)          | 32    |
+XLXI_9/temp_12_cmp_eq00001(XLXI_9/temp_12_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_12_31)          | 32    |
+XLXI_9/temp_13_cmp_eq00001(XLXI_9/temp_13_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_13_31)          | 32    |
+XLXI_9/temp_14_cmp_eq00001(XLXI_9/temp_14_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_14_31)          | 32    |
+XLXI_9/temp_15_cmp_eq00001(XLXI_9/temp_15_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_15_31)          | 32    |
+XLXI_9/temp_16_cmp_eq00001(XLXI_9/temp_16_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_16_31)          | 32    |
+XLXI_9/temp_17_cmp_eq00001(XLXI_9/temp_17_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_17_31)          | 32    |
+XLXI_9/temp_18_cmp_eq00001(XLXI_9/temp_18_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_18_31)          | 32    |
+XLXI_9/temp_19_cmp_eq00001(XLXI_9/temp_19_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_19_31)          | 32    |
+XLXI_9/temp_20_cmp_eq00001(XLXI_9/temp_20_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_20_31)          | 32    |
+XLXI_9/temp_21_cmp_eq00001(XLXI_9/temp_21_cmp_eq00001:O)| BUFG(*)(XLXI_9/temp_21_31)          | 32    |
+XLXI_9/temp_22_cmp_eq0000(XLXI_9/temp_22_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_22_31)          | 32    |
+XLXI_9/temp_23_cmp_eq0000(XLXI_9/temp_23_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_23_31)          | 32    |
+XLXI_9/temp_24_cmp_eq0000(XLXI_9/temp_24_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_24_31)          | 32    |
+XLXI_9/temp_25_cmp_eq0000(XLXI_9/temp_25_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_25_31)          | 32    |
+XLXI_9/temp_26_cmp_eq0000(XLXI_9/temp_26_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_26_31)          | 32    |
+XLXI_9/temp_27_cmp_eq0000(XLXI_9/temp_27_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_27_31)          | 32    |
+XLXI_9/temp_28_cmp_eq0000(XLXI_9/temp_28_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_28_31)          | 32    |
+XLXI_9/temp_29_cmp_eq0000(XLXI_9/temp_29_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_29_31)          | 32    |
+XLXI_9/temp_30_cmp_eq0000(XLXI_9/temp_30_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_30_31)          | 32    |
+XLXI_9/temp_31_cmp_eq0000(XLXI_9/temp_31_cmp_eq00001:O) | NONE(*)(XLXI_9/temp_31_31)          | 32    |
+XLXI_1/O_FSM_ALU1                                       | BUFG                                | 34    |
+XLXI_1/O_FSM_RAM                                        | NONE(XLXI_17/O_RAM_DATA_31)         | 32    |
+XLXI_17/ram_0_not0001(XLXI_17/ram_0_not0001_f5:O)       | NONE(*)(XLXI_17/ram_0_31)           | 32    |
+XLXI_17/ram_1_cmp_eq0000(XLXI_17/ram_1_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_1_31)           | 32    |
+XLXI_17/ram_2_cmp_eq0000(XLXI_17/ram_2_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_2_31)           | 32    |
+XLXI_17/ram_3_cmp_eq0000(XLXI_17/ram_3_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_3_31)           | 32    |
+XLXI_17/ram_4_cmp_eq0000(XLXI_17/ram_4_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_4_31)           | 32    |
+XLXI_17/ram_5_cmp_eq0000(XLXI_17/ram_5_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_5_31)           | 32    |
+XLXI_17/ram_6_cmp_eq0000(XLXI_17/ram_6_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_6_31)           | 32    |
+XLXI_17/ram_7_cmp_eq0000(XLXI_17/ram_7_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_7_31)           | 32    |
+XLXI_17/ram_8_cmp_eq0000(XLXI_17/ram_8_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_8_31)           | 32    |
+XLXI_17/ram_9_cmp_eq0000(XLXI_17/ram_9_cmp_eq00001:O)   | NONE(*)(XLXI_17/ram_9_31)           | 32    |
+XLXI_17/ram_10_cmp_eq0000(XLXI_17/ram_10_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_10_31)          | 32    |
+XLXI_17/ram_11_cmp_eq0000(XLXI_17/ram_11_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_11_31)          | 32    |
+XLXI_17/ram_12_cmp_eq0000(XLXI_17/ram_12_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_12_31)          | 32    |
+XLXI_17/ram_13_cmp_eq0000(XLXI_17/ram_13_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_13_31)          | 32    |
+XLXI_17/ram_14_cmp_eq0000(XLXI_17/ram_14_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_14_31)          | 32    |
+XLXI_17/ram_15_cmp_eq0000(XLXI_17/ram_15_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_15_31)          | 32    |
+XLXI_17/ram_16_cmp_eq0000(XLXI_17/ram_16_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_16_31)          | 32    |
+XLXI_17/ram_17_cmp_eq0000(XLXI_17/ram_17_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_17_31)          | 32    |
+XLXI_17/ram_18_cmp_eq0000(XLXI_17/ram_18_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_18_31)          | 32    |
+XLXI_17/ram_19_cmp_eq0000(XLXI_17/ram_19_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_19_31)          | 32    |
+XLXI_17/ram_20_cmp_eq0000(XLXI_17/ram_20_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_20_31)          | 32    |
+XLXI_17/ram_21_cmp_eq0000(XLXI_17/ram_21_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_21_31)          | 32    |
+XLXI_17/ram_22_cmp_eq0000(XLXI_17/ram_22_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_22_31)          | 32    |
+XLXI_17/ram_23_cmp_eq0000(XLXI_17/ram_23_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_23_31)          | 32    |
+XLXI_17/ram_24_cmp_eq0000(XLXI_17/ram_24_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_24_31)          | 32    |
+XLXI_17/ram_25_cmp_eq0000(XLXI_17/ram_25_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_25_31)          | 32    |
+XLXI_17/ram_26_cmp_eq0000(XLXI_17/ram_26_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_26_31)          | 32    |
+XLXI_17/ram_27_cmp_eq0000(XLXI_17/ram_27_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_27_31)          | 32    |
+XLXI_17/ram_28_cmp_eq0000(XLXI_17/ram_28_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_28_31)          | 32    |
+XLXI_17/ram_29_cmp_eq0000(XLXI_17/ram_29_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_29_31)          | 32    |
+XLXI_17/ram_30_cmp_eq0000(XLXI_17/ram_30_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_30_31)          | 32    |
+XLXI_17/ram_31_cmp_eq0000(XLXI_17/ram_31_cmp_eq00001:O) | NONE(*)(XLXI_17/ram_31_31)          | 32    |
+XLXI_1/O_FSM_PCREG_1                                    | NONE(XLXI_3/Mrom_O_ROM_DATA_mux0000)| 1     |
+--------------------------------------------------------+-------------------------------------+-------+
+(*) These 65 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------+----------------------------+-------+
+Control Signal                                     | Buffer(FF name)            | Load  |
+---------------------------------------------------+----------------------------+-------+
+XLXI_1/state_Rst_inv(XLXI_1/state_Rst_inv1_INV_0:O)| NONE(XLXI_1/state_FSM_FFd1)| 5     |
+---------------------------------------------------+----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 12.441ns (Maximum Frequency: 80.380MHz)
+   Minimum input arrival time before clock: 2.232ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/O_FSM_PCREG'
+  Clock period: 12.441ns (frequency: 80.380MHz)
+  Total number of paths / destination ports: 75 / 10
+-------------------------------------------------------------------------
+Delay:               6.220ns (Levels of Logic = 8)
+  Source:            XLXI_2/O_PC_1 (FF)
+  Destination:       XLXI_2/temp_4 (FF)
+  Source Clock:      XLXI_1/O_FSM_PCREG falling
+  Destination Clock: XLXI_1/O_FSM_PCREG rising
+
+  Data Path: XLXI_2/O_PC_1 to XLXI_2/temp_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             1   0.514   0.509  XLXI_2/O_PC_1 (XLXI_2/O_PC_1)
+     LUT1:I0->O            1   0.612   0.000  XLXI_4/Madd_O_ADD1_cy<1>_rt (XLXI_4/Madd_O_ADD1_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_4/Madd_O_ADD1_cy<1> (XLXI_4/Madd_O_ADD1_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_4/Madd_O_ADD1_cy<2> (XLXI_4/Madd_O_ADD1_cy<2>)
+     XORCY:CI->O           2   0.699   0.449  XLXI_4/Madd_O_ADD1_xor<3> (XLXN_34<3>)
+     LUT2:I1->O            1   0.612   0.000  XLXI_5/Madd_O_ADD2_lut<3> (XLXI_5/Madd_O_ADD2_lut<3>)
+     MUXCY:S->O            0   0.404   0.000  XLXI_5/Madd_O_ADD2_cy<3> (XLXI_5/Madd_O_ADD2_cy<3>)
+     XORCY:CI->O           1   0.699   0.387  XLXI_5/Madd_O_ADD2_xor<4> (XLXN_32<4>)
+     LUT3:I2->O            1   0.612   0.000  XLXI_6/O_MUX<4>1 (XLXN_35<4>)
+     FD:D                      0.268          XLXI_2/temp_4
+    ----------------------------------------
+    Total                      6.220ns (4.875ns logic, 1.345ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 1.803ns (frequency: 554.647MHz)
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               1.803ns (Levels of Logic = 1)
+  Source:            XLXI_1/state_FSM_FFd5 (FF)
+  Destination:       XLXI_1/state_FSM_FFd3 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: XLXI_1/state_FSM_FFd5 to XLXI_1/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.380  XLXI_1/state_FSM_FFd5 (XLXI_1/state_FSM_FFd5)
+     MUXF5:S->O            1   0.641   0.000  XLXI_1/state_FSM_FFd3-In101_f5 (XLXI_1/state_FSM_FFd3-In)
+     FDC:D                     0.268          XLXI_1/state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.803ns (1.423ns logic, 0.380ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/O_FSM_CTL'
+  Clock period: 2.467ns (frequency: 405.408MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.467ns (Levels of Logic = 2)
+  Source:            XLXI_7/op_1 (LATCH)
+  Destination:       XLXI_7/op_1 (LATCH)
+  Source Clock:      XLXI_1/O_FSM_CTL falling
+  Destination Clock: XLXI_1/O_FSM_CTL falling
+
+  Data Path: XLXI_7/op_1 to XLXI_7/op_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               6   0.588   0.721  XLXI_7/op_1 (XLXI_7/op_1)
+     LUT4:I0->O            1   0.612   0.000  XLXI_7/op_mux0001<0>_G (N150)
+     MUXF5:I1->O           1   0.278   0.000  XLXI_7/op_mux0001<0> (XLXI_7/op_mux0001<0>)
+     LD:D                      0.268          XLXI_7/op_1
+    ----------------------------------------
+    Total                      2.467ns (1.746ns logic, 0.721ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_0_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_0_31 (LATCH)
+  Destination:       XLXI_9/temp_0_31 (LATCH)
+  Source Clock:      XLXI_9/temp_0_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_0_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_0_31 to XLXI_9/temp_0_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_0_31 (XLXI_9/temp_0_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_0_mux0000<31>1 (XLXI_9/temp_0_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_0_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_1_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_1_31 (LATCH)
+  Destination:       XLXI_9/temp_1_31 (LATCH)
+  Source Clock:      XLXI_9/temp_1_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_1_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_1_31 to XLXI_9/temp_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_1_31 (XLXI_9/temp_1_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_1_mux0000<31>1 (XLXI_9/temp_1_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_1_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_2_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_2_31 (LATCH)
+  Destination:       XLXI_9/temp_2_31 (LATCH)
+  Source Clock:      XLXI_9/temp_2_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_2_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_2_31 to XLXI_9/temp_2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_2_31 (XLXI_9/temp_2_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_2_mux0000<31>1 (XLXI_9/temp_2_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_2_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_3_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_3_31 (LATCH)
+  Destination:       XLXI_9/temp_3_31 (LATCH)
+  Source Clock:      XLXI_9/temp_3_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_3_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_3_31 to XLXI_9/temp_3_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_3_31 (XLXI_9/temp_3_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_3_mux0000<31>1 (XLXI_9/temp_3_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_3_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_4_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_4_31 (LATCH)
+  Destination:       XLXI_9/temp_4_31 (LATCH)
+  Source Clock:      XLXI_9/temp_4_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_4_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_4_31 to XLXI_9/temp_4_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_4_31 (XLXI_9/temp_4_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_4_mux0000<31>1 (XLXI_9/temp_4_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_4_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_5_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_5_31 (LATCH)
+  Destination:       XLXI_9/temp_5_31 (LATCH)
+  Source Clock:      XLXI_9/temp_5_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_5_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_5_31 to XLXI_9/temp_5_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_5_31 (XLXI_9/temp_5_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_5_mux0000<31>1 (XLXI_9/temp_5_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_5_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_6_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_6_31 (LATCH)
+  Destination:       XLXI_9/temp_6_31 (LATCH)
+  Source Clock:      XLXI_9/temp_6_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_6_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_6_31 to XLXI_9/temp_6_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_6_31 (XLXI_9/temp_6_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_6_mux0000<31>1 (XLXI_9/temp_6_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_6_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_7_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_7_31 (LATCH)
+  Destination:       XLXI_9/temp_7_31 (LATCH)
+  Source Clock:      XLXI_9/temp_7_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_7_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_7_31 to XLXI_9/temp_7_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_7_31 (XLXI_9/temp_7_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_7_mux0000<31>1 (XLXI_9/temp_7_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_7_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_8_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_8_31 (LATCH)
+  Destination:       XLXI_9/temp_8_31 (LATCH)
+  Source Clock:      XLXI_9/temp_8_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_8_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_8_31 to XLXI_9/temp_8_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_8_31 (XLXI_9/temp_8_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_8_mux0000<31>1 (XLXI_9/temp_8_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_8_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_9_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_9_31 (LATCH)
+  Destination:       XLXI_9/temp_9_31 (LATCH)
+  Source Clock:      XLXI_9/temp_9_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_9_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_9_31 to XLXI_9/temp_9_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_9_31 (XLXI_9/temp_9_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_9_mux0000<31>1 (XLXI_9/temp_9_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_9_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_10_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_10_31 (LATCH)
+  Destination:       XLXI_9/temp_10_31 (LATCH)
+  Source Clock:      XLXI_9/temp_10_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_10_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_10_31 to XLXI_9/temp_10_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_10_31 (XLXI_9/temp_10_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_10_mux0000<31>1 (XLXI_9/temp_10_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_10_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_11_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_11_31 (LATCH)
+  Destination:       XLXI_9/temp_11_31 (LATCH)
+  Source Clock:      XLXI_9/temp_11_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_11_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_11_31 to XLXI_9/temp_11_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_11_31 (XLXI_9/temp_11_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_11_mux0000<31>1 (XLXI_9/temp_11_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_11_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_12_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_12_31 (LATCH)
+  Destination:       XLXI_9/temp_12_31 (LATCH)
+  Source Clock:      XLXI_9/temp_12_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_12_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_12_31 to XLXI_9/temp_12_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_12_31 (XLXI_9/temp_12_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_12_mux0000<31>1 (XLXI_9/temp_12_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_12_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_13_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_13_31 (LATCH)
+  Destination:       XLXI_9/temp_13_31 (LATCH)
+  Source Clock:      XLXI_9/temp_13_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_13_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_13_31 to XLXI_9/temp_13_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_13_31 (XLXI_9/temp_13_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_13_mux0000<31>1 (XLXI_9/temp_13_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_13_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_14_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_14_31 (LATCH)
+  Destination:       XLXI_9/temp_14_31 (LATCH)
+  Source Clock:      XLXI_9/temp_14_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_14_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_14_31 to XLXI_9/temp_14_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_14_31 (XLXI_9/temp_14_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_14_mux0000<31>1 (XLXI_9/temp_14_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_14_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_15_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_15_31 (LATCH)
+  Destination:       XLXI_9/temp_15_31 (LATCH)
+  Source Clock:      XLXI_9/temp_15_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_15_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_15_31 to XLXI_9/temp_15_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_15_31 (XLXI_9/temp_15_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_15_mux0000<31>1 (XLXI_9/temp_15_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_15_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_16_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_16_31 (LATCH)
+  Destination:       XLXI_9/temp_16_31 (LATCH)
+  Source Clock:      XLXI_9/temp_16_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_16_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_16_31 to XLXI_9/temp_16_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_16_31 (XLXI_9/temp_16_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_16_mux0000<31>1 (XLXI_9/temp_16_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_16_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_17_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_17_31 (LATCH)
+  Destination:       XLXI_9/temp_17_31 (LATCH)
+  Source Clock:      XLXI_9/temp_17_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_17_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_17_31 to XLXI_9/temp_17_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_17_31 (XLXI_9/temp_17_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_17_mux0000<31>1 (XLXI_9/temp_17_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_17_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_18_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_18_31 (LATCH)
+  Destination:       XLXI_9/temp_18_31 (LATCH)
+  Source Clock:      XLXI_9/temp_18_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_18_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_18_31 to XLXI_9/temp_18_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_18_31 (XLXI_9/temp_18_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_18_mux0000<31>1 (XLXI_9/temp_18_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_18_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_19_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_19_31 (LATCH)
+  Destination:       XLXI_9/temp_19_31 (LATCH)
+  Source Clock:      XLXI_9/temp_19_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_19_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_19_31 to XLXI_9/temp_19_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_19_31 (XLXI_9/temp_19_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_19_mux0000<31>1 (XLXI_9/temp_19_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_19_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_20_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_20_31 (LATCH)
+  Destination:       XLXI_9/temp_20_31 (LATCH)
+  Source Clock:      XLXI_9/temp_20_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_20_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_20_31 to XLXI_9/temp_20_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_20_31 (XLXI_9/temp_20_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_20_mux0000<31>1 (XLXI_9/temp_20_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_20_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_21_cmp_eq00001'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_21_31 (LATCH)
+  Destination:       XLXI_9/temp_21_31 (LATCH)
+  Source Clock:      XLXI_9/temp_21_cmp_eq00001 falling
+  Destination Clock: XLXI_9/temp_21_cmp_eq00001 falling
+
+  Data Path: XLXI_9/temp_21_31 to XLXI_9/temp_21_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_21_31 (XLXI_9/temp_21_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_21_mux0000<31>1 (XLXI_9/temp_21_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_21_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_22_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_22_31 (LATCH)
+  Destination:       XLXI_9/temp_22_31 (LATCH)
+  Source Clock:      XLXI_9/temp_22_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_22_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_22_31 to XLXI_9/temp_22_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_22_31 (XLXI_9/temp_22_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_22_mux0000<31>1 (XLXI_9/temp_22_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_22_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_23_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_23_31 (LATCH)
+  Destination:       XLXI_9/temp_23_31 (LATCH)
+  Source Clock:      XLXI_9/temp_23_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_23_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_23_31 to XLXI_9/temp_23_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_23_31 (XLXI_9/temp_23_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_23_mux0000<31>1 (XLXI_9/temp_23_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_23_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_24_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_24_31 (LATCH)
+  Destination:       XLXI_9/temp_24_31 (LATCH)
+  Source Clock:      XLXI_9/temp_24_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_24_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_24_31 to XLXI_9/temp_24_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_24_31 (XLXI_9/temp_24_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_24_mux0000<31>1 (XLXI_9/temp_24_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_24_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_25_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_25_31 (LATCH)
+  Destination:       XLXI_9/temp_25_31 (LATCH)
+  Source Clock:      XLXI_9/temp_25_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_25_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_25_31 to XLXI_9/temp_25_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_25_31 (XLXI_9/temp_25_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_25_mux0000<31>1 (XLXI_9/temp_25_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_25_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_26_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_26_31 (LATCH)
+  Destination:       XLXI_9/temp_26_31 (LATCH)
+  Source Clock:      XLXI_9/temp_26_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_26_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_26_31 to XLXI_9/temp_26_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_26_31 (XLXI_9/temp_26_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_26_mux0000<31>1 (XLXI_9/temp_26_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_26_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_27_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_27_31 (LATCH)
+  Destination:       XLXI_9/temp_27_31 (LATCH)
+  Source Clock:      XLXI_9/temp_27_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_27_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_27_31 to XLXI_9/temp_27_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_27_31 (XLXI_9/temp_27_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_27_mux0000<31>1 (XLXI_9/temp_27_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_27_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_28_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_28_31 (LATCH)
+  Destination:       XLXI_9/temp_28_31 (LATCH)
+  Source Clock:      XLXI_9/temp_28_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_28_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_28_31 to XLXI_9/temp_28_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_28_31 (XLXI_9/temp_28_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_28_mux0000<31>1 (XLXI_9/temp_28_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_28_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_29_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_29_31 (LATCH)
+  Destination:       XLXI_9/temp_29_31 (LATCH)
+  Source Clock:      XLXI_9/temp_29_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_29_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_29_31 to XLXI_9/temp_29_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_29_31 (XLXI_9/temp_29_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_29_mux0000<31>1 (XLXI_9/temp_29_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_29_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_30_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_30_31 (LATCH)
+  Destination:       XLXI_9/temp_30_31 (LATCH)
+  Source Clock:      XLXI_9/temp_30_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_30_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_30_31 to XLXI_9/temp_30_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_30_31 (XLXI_9/temp_30_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_30_mux0000<31>1 (XLXI_9/temp_30_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_30_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_9/temp_31_cmp_eq0000'
+  Clock period: 1.988ns (frequency: 502.930MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.988ns (Levels of Logic = 1)
+  Source:            XLXI_9/temp_31_31 (LATCH)
+  Destination:       XLXI_9/temp_31_31 (LATCH)
+  Source Clock:      XLXI_9/temp_31_cmp_eq0000 falling
+  Destination Clock: XLXI_9/temp_31_cmp_eq0000 falling
+
+  Data Path: XLXI_9/temp_31_31 to XLXI_9/temp_31_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  XLXI_9/temp_31_31 (XLXI_9/temp_31_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_9/temp_31_mux0000<31>1 (XLXI_9/temp_31_mux0000<31>)
+     LDE:D                     0.268          XLXI_9/temp_31_31
+    ----------------------------------------
+    Total                      1.988ns (1.468ns logic, 0.520ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/O_FSM_ALU1'
+  Clock period: 2.957ns (frequency: 338.135MHz)
+  Total number of paths / destination ports: 67 / 34
+-------------------------------------------------------------------------
+Delay:               2.957ns (Levels of Logic = 2)
+  Source:            XLXI_14/temp_1 (LATCH)
+  Destination:       XLXI_14/temp_1 (LATCH)
+  Source Clock:      XLXI_1/O_FSM_ALU1 falling
+  Destination Clock: XLXI_1/O_FSM_ALU1 falling
+
+  Data Path: XLXI_14/temp_1 to XLXI_14/temp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q             291   0.588   1.211  XLXI_14/temp_1 (XLXI_14/temp_1)
+     LUT3:I1->O            1   0.612   0.000  XLXI_14/temp_mux0003<1>10_F (N191)
+     MUXF5:I0->O           1   0.278   0.000  XLXI_14/temp_mux0003<1>10 (XLXI_14/temp_mux0003<1>)
+     LD:D                      0.268          XLXI_14/temp_1
+    ----------------------------------------
+    Total                      2.957ns (1.746ns logic, 1.211ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_0_not0001'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_0_31 (LATCH)
+  Destination:       XLXI_17/ram_0_31 (LATCH)
+  Source Clock:      XLXI_17/ram_0_not0001 rising
+  Destination Clock: XLXI_17/ram_0_not0001 rising
+
+  Data Path: XLXI_17/ram_0_31 to XLXI_17/ram_0_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.588   0.449  XLXI_17/ram_0_31 (XLXI_17/ram_0_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_0_mux0000<31>1 (XLXI_17/ram_0_mux0000<31>)
+     LDE_1:D                   0.268          XLXI_17/ram_0_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_1_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_1_31 (LATCH)
+  Destination:       XLXI_17/ram_1_31 (LATCH)
+  Source Clock:      XLXI_17/ram_1_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_1_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_1_31 to XLXI_17/ram_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_1_31 (XLXI_17/ram_1_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_1_mux0000<31>1 (XLXI_17/ram_1_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_1_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_2_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_2_31 (LATCH)
+  Destination:       XLXI_17/ram_2_31 (LATCH)
+  Source Clock:      XLXI_17/ram_2_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_2_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_2_31 to XLXI_17/ram_2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_2_31 (XLXI_17/ram_2_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_2_mux0000<31>1 (XLXI_17/ram_2_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_2_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_3_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_3_31 (LATCH)
+  Destination:       XLXI_17/ram_3_31 (LATCH)
+  Source Clock:      XLXI_17/ram_3_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_3_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_3_31 to XLXI_17/ram_3_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_3_31 (XLXI_17/ram_3_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_3_mux0000<31>1 (XLXI_17/ram_3_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_3_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_4_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_4_31 (LATCH)
+  Destination:       XLXI_17/ram_4_31 (LATCH)
+  Source Clock:      XLXI_17/ram_4_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_4_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_4_31 to XLXI_17/ram_4_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_4_31 (XLXI_17/ram_4_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_4_mux0000<31>1 (XLXI_17/ram_4_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_4_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_5_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_5_31 (LATCH)
+  Destination:       XLXI_17/ram_5_31 (LATCH)
+  Source Clock:      XLXI_17/ram_5_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_5_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_5_31 to XLXI_17/ram_5_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_5_31 (XLXI_17/ram_5_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_5_mux0000<31>1 (XLXI_17/ram_5_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_5_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_6_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_6_31 (LATCH)
+  Destination:       XLXI_17/ram_6_31 (LATCH)
+  Source Clock:      XLXI_17/ram_6_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_6_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_6_31 to XLXI_17/ram_6_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_6_31 (XLXI_17/ram_6_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_6_mux0000<31>1 (XLXI_17/ram_6_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_6_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_7_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_7_31 (LATCH)
+  Destination:       XLXI_17/ram_7_31 (LATCH)
+  Source Clock:      XLXI_17/ram_7_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_7_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_7_31 to XLXI_17/ram_7_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_7_31 (XLXI_17/ram_7_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_7_mux0000<31>1 (XLXI_17/ram_7_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_7_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_8_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_8_31 (LATCH)
+  Destination:       XLXI_17/ram_8_31 (LATCH)
+  Source Clock:      XLXI_17/ram_8_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_8_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_8_31 to XLXI_17/ram_8_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_8_31 (XLXI_17/ram_8_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_8_mux0000<31>1 (XLXI_17/ram_8_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_8_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_9_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_9_31 (LATCH)
+  Destination:       XLXI_17/ram_9_31 (LATCH)
+  Source Clock:      XLXI_17/ram_9_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_9_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_9_31 to XLXI_17/ram_9_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_9_31 (XLXI_17/ram_9_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_9_mux0000<31>1 (XLXI_17/ram_9_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_9_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_10_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_10_31 (LATCH)
+  Destination:       XLXI_17/ram_10_31 (LATCH)
+  Source Clock:      XLXI_17/ram_10_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_10_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_10_31 to XLXI_17/ram_10_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_10_31 (XLXI_17/ram_10_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_10_mux0000<31>1 (XLXI_17/ram_10_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_10_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_11_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_11_31 (LATCH)
+  Destination:       XLXI_17/ram_11_31 (LATCH)
+  Source Clock:      XLXI_17/ram_11_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_11_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_11_31 to XLXI_17/ram_11_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_11_31 (XLXI_17/ram_11_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_11_mux0000<31>1 (XLXI_17/ram_11_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_11_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_12_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_12_31 (LATCH)
+  Destination:       XLXI_17/ram_12_31 (LATCH)
+  Source Clock:      XLXI_17/ram_12_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_12_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_12_31 to XLXI_17/ram_12_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_12_31 (XLXI_17/ram_12_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_12_mux0000<31>1 (XLXI_17/ram_12_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_12_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_13_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_13_31 (LATCH)
+  Destination:       XLXI_17/ram_13_31 (LATCH)
+  Source Clock:      XLXI_17/ram_13_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_13_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_13_31 to XLXI_17/ram_13_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_13_31 (XLXI_17/ram_13_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_13_mux0000<31>1 (XLXI_17/ram_13_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_13_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_14_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_14_31 (LATCH)
+  Destination:       XLXI_17/ram_14_31 (LATCH)
+  Source Clock:      XLXI_17/ram_14_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_14_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_14_31 to XLXI_17/ram_14_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_14_31 (XLXI_17/ram_14_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_14_mux0000<31>1 (XLXI_17/ram_14_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_14_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_15_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_15_31 (LATCH)
+  Destination:       XLXI_17/ram_15_31 (LATCH)
+  Source Clock:      XLXI_17/ram_15_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_15_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_15_31 to XLXI_17/ram_15_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_15_31 (XLXI_17/ram_15_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_15_mux0000<31>1 (XLXI_17/ram_15_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_15_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_16_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_16_31 (LATCH)
+  Destination:       XLXI_17/ram_16_31 (LATCH)
+  Source Clock:      XLXI_17/ram_16_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_16_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_16_31 to XLXI_17/ram_16_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_16_31 (XLXI_17/ram_16_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_16_mux0000<31>1 (XLXI_17/ram_16_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_16_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_17_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_17_31 (LATCH)
+  Destination:       XLXI_17/ram_17_31 (LATCH)
+  Source Clock:      XLXI_17/ram_17_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_17_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_17_31 to XLXI_17/ram_17_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_17_31 (XLXI_17/ram_17_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_17_mux0000<31>1 (XLXI_17/ram_17_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_17_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_18_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_18_31 (LATCH)
+  Destination:       XLXI_17/ram_18_31 (LATCH)
+  Source Clock:      XLXI_17/ram_18_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_18_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_18_31 to XLXI_17/ram_18_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_18_31 (XLXI_17/ram_18_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_18_mux0000<31>1 (XLXI_17/ram_18_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_18_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_19_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_19_31 (LATCH)
+  Destination:       XLXI_17/ram_19_31 (LATCH)
+  Source Clock:      XLXI_17/ram_19_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_19_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_19_31 to XLXI_17/ram_19_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_19_31 (XLXI_17/ram_19_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_19_mux0000<31>1 (XLXI_17/ram_19_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_19_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_20_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_20_31 (LATCH)
+  Destination:       XLXI_17/ram_20_31 (LATCH)
+  Source Clock:      XLXI_17/ram_20_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_20_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_20_31 to XLXI_17/ram_20_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_20_31 (XLXI_17/ram_20_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_20_mux0000<31>1 (XLXI_17/ram_20_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_20_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_21_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_21_31 (LATCH)
+  Destination:       XLXI_17/ram_21_31 (LATCH)
+  Source Clock:      XLXI_17/ram_21_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_21_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_21_31 to XLXI_17/ram_21_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_21_31 (XLXI_17/ram_21_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_21_mux0000<31>1 (XLXI_17/ram_21_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_21_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_22_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_22_31 (LATCH)
+  Destination:       XLXI_17/ram_22_31 (LATCH)
+  Source Clock:      XLXI_17/ram_22_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_22_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_22_31 to XLXI_17/ram_22_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_22_31 (XLXI_17/ram_22_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_22_mux0000<31>1 (XLXI_17/ram_22_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_22_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_23_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_23_31 (LATCH)
+  Destination:       XLXI_17/ram_23_31 (LATCH)
+  Source Clock:      XLXI_17/ram_23_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_23_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_23_31 to XLXI_17/ram_23_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_23_31 (XLXI_17/ram_23_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_23_mux0000<31>1 (XLXI_17/ram_23_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_23_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_24_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_24_31 (LATCH)
+  Destination:       XLXI_17/ram_24_31 (LATCH)
+  Source Clock:      XLXI_17/ram_24_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_24_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_24_31 to XLXI_17/ram_24_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_24_31 (XLXI_17/ram_24_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_24_mux0000<31>1 (XLXI_17/ram_24_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_24_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_25_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_25_31 (LATCH)
+  Destination:       XLXI_17/ram_25_31 (LATCH)
+  Source Clock:      XLXI_17/ram_25_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_25_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_25_31 to XLXI_17/ram_25_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_25_31 (XLXI_17/ram_25_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_25_mux0000<31>1 (XLXI_17/ram_25_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_25_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_26_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_26_31 (LATCH)
+  Destination:       XLXI_17/ram_26_31 (LATCH)
+  Source Clock:      XLXI_17/ram_26_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_26_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_26_31 to XLXI_17/ram_26_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_26_31 (XLXI_17/ram_26_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_26_mux0000<31>1 (XLXI_17/ram_26_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_26_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_27_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_27_31 (LATCH)
+  Destination:       XLXI_17/ram_27_31 (LATCH)
+  Source Clock:      XLXI_17/ram_27_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_27_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_27_31 to XLXI_17/ram_27_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_27_31 (XLXI_17/ram_27_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_27_mux0000<31>1 (XLXI_17/ram_27_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_27_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_28_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_28_31 (LATCH)
+  Destination:       XLXI_17/ram_28_31 (LATCH)
+  Source Clock:      XLXI_17/ram_28_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_28_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_28_31 to XLXI_17/ram_28_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_28_31 (XLXI_17/ram_28_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_28_mux0000<31>1 (XLXI_17/ram_28_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_28_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_29_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_29_31 (LATCH)
+  Destination:       XLXI_17/ram_29_31 (LATCH)
+  Source Clock:      XLXI_17/ram_29_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_29_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_29_31 to XLXI_17/ram_29_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_29_31 (XLXI_17/ram_29_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_29_mux0000<31>1 (XLXI_17/ram_29_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_29_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_30_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_30_31 (LATCH)
+  Destination:       XLXI_17/ram_30_31 (LATCH)
+  Source Clock:      XLXI_17/ram_30_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_30_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_30_31 to XLXI_17/ram_30_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_30_31 (XLXI_17/ram_30_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_30_mux0000<31>1 (XLXI_17/ram_30_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_30_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_17/ram_31_cmp_eq0000'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            XLXI_17/ram_31_31 (LATCH)
+  Destination:       XLXI_17/ram_31_31 (LATCH)
+  Source Clock:      XLXI_17/ram_31_cmp_eq0000 falling
+  Destination Clock: XLXI_17/ram_31_cmp_eq0000 falling
+
+  Data Path: XLXI_17/ram_31_31 to XLXI_17/ram_31_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              2   0.588   0.449  XLXI_17/ram_31_31 (XLXI_17/ram_31_31)
+     LUT3:I1->O            1   0.612   0.000  XLXI_17/ram_31_mux0000<31>1 (XLXI_17/ram_31_mux0000<31>)
+     LDE:D                     0.268          XLXI_17/ram_31_31
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.232ns (Levels of Logic = 1)
+  Source:            Toggle (PAD)
+  Destination:       XLXI_1/O_FSM_CTL (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Toggle to XLXI_1/O_FSM_CTL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.106   0.643  Toggle_IBUF (Toggle_IBUF)
+     FDE:CE                    0.483          XLXI_1/O_FSM_ALU
+    ----------------------------------------
+    Total                      2.232ns (1.589ns logic, 0.643ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 47.18 secs
+ 
+--> 
+
+Total memory usage is 4872948 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  199 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

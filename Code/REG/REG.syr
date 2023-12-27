@@ -1,0 +1,2599 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: REG.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "REG.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "REG"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : REG
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" in Library work.
+Entity <reg> compiled.
+Entity <reg> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <REG> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <REG> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 61: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 65: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:790 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 66: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1607 - Contents of array <temp> may be accessed with an index that does not cover the full array size.
+WARNING:Xst:819 - "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <temp>
+Entity <REG> analyzed. Unit <REG> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <REG>.
+    Related source file is "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <temp_32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 33-to-1 multiplexer for signal <O_REG_DATA_A>.
+    Found 32-bit 33-to-1 multiplexer for signal <O_REG_DATA_B>.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <REG> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 33
+ 32-bit latch                                          : 33
+# Multiplexers                                         : 2
+ 32-bit 33-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 33
+ 32-bit latch                                          : 33
+# Multiplexers                                         : 2
+ 32-bit 33-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <1> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <2> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <3> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <4> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <5> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <6> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <8> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <9> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <10> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <11> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <12> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <13> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <14> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <15> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <16> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <17> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <18> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <19> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <20> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <21> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <22> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <23> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <24> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <25> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <26> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <27> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <28> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <29> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <30> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_1057>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <REG> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block REG, actual ratio is 24.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : REG.ngr
+Top Level Output File Name         : REG
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 113
+
+Cell Usage :
+# BELS                             : 3076
+#      LUT2                        : 36
+#      LUT3                        : 2048
+#      LUT4                        : 32
+#      MUXF5                       : 512
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+# FlipFlops/Latches                : 1024
+#      LDE                         : 1024
+# Clock Buffers                    : 24
+#      BUFG                        : 24
+# IO Buffers                       : 113
+#      IBUF                        : 49
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     1140  out of   4656    24%  
+ Number of Slice Flip Flops:           1024  out of   9312    10%  
+ Number of 4 input LUTs:               2116  out of   9312    22%  
+ Number of IOs:                         113
+ Number of bonded IOBs:                 113  out of    232    48%  
+ Number of GCLKs:                        24  out of     24   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------+------------------------+-------+
+Clock Signal                              | Clock buffer(FF name)  | Load  |
+------------------------------------------+------------------------+-------+
+temp_31_cmp_eq00001(temp_31_cmp_eq00001:O)| BUFG(*)(temp_31_0)     | 32    |
+temp_30_cmp_eq00001(temp_30_cmp_eq00001:O)| BUFG(*)(temp_30_0)     | 32    |
+temp_29_cmp_eq00001(temp_29_cmp_eq00001:O)| BUFG(*)(temp_29_0)     | 32    |
+temp_28_cmp_eq00001(temp_28_cmp_eq00001:O)| BUFG(*)(temp_28_0)     | 32    |
+temp_27_cmp_eq00001(temp_27_cmp_eq00001:O)| BUFG(*)(temp_27_0)     | 32    |
+temp_26_cmp_eq00001(temp_26_cmp_eq00001:O)| BUFG(*)(temp_26_0)     | 32    |
+temp_25_cmp_eq00001(temp_25_cmp_eq00001:O)| BUFG(*)(temp_25_0)     | 32    |
+temp_24_cmp_eq00001(temp_24_cmp_eq00001:O)| BUFG(*)(temp_24_0)     | 32    |
+temp_23_cmp_eq00001(temp_23_cmp_eq00001:O)| BUFG(*)(temp_23_0)     | 32    |
+temp_22_cmp_eq00001(temp_22_cmp_eq00001:O)| BUFG(*)(temp_22_0)     | 32    |
+temp_21_cmp_eq00001(temp_21_cmp_eq00001:O)| BUFG(*)(temp_21_0)     | 32    |
+temp_20_cmp_eq00001(temp_20_cmp_eq00001:O)| BUFG(*)(temp_20_0)     | 32    |
+temp_19_cmp_eq00001(temp_19_cmp_eq00001:O)| BUFG(*)(temp_19_0)     | 32    |
+temp_18_cmp_eq00001(temp_18_cmp_eq00001:O)| BUFG(*)(temp_18_0)     | 32    |
+temp_17_cmp_eq00001(temp_17_cmp_eq00001:O)| BUFG(*)(temp_17_0)     | 32    |
+temp_16_cmp_eq00001(temp_16_cmp_eq00001:O)| BUFG(*)(temp_16_0)     | 32    |
+temp_15_cmp_eq00001(temp_15_cmp_eq00001:O)| BUFG(*)(temp_15_0)     | 32    |
+temp_14_cmp_eq00001(temp_14_cmp_eq00001:O)| BUFG(*)(temp_14_0)     | 32    |
+temp_13_cmp_eq00001(temp_13_cmp_eq00001:O)| BUFG(*)(temp_13_0)     | 32    |
+temp_12_cmp_eq00001(temp_12_cmp_eq00001:O)| BUFG(*)(temp_12_0)     | 32    |
+temp_11_cmp_eq00001(temp_11_cmp_eq00001:O)| BUFG(*)(temp_11_0)     | 32    |
+temp_10_cmp_eq00001(temp_10_cmp_eq00001:O)| BUFG(*)(temp_10_0)     | 32    |
+temp_9_cmp_eq00001(temp_9_cmp_eq00001:O)  | BUFG(*)(temp_9_0)      | 32    |
+temp_8_cmp_eq00001(temp_8_cmp_eq00001:O)  | BUFG(*)(temp_8_0)      | 32    |
+temp_7_cmp_eq0000(temp_7_cmp_eq00001:O)   | NONE(*)(temp_7_0)      | 32    |
+temp_6_cmp_eq0000(temp_6_cmp_eq00001:O)   | NONE(*)(temp_6_0)      | 32    |
+temp_5_cmp_eq0000(temp_5_cmp_eq00001:O)   | NONE(*)(temp_5_0)      | 32    |
+temp_4_cmp_eq0000(temp_4_cmp_eq00001:O)   | NONE(*)(temp_4_0)      | 32    |
+temp_3_cmp_eq0000(temp_3_cmp_eq00001:O)   | NONE(*)(temp_3_0)      | 32    |
+temp_2_cmp_eq0000(temp_2_cmp_eq00001:O)   | NONE(*)(temp_2_0)      | 32    |
+temp_1_cmp_eq0000(temp_1_cmp_eq00001:O)   | NONE(*)(temp_1_0)      | 32    |
+temp_0_cmp_eq0000(temp_0_cmp_eq00001:O)   | NONE(*)(temp_0_0)      | 32    |
+------------------------------------------+------------------------+-------+
+(*) These 32 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.949ns (Maximum Frequency: 512.992MHz)
+   Minimum input arrival time before clock: 5.173ns
+   Maximum output required time after clock: 6.877ns
+   Maximum combinational path delay: 8.226ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_31_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_31_0 (LATCH)
+  Destination:       temp_31_0 (LATCH)
+  Source Clock:      temp_31_cmp_eq00001 falling
+  Destination Clock: temp_31_cmp_eq00001 falling
+
+  Data Path: temp_31_0 to temp_31_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_31_0 (temp_31_0)
+     LUT3:I2->O            1   0.612   0.000  temp_31_mux0000<0>1 (temp_31_mux0000<0>)
+     LDE:D                     0.268          temp_31_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_30_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_30_0 (LATCH)
+  Destination:       temp_30_0 (LATCH)
+  Source Clock:      temp_30_cmp_eq00001 falling
+  Destination Clock: temp_30_cmp_eq00001 falling
+
+  Data Path: temp_30_0 to temp_30_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_30_0 (temp_30_0)
+     LUT3:I2->O            1   0.612   0.000  temp_30_mux0000<0>1 (temp_30_mux0000<0>)
+     LDE:D                     0.268          temp_30_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_29_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_29_0 (LATCH)
+  Destination:       temp_29_0 (LATCH)
+  Source Clock:      temp_29_cmp_eq00001 falling
+  Destination Clock: temp_29_cmp_eq00001 falling
+
+  Data Path: temp_29_0 to temp_29_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_29_0 (temp_29_0)
+     LUT3:I2->O            1   0.612   0.000  temp_29_mux0000<0>1 (temp_29_mux0000<0>)
+     LDE:D                     0.268          temp_29_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_28_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_28_0 (LATCH)
+  Destination:       temp_28_0 (LATCH)
+  Source Clock:      temp_28_cmp_eq00001 falling
+  Destination Clock: temp_28_cmp_eq00001 falling
+
+  Data Path: temp_28_0 to temp_28_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_28_0 (temp_28_0)
+     LUT3:I2->O            1   0.612   0.000  temp_28_mux0000<0>1 (temp_28_mux0000<0>)
+     LDE:D                     0.268          temp_28_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_27_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_27_0 (LATCH)
+  Destination:       temp_27_0 (LATCH)
+  Source Clock:      temp_27_cmp_eq00001 falling
+  Destination Clock: temp_27_cmp_eq00001 falling
+
+  Data Path: temp_27_0 to temp_27_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_27_0 (temp_27_0)
+     LUT3:I2->O            1   0.612   0.000  temp_27_mux0000<0>1 (temp_27_mux0000<0>)
+     LDE:D                     0.268          temp_27_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_26_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_26_0 (LATCH)
+  Destination:       temp_26_0 (LATCH)
+  Source Clock:      temp_26_cmp_eq00001 falling
+  Destination Clock: temp_26_cmp_eq00001 falling
+
+  Data Path: temp_26_0 to temp_26_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_26_0 (temp_26_0)
+     LUT3:I2->O            1   0.612   0.000  temp_26_mux0000<0>1 (temp_26_mux0000<0>)
+     LDE:D                     0.268          temp_26_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_25_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_25_0 (LATCH)
+  Destination:       temp_25_0 (LATCH)
+  Source Clock:      temp_25_cmp_eq00001 falling
+  Destination Clock: temp_25_cmp_eq00001 falling
+
+  Data Path: temp_25_0 to temp_25_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_25_0 (temp_25_0)
+     LUT3:I2->O            1   0.612   0.000  temp_25_mux0000<0>1 (temp_25_mux0000<0>)
+     LDE:D                     0.268          temp_25_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_24_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_24_0 (LATCH)
+  Destination:       temp_24_0 (LATCH)
+  Source Clock:      temp_24_cmp_eq00001 falling
+  Destination Clock: temp_24_cmp_eq00001 falling
+
+  Data Path: temp_24_0 to temp_24_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_24_0 (temp_24_0)
+     LUT3:I2->O            1   0.612   0.000  temp_24_mux0000<0>1 (temp_24_mux0000<0>)
+     LDE:D                     0.268          temp_24_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_23_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_23_0 (LATCH)
+  Destination:       temp_23_0 (LATCH)
+  Source Clock:      temp_23_cmp_eq00001 falling
+  Destination Clock: temp_23_cmp_eq00001 falling
+
+  Data Path: temp_23_0 to temp_23_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_23_0 (temp_23_0)
+     LUT3:I2->O            1   0.612   0.000  temp_23_mux0000<0>1 (temp_23_mux0000<0>)
+     LDE:D                     0.268          temp_23_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_22_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_22_0 (LATCH)
+  Destination:       temp_22_0 (LATCH)
+  Source Clock:      temp_22_cmp_eq00001 falling
+  Destination Clock: temp_22_cmp_eq00001 falling
+
+  Data Path: temp_22_0 to temp_22_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_22_0 (temp_22_0)
+     LUT3:I2->O            1   0.612   0.000  temp_22_mux0000<0>1 (temp_22_mux0000<0>)
+     LDE:D                     0.268          temp_22_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_21_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_21_0 (LATCH)
+  Destination:       temp_21_0 (LATCH)
+  Source Clock:      temp_21_cmp_eq00001 falling
+  Destination Clock: temp_21_cmp_eq00001 falling
+
+  Data Path: temp_21_0 to temp_21_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_21_0 (temp_21_0)
+     LUT3:I2->O            1   0.612   0.000  temp_21_mux0000<0>1 (temp_21_mux0000<0>)
+     LDE:D                     0.268          temp_21_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_20_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_20_0 (LATCH)
+  Destination:       temp_20_0 (LATCH)
+  Source Clock:      temp_20_cmp_eq00001 falling
+  Destination Clock: temp_20_cmp_eq00001 falling
+
+  Data Path: temp_20_0 to temp_20_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_20_0 (temp_20_0)
+     LUT3:I2->O            1   0.612   0.000  temp_20_mux0000<0>1 (temp_20_mux0000<0>)
+     LDE:D                     0.268          temp_20_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_19_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_19_0 (LATCH)
+  Destination:       temp_19_0 (LATCH)
+  Source Clock:      temp_19_cmp_eq00001 falling
+  Destination Clock: temp_19_cmp_eq00001 falling
+
+  Data Path: temp_19_0 to temp_19_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_19_0 (temp_19_0)
+     LUT3:I2->O            1   0.612   0.000  temp_19_mux0000<0>1 (temp_19_mux0000<0>)
+     LDE:D                     0.268          temp_19_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_18_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_18_0 (LATCH)
+  Destination:       temp_18_0 (LATCH)
+  Source Clock:      temp_18_cmp_eq00001 falling
+  Destination Clock: temp_18_cmp_eq00001 falling
+
+  Data Path: temp_18_0 to temp_18_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_18_0 (temp_18_0)
+     LUT3:I2->O            1   0.612   0.000  temp_18_mux0000<0>1 (temp_18_mux0000<0>)
+     LDE:D                     0.268          temp_18_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_17_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_17_0 (LATCH)
+  Destination:       temp_17_0 (LATCH)
+  Source Clock:      temp_17_cmp_eq00001 falling
+  Destination Clock: temp_17_cmp_eq00001 falling
+
+  Data Path: temp_17_0 to temp_17_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_17_0 (temp_17_0)
+     LUT3:I2->O            1   0.612   0.000  temp_17_mux0000<0>1 (temp_17_mux0000<0>)
+     LDE:D                     0.268          temp_17_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_16_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_16_0 (LATCH)
+  Destination:       temp_16_0 (LATCH)
+  Source Clock:      temp_16_cmp_eq00001 falling
+  Destination Clock: temp_16_cmp_eq00001 falling
+
+  Data Path: temp_16_0 to temp_16_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_16_0 (temp_16_0)
+     LUT3:I2->O            1   0.612   0.000  temp_16_mux0000<0>1 (temp_16_mux0000<0>)
+     LDE:D                     0.268          temp_16_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_15_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_15_0 (LATCH)
+  Destination:       temp_15_0 (LATCH)
+  Source Clock:      temp_15_cmp_eq00001 falling
+  Destination Clock: temp_15_cmp_eq00001 falling
+
+  Data Path: temp_15_0 to temp_15_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_15_0 (temp_15_0)
+     LUT3:I2->O            1   0.612   0.000  temp_15_mux0000<0>1 (temp_15_mux0000<0>)
+     LDE:D                     0.268          temp_15_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_14_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_14_0 (LATCH)
+  Destination:       temp_14_0 (LATCH)
+  Source Clock:      temp_14_cmp_eq00001 falling
+  Destination Clock: temp_14_cmp_eq00001 falling
+
+  Data Path: temp_14_0 to temp_14_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_14_0 (temp_14_0)
+     LUT3:I2->O            1   0.612   0.000  temp_14_mux0000<0>1 (temp_14_mux0000<0>)
+     LDE:D                     0.268          temp_14_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_13_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_13_0 (LATCH)
+  Destination:       temp_13_0 (LATCH)
+  Source Clock:      temp_13_cmp_eq00001 falling
+  Destination Clock: temp_13_cmp_eq00001 falling
+
+  Data Path: temp_13_0 to temp_13_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_13_0 (temp_13_0)
+     LUT3:I2->O            1   0.612   0.000  temp_13_mux0000<0>1 (temp_13_mux0000<0>)
+     LDE:D                     0.268          temp_13_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_12_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_12_0 (LATCH)
+  Destination:       temp_12_0 (LATCH)
+  Source Clock:      temp_12_cmp_eq00001 falling
+  Destination Clock: temp_12_cmp_eq00001 falling
+
+  Data Path: temp_12_0 to temp_12_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_12_0 (temp_12_0)
+     LUT3:I2->O            1   0.612   0.000  temp_12_mux0000<0>1 (temp_12_mux0000<0>)
+     LDE:D                     0.268          temp_12_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_11_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_11_0 (LATCH)
+  Destination:       temp_11_0 (LATCH)
+  Source Clock:      temp_11_cmp_eq00001 falling
+  Destination Clock: temp_11_cmp_eq00001 falling
+
+  Data Path: temp_11_0 to temp_11_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_11_0 (temp_11_0)
+     LUT3:I2->O            1   0.612   0.000  temp_11_mux0000<0>1 (temp_11_mux0000<0>)
+     LDE:D                     0.268          temp_11_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_10_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_10_0 (LATCH)
+  Destination:       temp_10_0 (LATCH)
+  Source Clock:      temp_10_cmp_eq00001 falling
+  Destination Clock: temp_10_cmp_eq00001 falling
+
+  Data Path: temp_10_0 to temp_10_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_10_0 (temp_10_0)
+     LUT3:I2->O            1   0.612   0.000  temp_10_mux0000<0>1 (temp_10_mux0000<0>)
+     LDE:D                     0.268          temp_10_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_9_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_9_0 (LATCH)
+  Destination:       temp_9_0 (LATCH)
+  Source Clock:      temp_9_cmp_eq00001 falling
+  Destination Clock: temp_9_cmp_eq00001 falling
+
+  Data Path: temp_9_0 to temp_9_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_9_0 (temp_9_0)
+     LUT3:I2->O            1   0.612   0.000  temp_9_mux0000<0>1 (temp_9_mux0000<0>)
+     LDE:D                     0.268          temp_9_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_8_cmp_eq00001'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_8_0 (LATCH)
+  Destination:       temp_8_0 (LATCH)
+  Source Clock:      temp_8_cmp_eq00001 falling
+  Destination Clock: temp_8_cmp_eq00001 falling
+
+  Data Path: temp_8_0 to temp_8_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_8_0 (temp_8_0)
+     LUT3:I2->O            1   0.612   0.000  temp_8_mux0000<0>1 (temp_8_mux0000<0>)
+     LDE:D                     0.268          temp_8_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_7_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_7_0 (LATCH)
+  Destination:       temp_7_0 (LATCH)
+  Source Clock:      temp_7_cmp_eq0000 falling
+  Destination Clock: temp_7_cmp_eq0000 falling
+
+  Data Path: temp_7_0 to temp_7_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_7_0 (temp_7_0)
+     LUT3:I2->O            1   0.612   0.000  temp_7_mux0000<0>1 (temp_7_mux0000<0>)
+     LDE:D                     0.268          temp_7_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_6_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_6_0 (LATCH)
+  Destination:       temp_6_0 (LATCH)
+  Source Clock:      temp_6_cmp_eq0000 falling
+  Destination Clock: temp_6_cmp_eq0000 falling
+
+  Data Path: temp_6_0 to temp_6_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_6_0 (temp_6_0)
+     LUT3:I2->O            1   0.612   0.000  temp_6_mux0000<0>1 (temp_6_mux0000<0>)
+     LDE:D                     0.268          temp_6_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_5_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_5_0 (LATCH)
+  Destination:       temp_5_0 (LATCH)
+  Source Clock:      temp_5_cmp_eq0000 falling
+  Destination Clock: temp_5_cmp_eq0000 falling
+
+  Data Path: temp_5_0 to temp_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_5_0 (temp_5_0)
+     LUT3:I2->O            1   0.612   0.000  temp_5_mux0000<0>1 (temp_5_mux0000<0>)
+     LDE:D                     0.268          temp_5_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_4_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_4_0 (LATCH)
+  Destination:       temp_4_0 (LATCH)
+  Source Clock:      temp_4_cmp_eq0000 falling
+  Destination Clock: temp_4_cmp_eq0000 falling
+
+  Data Path: temp_4_0 to temp_4_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_4_0 (temp_4_0)
+     LUT3:I2->O            1   0.612   0.000  temp_4_mux0000<0>1 (temp_4_mux0000<0>)
+     LDE:D                     0.268          temp_4_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_3_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_3_0 (LATCH)
+  Destination:       temp_3_0 (LATCH)
+  Source Clock:      temp_3_cmp_eq0000 falling
+  Destination Clock: temp_3_cmp_eq0000 falling
+
+  Data Path: temp_3_0 to temp_3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_3_0 (temp_3_0)
+     LUT3:I2->O            1   0.612   0.000  temp_3_mux0000<0>1 (temp_3_mux0000<0>)
+     LDE:D                     0.268          temp_3_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_2_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_2_0 (LATCH)
+  Destination:       temp_2_0 (LATCH)
+  Source Clock:      temp_2_cmp_eq0000 falling
+  Destination Clock: temp_2_cmp_eq0000 falling
+
+  Data Path: temp_2_0 to temp_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_2_0 (temp_2_0)
+     LUT3:I2->O            1   0.612   0.000  temp_2_mux0000<0>1 (temp_2_mux0000<0>)
+     LDE:D                     0.268          temp_2_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_1_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_1_0 (LATCH)
+  Destination:       temp_1_0 (LATCH)
+  Source Clock:      temp_1_cmp_eq0000 falling
+  Destination Clock: temp_1_cmp_eq0000 falling
+
+  Data Path: temp_1_0 to temp_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_1_0 (temp_1_0)
+     LUT3:I2->O            1   0.612   0.000  temp_1_mux0000<0>1 (temp_1_mux0000<0>)
+     LDE:D                     0.268          temp_1_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'temp_0_cmp_eq0000'
+  Clock period: 1.949ns (frequency: 512.992MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 1)
+  Source:            temp_0_0 (LATCH)
+  Destination:       temp_0_0 (LATCH)
+  Source Clock:      temp_0_cmp_eq0000 falling
+  Destination Clock: temp_0_cmp_eq0000 falling
+
+  Data Path: temp_0_0 to temp_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_0_0 (temp_0_0)
+     LUT3:I2->O            1   0.612   0.000  temp_0_mux0000<0>1 (temp_0_mux0000<0>)
+     LDE:D                     0.268          temp_0_0
+    ----------------------------------------
+    Total                      1.949ns (1.468ns logic, 0.481ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_31_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_31_0 (LATCH)
+  Destination Clock: temp_31_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_31_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_31_mux0000<9>1 (temp_31_mux0000<9>)
+     LDE:D                     0.268          temp_31_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_30_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_30_0 (LATCH)
+  Destination Clock: temp_30_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_30_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_30_mux0000<9>1 (temp_30_mux0000<9>)
+     LDE:D                     0.268          temp_30_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_29_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_29_0 (LATCH)
+  Destination Clock: temp_29_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_29_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_29_mux0000<9>1 (temp_29_mux0000<9>)
+     LDE:D                     0.268          temp_29_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_28_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_28_0 (LATCH)
+  Destination Clock: temp_28_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_28_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_28_mux0000<9>1 (temp_28_mux0000<9>)
+     LDE:D                     0.268          temp_28_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_27_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_27_0 (LATCH)
+  Destination Clock: temp_27_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_27_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_27_mux0000<9>1 (temp_27_mux0000<9>)
+     LDE:D                     0.268          temp_27_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_26_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_26_0 (LATCH)
+  Destination Clock: temp_26_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_26_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_26_mux0000<9>1 (temp_26_mux0000<9>)
+     LDE:D                     0.268          temp_26_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_25_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_25_0 (LATCH)
+  Destination Clock: temp_25_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_25_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_25_mux0000<9>1 (temp_25_mux0000<9>)
+     LDE:D                     0.268          temp_25_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_24_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_24_0 (LATCH)
+  Destination Clock: temp_24_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_24_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_24_mux0000<9>1 (temp_24_mux0000<9>)
+     LDE:D                     0.268          temp_24_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_23_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_23_0 (LATCH)
+  Destination Clock: temp_23_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_23_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_23_mux0000<9>1 (temp_23_mux0000<9>)
+     LDE:D                     0.268          temp_23_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_22_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_22_0 (LATCH)
+  Destination Clock: temp_22_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_22_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_22_mux0000<9>1 (temp_22_mux0000<9>)
+     LDE:D                     0.268          temp_22_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_21_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_21_0 (LATCH)
+  Destination Clock: temp_21_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_21_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_21_mux0000<9>1 (temp_21_mux0000<9>)
+     LDE:D                     0.268          temp_21_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_20_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_20_0 (LATCH)
+  Destination Clock: temp_20_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_20_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_20_mux0000<9>1 (temp_20_mux0000<9>)
+     LDE:D                     0.268          temp_20_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_19_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_19_0 (LATCH)
+  Destination Clock: temp_19_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_19_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_19_mux0000<9>1 (temp_19_mux0000<9>)
+     LDE:D                     0.268          temp_19_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_18_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_18_0 (LATCH)
+  Destination Clock: temp_18_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_18_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_18_mux0000<9>1 (temp_18_mux0000<9>)
+     LDE:D                     0.268          temp_18_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_17_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_17_0 (LATCH)
+  Destination Clock: temp_17_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_17_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_17_mux0000<9>1 (temp_17_mux0000<9>)
+     LDE:D                     0.268          temp_17_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_16_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_16_0 (LATCH)
+  Destination Clock: temp_16_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_16_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_16_mux0000<9>1 (temp_16_mux0000<9>)
+     LDE:D                     0.268          temp_16_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_15_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_15_0 (LATCH)
+  Destination Clock: temp_15_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_15_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_15_mux0000<9>1 (temp_15_mux0000<9>)
+     LDE:D                     0.268          temp_15_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_14_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_14_0 (LATCH)
+  Destination Clock: temp_14_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_14_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_14_mux0000<9>1 (temp_14_mux0000<9>)
+     LDE:D                     0.268          temp_14_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_13_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_13_0 (LATCH)
+  Destination Clock: temp_13_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_13_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_13_mux0000<9>1 (temp_13_mux0000<9>)
+     LDE:D                     0.268          temp_13_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_12_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_12_0 (LATCH)
+  Destination Clock: temp_12_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_12_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_12_mux0000<9>1 (temp_12_mux0000<9>)
+     LDE:D                     0.268          temp_12_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_11_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_11_0 (LATCH)
+  Destination Clock: temp_11_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_11_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_11_mux0000<9>1 (temp_11_mux0000<9>)
+     LDE:D                     0.268          temp_11_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_10_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_10_0 (LATCH)
+  Destination Clock: temp_10_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_10_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_10_mux0000<9>1 (temp_10_mux0000<9>)
+     LDE:D                     0.268          temp_10_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_9_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_9_0 (LATCH)
+  Destination Clock: temp_9_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_9_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_9_mux0000<9>1 (temp_9_mux0000<9>)
+     LDE:D                     0.268          temp_9_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_8_cmp_eq00001'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_8_0 (LATCH)
+  Destination Clock: temp_8_cmp_eq00001 falling
+
+  Data Path: I_REG_Write to temp_8_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_8_mux0000<9>1 (temp_8_mux0000<9>)
+     LDE:D                     0.268          temp_8_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_7_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_7_0 (LATCH)
+  Destination Clock: temp_7_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_7_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_7_mux0000<9>1 (temp_7_mux0000<9>)
+     LDE:D                     0.268          temp_7_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_6_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_6_0 (LATCH)
+  Destination Clock: temp_6_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_6_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_6_mux0000<9>1 (temp_6_mux0000<9>)
+     LDE:D                     0.268          temp_6_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_5_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_5_0 (LATCH)
+  Destination Clock: temp_5_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_5_mux0000<9>1 (temp_5_mux0000<9>)
+     LDE:D                     0.268          temp_5_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_4_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_4_0 (LATCH)
+  Destination Clock: temp_4_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_4_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_4_mux0000<9>1 (temp_4_mux0000<9>)
+     LDE:D                     0.268          temp_4_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_3_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_3_0 (LATCH)
+  Destination Clock: temp_3_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_3_mux0000<9>1 (temp_3_mux0000<9>)
+     LDE:D                     0.268          temp_3_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_2_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_2_0 (LATCH)
+  Destination Clock: temp_2_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_2_mux0000<9>1 (temp_2_mux0000<9>)
+     LDE:D                     0.268          temp_2_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_1_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_1_0 (LATCH)
+  Destination Clock: temp_1_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_1_mux0000<9>1 (temp_1_mux0000<9>)
+     LDE:D                     0.268          temp_1_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_0_cmp_eq0000'
+  Total number of paths / destination ports: 128 / 64
+-------------------------------------------------------------------------
+Offset:              5.173ns (Levels of Logic = 3)
+  Source:            I_REG_Write (PAD)
+  Destination:       temp_0_0 (LATCH)
+  Destination Clock: temp_0_cmp_eq0000 falling
+
+  Data Path: I_REG_Write to temp_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1056   1.106   1.351  I_REG_Write_IBUF (I_REG_Write_IBUF)
+     LUT2:I0->O           32   0.612   1.225  temp_0_mux0000<9>11 (N30)
+     LUT3:I0->O            1   0.612   0.000  temp_0_mux0000<9>1 (temp_0_mux0000<9>)
+     LDE:D                     0.268          temp_0_9
+    ----------------------------------------
+    Total                      5.173ns (2.598ns logic, 2.575ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_0_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_0_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_0_cmp_eq0000 falling
+
+  Data Path: temp_0_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_0_31 (temp_0_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_1024 (Mmux_O_REG_DATA_A_1024)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_8_f5_23 (Mmux_O_REG_DATA_A_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_1_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_1_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_1_cmp_eq0000 falling
+
+  Data Path: temp_1_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_1_31 (temp_1_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_1024 (Mmux_O_REG_DATA_A_1024)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_8_f5_23 (Mmux_O_REG_DATA_A_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_2_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_2_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_2_cmp_eq0000 falling
+
+  Data Path: temp_2_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_2_31 (temp_2_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_999 (Mmux_O_REG_DATA_A_999)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_8_f5_23 (Mmux_O_REG_DATA_A_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_3_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_3_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_3_cmp_eq0000 falling
+
+  Data Path: temp_3_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_3_31 (temp_3_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_999 (Mmux_O_REG_DATA_A_999)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_8_f5_23 (Mmux_O_REG_DATA_A_8_f524)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_4_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_4_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_4_cmp_eq0000 falling
+
+  Data Path: temp_4_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_4_31 (temp_4_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_998 (Mmux_O_REG_DATA_A_998)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_73 (Mmux_O_REG_DATA_A_7_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_5_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_5_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_5_cmp_eq0000 falling
+
+  Data Path: temp_5_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_5_31 (temp_5_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_998 (Mmux_O_REG_DATA_A_998)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_73 (Mmux_O_REG_DATA_A_7_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_6_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_6_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_6_cmp_eq0000 falling
+
+  Data Path: temp_6_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_6_31 (temp_6_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8149 (Mmux_O_REG_DATA_A_8149)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_73 (Mmux_O_REG_DATA_A_7_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_7_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_7_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_7_cmp_eq0000 falling
+
+  Data Path: temp_7_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_7_31 (temp_7_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8149 (Mmux_O_REG_DATA_A_8149)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_73 (Mmux_O_REG_DATA_A_7_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_6_f6_23 (Mmux_O_REG_DATA_A_6_f624)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_8_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_8_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_8_cmp_eq00001 falling
+
+  Data Path: temp_8_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_8_31 (temp_8_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_997 (Mmux_O_REG_DATA_A_997)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_72 (Mmux_O_REG_DATA_A_7_f573)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_9_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_9_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_9_cmp_eq00001 falling
+
+  Data Path: temp_9_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_9_31 (temp_9_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_997 (Mmux_O_REG_DATA_A_997)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_72 (Mmux_O_REG_DATA_A_7_f573)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_10_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_10_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_10_cmp_eq00001 falling
+
+  Data Path: temp_10_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_10_31 (temp_10_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8148 (Mmux_O_REG_DATA_A_8148)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_72 (Mmux_O_REG_DATA_A_7_f573)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_11_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_11_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_11_cmp_eq00001 falling
+
+  Data Path: temp_11_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_11_31 (temp_11_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8148 (Mmux_O_REG_DATA_A_8148)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_72 (Mmux_O_REG_DATA_A_7_f573)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_12_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_12_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_12_cmp_eq00001 falling
+
+  Data Path: temp_12_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_12_31 (temp_12_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8147 (Mmux_O_REG_DATA_A_8147)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_73 (Mmux_O_REG_DATA_A_6_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_13_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_13_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_13_cmp_eq00001 falling
+
+  Data Path: temp_13_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_13_31 (temp_13_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8147 (Mmux_O_REG_DATA_A_8147)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_73 (Mmux_O_REG_DATA_A_6_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_14_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_14_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_14_cmp_eq00001 falling
+
+  Data Path: temp_14_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_14_31 (temp_14_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_799 (Mmux_O_REG_DATA_A_799)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_73 (Mmux_O_REG_DATA_A_6_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_15_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_15_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_15_cmp_eq00001 falling
+
+  Data Path: temp_15_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_15_31 (temp_15_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_799 (Mmux_O_REG_DATA_A_799)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_73 (Mmux_O_REG_DATA_A_6_f574)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_48 (Mmux_O_REG_DATA_A_5_f649)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f7_23 (Mmux_O_REG_DATA_A_4_f724)
+     MUXF8:I0->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_16_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_16_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_16_cmp_eq00001 falling
+
+  Data Path: temp_16_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_16_31 (temp_16_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_996 (Mmux_O_REG_DATA_A_996)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_71 (Mmux_O_REG_DATA_A_7_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_17_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_17_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_17_cmp_eq00001 falling
+
+  Data Path: temp_17_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_17_31 (temp_17_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_996 (Mmux_O_REG_DATA_A_996)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_71 (Mmux_O_REG_DATA_A_7_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_18_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_18_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_18_cmp_eq00001 falling
+
+  Data Path: temp_18_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_18_31 (temp_18_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8146 (Mmux_O_REG_DATA_A_8146)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_71 (Mmux_O_REG_DATA_A_7_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_19_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_19_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_19_cmp_eq00001 falling
+
+  Data Path: temp_19_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_19_31 (temp_19_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8146 (Mmux_O_REG_DATA_A_8146)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_7_f5_71 (Mmux_O_REG_DATA_A_7_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_20_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_20_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_20_cmp_eq00001 falling
+
+  Data Path: temp_20_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_20_31 (temp_20_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8145 (Mmux_O_REG_DATA_A_8145)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_72 (Mmux_O_REG_DATA_A_6_f573)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_21_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_21_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_21_cmp_eq00001 falling
+
+  Data Path: temp_21_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_21_31 (temp_21_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8145 (Mmux_O_REG_DATA_A_8145)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_72 (Mmux_O_REG_DATA_A_6_f573)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_22_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_22_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_22_cmp_eq00001 falling
+
+  Data Path: temp_22_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_22_31 (temp_22_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_798 (Mmux_O_REG_DATA_A_798)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_72 (Mmux_O_REG_DATA_A_6_f573)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_23_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_23_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_23_cmp_eq00001 falling
+
+  Data Path: temp_23_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_23_31 (temp_23_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_798 (Mmux_O_REG_DATA_A_798)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_72 (Mmux_O_REG_DATA_A_6_f573)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_5_f6_47 (Mmux_O_REG_DATA_A_5_f648)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_24_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_24_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_24_cmp_eq00001 falling
+
+  Data Path: temp_24_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_24_31 (temp_24_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8144 (Mmux_O_REG_DATA_A_8144)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_71 (Mmux_O_REG_DATA_A_6_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_25_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_25_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_25_cmp_eq00001 falling
+
+  Data Path: temp_25_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_25_31 (temp_25_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_8144 (Mmux_O_REG_DATA_A_8144)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_71 (Mmux_O_REG_DATA_A_6_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_26_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_26_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_26_cmp_eq00001 falling
+
+  Data Path: temp_26_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_26_31 (temp_26_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_797 (Mmux_O_REG_DATA_A_797)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_71 (Mmux_O_REG_DATA_A_6_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_27_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_27_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_27_cmp_eq00001 falling
+
+  Data Path: temp_27_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_27_31 (temp_27_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_797 (Mmux_O_REG_DATA_A_797)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_6_f5_71 (Mmux_O_REG_DATA_A_6_f572)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_28_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_28_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_28_cmp_eq00001 falling
+
+  Data Path: temp_28_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_28_31 (temp_28_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_796 (Mmux_O_REG_DATA_A_796)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_5_f5_23 (Mmux_O_REG_DATA_A_5_f524)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_29_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_29_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_29_cmp_eq00001 falling
+
+  Data Path: temp_29_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_29_31 (temp_29_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_796 (Mmux_O_REG_DATA_A_796)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_O_REG_DATA_A_5_f5_23 (Mmux_O_REG_DATA_A_5_f524)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_30_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.877ns (Levels of Logic = 6)
+  Source:            temp_30_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_30_cmp_eq00001 falling
+
+  Data Path: temp_30_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.520  temp_30_31 (temp_30_31)
+     LUT3:I1->O            1   0.612   0.000  Mmux_O_REG_DATA_A_624 (Mmux_O_REG_DATA_A_624)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_5_f5_23 (Mmux_O_REG_DATA_A_5_f524)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.877ns (6.000ns logic, 0.877ns route)
+                                       (87.2% logic, 12.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_31_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.838ns (Levels of Logic = 6)
+  Source:            temp_31_31 (LATCH)
+  Destination:       O_REG_DATA_A<31> (PAD)
+  Source Clock:      temp_31_cmp_eq00001 falling
+
+  Data Path: temp_31_31 to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.588   0.481  temp_31_31 (temp_31_31)
+     LUT3:I2->O            1   0.612   0.000  Mmux_O_REG_DATA_A_624 (Mmux_O_REG_DATA_A_624)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_5_f5_23 (Mmux_O_REG_DATA_A_5_f524)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6_23 (Mmux_O_REG_DATA_A_4_f624)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7_23 (Mmux_O_REG_DATA_A_3_f724)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8_23 (O_REG_DATA_A_31_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_31_OBUF (O_REG_DATA_A<31>)
+    ----------------------------------------
+    Total                      6.838ns (6.000ns logic, 0.838ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1984 / 64
+-------------------------------------------------------------------------
+Delay:               8.226ns (Levels of Logic = 7)
+  Source:            I_REG_SEL_RS<0> (PAD)
+  Destination:       O_REG_DATA_A<31> (PAD)
+
+  Data Path: I_REG_SEL_RS<0> to O_REG_DATA_A<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           512   1.106   1.351  I_REG_SEL_RS_0_IBUF (I_REG_SEL_RS_0_IBUF)
+     LUT3:I0->O            1   0.612   0.000  Mmux_O_REG_DATA_A_6 (Mmux_O_REG_DATA_A_6)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_O_REG_DATA_A_5_f5 (Mmux_O_REG_DATA_A_5_f5)
+     MUXF6:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_4_f6 (Mmux_O_REG_DATA_A_4_f6)
+     MUXF7:I1->O           1   0.451   0.000  Mmux_O_REG_DATA_A_3_f7 (Mmux_O_REG_DATA_A_3_f7)
+     MUXF8:I1->O           1   0.451   0.357  Mmux_O_REG_DATA_A_2_f8 (O_REG_DATA_A_0_OBUF)
+     OBUF:I->O                 3.169          O_REG_DATA_A_0_OBUF (O_REG_DATA_A<0>)
+    ----------------------------------------
+    Total                      8.226ns (6.518ns logic, 1.708ns route)
+                                       (79.2% logic, 20.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.57 secs
+ 
+--> 
+
+Total memory usage is 4660344 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  101 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

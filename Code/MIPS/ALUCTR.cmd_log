@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../ALUCTR/ALUCTR.vhd -prj MIPS -o ALUCTR.spl -module ALUCTR -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ALUCTR.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/ALUCTR.sym} 

@@ -1,0 +1,2 @@
+vhdl work "MUX32.vhd"
+vhdl work "MUX32_Test.vhd"

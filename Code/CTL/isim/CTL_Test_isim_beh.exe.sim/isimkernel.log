@@ -1,0 +1,28 @@
+Command line:
+   CTL_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50908
+
+Fri Jan 15 01:57:04 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.17 Meg
+
+ Total Signals          : 22
+ Total Nets             : 25
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 385
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5468.75 Meg
+
+Fri Jan 15 01:57:57 2021
+

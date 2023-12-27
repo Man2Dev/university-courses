@@ -1,0 +1,37 @@
+ISim log file
+Running: E:\Xilinx\Computer Architecture Lab\Project\MIPSVHDL\MIPS_MIPS_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Xilinx/Computer Architecture Lab/Project/MIPSVHDL/MIPS_MIPS_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_5/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_9/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ps(2), Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ps(4), Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+** Failure:Sim stops.
+User(VHDL) Code Called Simulation Stop
+In process MIPS_Test.vhd:tb 
+ 
+INFO: Simulator is stopped.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_9/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ps(2), Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 6 ps(4), Instance /mips_mips_sch_tb/UUT/XLXI_17/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+
+** Failure:Sim stops.
+User(VHDL) Code Called Simulation Stop
+In process MIPS_Test.vhd:tb 
+ 
+INFO: Simulator is stopped.

@@ -1,0 +1,13 @@
+[Inputs]
+I_CTL_T
+=I_CTL_INS[5:0]=
+[Outputs]
+O_CTL_RegDst
+O_CTL_Branch
+O_CTL_MemRead
+O_CTL_MemtoReg
+O_CTL_MemWrite
+O_CTL_ALUSrc
+O_CTL_RegWrite
+=O_CTL_ALUOp[1:0]=
+[BiDir]

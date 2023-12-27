@@ -1,0 +1,93 @@
+V3 58
+FL "E:/Xilinx/Computer Architecture Lab/Project/ADD1/ADD1.vhd" 2021/01/13.20:50:00 P.20131013
+EN work/ADD1 1610651906 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ADD1/ADD1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ADD1/Behavioral 1610651907 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ADD1/ADD1.vhd" EN work/ADD1 1610651906
+FL "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2.vhd" 2021/01/14.01:30:15 P.20131013
+EN work/ADD2 1610651908 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ADD2/Behavioral 1610651909 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2.vhd" EN work/ADD2 1610651908
+FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" 2021/01/14.02:08:48 P.20131013
+EN work/ALU 1610651918 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU/Behavioral 1610651919 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALU/ALU.vhd" EN work/ALU 1610651918
+FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" 2021/01/14.01:50:51 P.20131013
+EN work/ALUCTR 1610651920 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ALUCTR/Behavioral 1610651921 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/ALUCTR/ALUCTR.vhd" \
+      EN work/ALUCTR 1610651920
+FL "E:/Xilinx/Computer Architecture Lab/Project/CTL/CTL.vhd" 2021/01/13.22:36:28 P.20131013
+EN work/CTL 1610651912 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/CTL/CTL.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CTL/Behavioral 1610651913 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/CTL/CTL.vhd" EN work/CTL 1610651912
+FL "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd" 2021/01/14.17:45:27 P.20131013
+EN work/CtrlFSM 1610651900 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CtrlFSM/Behavioral 1610651901 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd" \
+      EN work/CtrlFSM 1610651900
+FL "E:/Xilinx/Computer Architecture Lab/Project/EXT/EXT.vhd" 2021/01/14.00:07:57 P.20131013
+EN work/EXT 1610651922 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/EXT/EXT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/EXT/Behavioral 1610651923 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/EXT/EXT.vhd" EN work/EXT 1610651922
+FL "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd" 2021/01/14.21:30:30 P.20131013
+EN work/IM 1610651904 FL "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB std/TEXTIO 1381692176
+AR work/IM/Behavioral 1610651905 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.vhd" EN work/IM 1610651904
+FL "E:/Xilinx/Computer Architecture Lab/Project/MIPS/MIPS.vhd" 2021/01/14.18:14:24 P.20131013
+FL "E:/Xilinx/Computer Architecture Lab/Project/MIPS/MIPS.vhf" 2021/01/14.22:48:11 P.20131013
+EN work/MIPS 1610651926 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MIPS/MIPS.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MIPS/Behavioral 1610651927 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MIPS/MIPS.vhf" EN work/MIPS 1610651926 \
+      CP CtrlFSM CP PC CP IM CP ADD1 CP ADD2 CP MUX32 CP CTL CP MUX5 CP REG CP ALU \
+      CP ALUCTR CP EXT CP RAM CP AND2
+FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" 2021/01/14.00:59:13 P.20131013
+EN work/MUX32 1610651910 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX32/Behavioral 1610651911 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" \
+      EN work/MUX32 1610651910
+FL "E:/Xilinx/Computer Architecture Lab/Project/MUX5/MUX5.vhd" 2021/01/13.22:47:57 P.20131013
+EN work/MUX5 1610651914 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX5/MUX5.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX5/Behavioral 1610651915 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX5/MUX5.vhd" EN work/MUX5 1610651914
+FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" 2021/01/13.18:51:57 P.20131013
+EN work/PC 1610651902 FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/PC/Behavioral 1610651903 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/PC/PC.vhd" EN work/PC 1610651902
+FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" 2021/01/14.03:13:09 P.20131013
+EN work/RAM 1610651924 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/RAM/Behavioral 1610651925 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" EN work/RAM 1610651924
+FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" 2021/01/14.22:48:04 P.20131013
+EN work/REG 1610651916 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/REG/Behavioral 1610651917 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" EN work/REG 1610651916

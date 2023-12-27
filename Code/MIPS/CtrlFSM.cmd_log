@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../CtrlFSM/CtrlFSM.vhd -prj MIPS -o CtrlFSM.spl -module CtrlFSM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CtrlFSM.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/CtrlFSM.sym} 
