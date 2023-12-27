@@ -11,7 +11,7 @@ cd ~ && git clone git@github.com:Man2Dev/Basics-of-Computer-and-Programming-cour
 ````
 2. run
 ````
-.Basics-of-Computer-and-Programming-course/Tic Tac Toe/Tic-Tac-Toe.out
+.Basics-of-Computer-and-Programming-course/Tic\ Tac\ Toe/Tic-Tac-Toe.out
 ````
 
 ## compile it yourself on Linux
