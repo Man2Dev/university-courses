@@ -1,0 +1,67 @@
+[submodule "Advanced-Programming-course"]
+	path = Advanced-Programming-course
+	url = git@github.com:Man2Dev/Advanced-Programming-course
+
+[submodule "Algorithms-Design-course"]
+	path = Algorithms-Design-course
+	url = git@github.com:Man2Dev/Algorithms-Design-course
+
+[submodule "Basics-of-Computer-and-Programming-course"]
+	path = Basics-of-Computer-and-Programming-course
+	url = git@github.com:Man2Dev/Basics-of-Computer-and-Programming-course
+
+[submodule "Computer-Architecture-course"]
+	path = Computer-Architecture-course
+	url = git@github.com:Man2Dev/Computer-Architecture-course
+
+[submodule "Computer-Design-of-Digital-Systems-course"]
+	path = Computer-Design-of-Digital-Systems-course
+	url = git@github.com:Man2Dev/Computer-Design-of-Digital-Systems-course
+
+[submodule "Computer-Networks-course"]
+	path = Computer-Networks-course
+	url = git@github.com:Man2Dev/Computer-Networks-course
+
+[submodule "Computer-Networks-Lab-course"]
+	path = Computer-Networks-Lab-course
+	url = git@github.com:Man2Dev/Computer-Networks-Lab-course
+
+[submodule "Data-Structure-course"]
+	path = Data-Structure-course
+	url = git@github.com:Man2Dev/Data-Structure-course
+
+[submodule "Database-course"]
+	path = Database-course
+	url = git@github.com:Man2DevDatabase-course
+
+[submodule "Electric-Circuits-course"]
+	path = Electric-Circuits-course
+	url = git@github.com:Man2Dev/Electric-Circuits-course
+
+[submodule "Embedded-and-Real-time-Systems-course"]
+	path = Embedded-and-Real-time-Systems-course
+	url = git@github.com:Man2Dev/Embedded-and-Real-time-Systems-course
+
+[submodule "Hardware-Software-Codesign-course"]
+	path = Hardware-Software-Codesign-course
+	url = git@github.com:Man2Dev/Hardware-Software-Codesign-course
+
+[submodule "Logic-Circuits-and-Computer-Architecture-Lab-course"]
+	path = Logic-Circuits-and-Computer-Architecture-Lab-course
+	url = git@github.com:Man2Dev/Logic-Circuits-and-Computer-Architecture-Lab-course
+
+[submodule "Microprocessor-and-Assembly-Language-course"]
+	path = Microprocessor-and-Assembly-Language-course
+	url = git@github.com:Man2Dev/Microprocessor-and-Assembly-Language-course
+
+[submodule "Microprocessor-Lab-course"]
+	path = Microprocessor-Lab-course
+	url = git@github.com:Man2Dev/Microprocessor-Lab-course
+
+[submodule "Systems-Analysis-and-Design-course"]
+	path = Systems-Analysis-and-Design-course
+	url = git@github.com:Man2Dev/Systems-Analysis-and-Design-course
+
+[submodule "not-BomberMan"]
+	path = Advanced-Programming-course/not-BomberMan
+	url = git@github.com:Man2Dev/not-BomberMan.git
