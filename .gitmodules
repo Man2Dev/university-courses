@@ -1,0 +1,3 @@
+[submodule "not-BomberMan"]
+	path = not-BomberMan
+	url = git@github.com:Man2Dev/not-BomberMan.git
