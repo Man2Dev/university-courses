@@ -31,3 +31,6 @@
 [submodule "Hardware-Software-Codesign-course"]
 	path = Hardware-Software-Codesign-course
 	url = git@github.com:Man2Dev/Hardware-Software-Codesign-course.git
+[submodule "Data-Structure-course"]
+	path = Data-Structure-course
+	url = git@github.com:Man2Dev/Data-Structure-course.git
