@@ -4,3 +4,6 @@
 [submodule "Microprocessor-and-Assembly-Language-course"]
 	path = Microprocessor-and-Assembly-Language-course
 	url = git@github.com:Man2Dev/Microprocessor-and-Assembly-Language-course.git
+[submodule "Microprocessor-Lab-course"]
+	path = Microprocessor-Lab-course
+	url = git@github.com:Man2Dev/Microprocessor-Lab-course.git
