@@ -1,3 +1,6 @@
 [submodule "All-IN-ONE-Calculator"]
 	path = All-IN-ONE-Calculator
 	url = git@github.com:Man2Dev/All-IN-ONE-Calculator.git
+[submodule "Tic-Tac-Toe.cpp"]
+	path = Tic-Tac-Toe.cpp
+	url = git@github.com:Man2Dev/Tic-Tac-Toe.cpp.git
