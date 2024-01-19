@@ -28,3 +28,6 @@
 [submodule "Systems-Analysis-and-Design-course"]
 	path = Systems-Analysis-and-Design-course
 	url = git@github.com:Man2Dev/Systems-Analysis-and-Design-course.git
+[submodule "Hardware-Software-Codesign-course"]
+	path = Hardware-Software-Codesign-course
+	url = git@github.com:Man2Dev/Hardware-Software-Codesign-course.git
