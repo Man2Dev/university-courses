@@ -16,3 +16,6 @@
 [submodule "Electric-Circuits-course"]
 	path = Electric-Circuits-course
 	url = git@github.com:Man2Dev/Electric-Circuits-course.git
+[submodule "Computer-Architecture-course"]
+	path = Computer-Architecture-course
+	url = git@github.com:Man2Dev/Computer-Architecture-course.git
