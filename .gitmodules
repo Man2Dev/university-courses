@@ -19,3 +19,6 @@
 [submodule "Computer-Architecture-course"]
 	path = Computer-Architecture-course
 	url = git@github.com:Man2Dev/Computer-Architecture-course.git
+[submodule "Algorithms-Design-course"]
+	path = Algorithms-Design-course
+	url = git@github.com:Man2Dev/Algorithms-Design-course.git
