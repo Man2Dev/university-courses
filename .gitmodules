@@ -10,3 +10,6 @@
 [submodule "Logic-Circuits-and-Computer-Architecture-Lab-course"]
 	path = Logic-Circuits-and-Computer-Architecture-Lab-course
 	url = git@github.com:Man2Dev/Logic-Circuits-and-Computer-Architecture-Lab-course.git
+[submodule "Embedded-and-Real-time-Systems-course"]
+	path = Embedded-and-Real-time-Systems-course
+	url = git@github.com:Man2Dev/Embedded-and-Real-time-Systems-course.git
