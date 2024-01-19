@@ -1,3 +1,6 @@
 [submodule "Advanced-Programming-course"]
 	path = Advanced-Programming-course
 	url = git@github.com:Man2Dev/Advanced-Programming-course.git
+[submodule "Microprocessor-and-Assembly-Language-course"]
+	path = Microprocessor-and-Assembly-Language-course
+	url = git@github.com:Man2Dev/Microprocessor-and-Assembly-Language-course.git
