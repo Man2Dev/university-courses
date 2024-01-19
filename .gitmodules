@@ -13,3 +13,6 @@
 [submodule "Embedded-and-Real-time-Systems-course"]
 	path = Embedded-and-Real-time-Systems-course
 	url = git@github.com:Man2Dev/Embedded-and-Real-time-Systems-course.git
+[submodule "Electric-Circuits-course"]
+	path = Electric-Circuits-course
+	url = git@github.com:Man2Dev/Electric-Circuits-course.git
