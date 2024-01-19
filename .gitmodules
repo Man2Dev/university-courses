@@ -1,0 +1,3 @@
+[submodule "N-Queen"]
+	path = N-Queen
+	url = git@github.com:Man2Dev/N-Queen.git
