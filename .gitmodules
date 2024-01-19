@@ -25,3 +25,6 @@
 [submodule "Basics-of-Computer-and-Programming-course"]
 	path = Basics-of-Computer-and-Programming-course
 	url = git@github.com:Man2Dev/Basics-of-Computer-and-Programming-course.git
+[submodule "Systems-Analysis-and-Design-course"]
+	path = Systems-Analysis-and-Design-course
+	url = git@github.com:Man2Dev/Systems-Analysis-and-Design-course.git
