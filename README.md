@@ -1,5 +1,9 @@
 # not a BomberMan game clone
 
+```
+![demo video](sample.mp4)
+```
+
 ## Description
 The "not-BomberMan" repository contains a game inspired by the classic Bomberman game. It is a game where player controls characters who navigate through a maze-like arena, placing bombs to destroy obstacles and opponents. The objective is to be the last player standing.
 
