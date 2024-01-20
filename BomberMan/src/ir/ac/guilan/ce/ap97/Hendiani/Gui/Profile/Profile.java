@@ -68,7 +68,7 @@ public class Profile {
 	private JButton btnStistic;
 	private int gender;
 	private File file;
-	private String picPath = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barkeep.png";
+	private String picPath = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barkeep.png";
 	private String path2 = null;
 
 	public static ArrayList<String> temp = new ArrayList<String>();
@@ -419,8 +419,8 @@ public class Profile {
 					UIManager.put("ToggleButton.select", new Color(150, 40, 27));
 					SwingUtilities.updateComponentTreeUI(edit);
 
-					String a1 = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barkeep.png";
-					String a2 = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barmaid.png";
+					String a1 = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barkeep.png";
+					String a2 = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barmaid.png";
 					if (a1.equals(Login.getPictures().get(Login.getPositionInList()))
 							|| a2.equals(Login.getPictures().get(Login.getPositionInList()))) {
 						activation = true;
@@ -525,9 +525,9 @@ public class Profile {
 							if (activation) {
 								// if default picture.
 								if (gender == 0) {
-									picPath = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barkeep.png";
+									picPath = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barkeep.png";
 								} else {
-									picPath = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barmaid.png";
+									picPath = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barmaid.png";
 								}
 							} else if (!activation) {
 								picPath = file + "";
