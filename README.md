@@ -10,6 +10,10 @@ the GUI was made with `swing`
 ```
 sudo update-alternatives --config java
 ```
+## switch JAVA version on Linux:
+```
+sudo update-alternatives --config java
+```
 ## run compiled game:
 1. clone my repo:
 ````
