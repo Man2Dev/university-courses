@@ -1,7 +1,9 @@
 # not a BomberMan game clone
 
-this game was made in 10 days in `eclipse`
-the GUI was made with `swing`
+## Description
+The "not-BomberMan" repository contains a game inspired by the classic Bomberman game. It is a game where player controls characters who navigate through a maze-like arena, placing bombs to destroy obstacles and opponents. The objective is to be the last player standing.
+
+This game was made in 10 days in `eclipse` the GUI was made with `swing`.
 
 ## requrment:
 * java-1.8
