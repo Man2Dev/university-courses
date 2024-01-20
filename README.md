@@ -1,5 +1,7 @@
 # not a BomberMan game clone
 
+![img](sample/game.png)
+
 ![demo video](sample/output.gif)
 [![Download Video](https://img.shields.io/badge/Download-Video-orange)](https://github.com/Man2Dev/not-BomberMan/raw/master/sample/sample.mp4)
 
