@@ -10,6 +10,10 @@ the GUI was made with `swing`
 ```
 sudo update-alternatives --config java
 ```
+
+## The cli output can be enabled by uncomenting code in:
+`BomberMan/src/ir/ac/guilan/ce/ap97/Hendiani/Function/Function.java`
+
 ## run game:
 1. clone my repo:
 ````
