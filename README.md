@@ -33,14 +33,18 @@ sudo dnf install java-1.8.0-openjdk java-latest-openjdk-devel
 sudo update-alternatives --config java
 ```
 
+or just preferably install eclipse
+
+### elcipse flatpak
+```
+flatpak install -y flathub org.eclipse.Java
+```
+
 ## run game:
 1. clone my repo:
 ````
 cd ~ && git clone git@github.com:Man2Dev/not-BomberMan.git
 ````
-2. cd to directory:
-````
-java BomberMan/src/ir/ac/guilan/ce/ap97/Hendiani/Gui/Login/SignUp.java
-````
-3. run:
-import inside eclipse
+2. run:
+
+import inside eclipse and run
