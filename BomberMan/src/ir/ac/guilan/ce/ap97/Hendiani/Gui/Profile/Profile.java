@@ -95,12 +95,24 @@ public class Profile {
 		File file = new File(Login.getPictures().get(Login.getPositionInList()));
 		path2 = Login.getPictures().get(Login.getPositionInList());
 
-		Image image = null;
-		try {
-			image = ImageIO.read(file);
-		} catch (IOException e) {
+		if (file.exists() && file != null) {
+			Image image = null;
+			try {
+				image = ImageIO.read(file);
+			} catch (IOException e) {
+			}
+		    if (image != null) {
+				lalPic.setIcon(new ImageIcon(image.getScaledInstance(93, 96, image.SCALE_DEFAULT)));
+		    } else {
+		        // Handle the case where the image is null
+		        // For example, you can assign a default image or display an error message
+		    	System.out.println("image is null");
+		    }
+		} else {
+		    // Handle the case where the file does not exist or is null
+		    // For example, you can assign a default image or display an error message
+	    	System.out.println("file is null");
 		}
-		lalPic.setIcon(new ImageIcon(image.getScaledInstance(93, 96, image.SCALE_DEFAULT)));
 		// setting name.
 		txtName.setText(Login.getNames().get(Login.getPositionInList()).replaceAll("_", " "));
 		// setting usernsme.
