@@ -98,7 +98,8 @@ public class Profile {
 		if (file.exists() && file != null) {
 			Image image = null;
 			try {
-				image = ImageIO.read(file);
+				// image = ImageIO.read(file);
+				image = ImageIO.read(Profile.class.getResource("/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barkeep.png"));
 			} catch (IOException e) {
 			}
 		    if (image != null) {
