@@ -6,11 +6,7 @@ the GUI was made with `swing`
 ## requrment:
 * java-1.8
 
-## switch JAVA version on Linux:
-```
-sudo update-alternatives --config java
-```
-## switch JAVA version on Linux:
+### switch JAVA version in Linux:
 ```
 sudo update-alternatives --config java
 ```
