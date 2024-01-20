@@ -406,9 +406,9 @@ public class SignUp {
 							if (activation) {
 								// if default picture.
 								if (comboBox.getSelectedIndex() == 0) {
-									picPath = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barkeep.png";
+									picPath = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barkeep.png";
 								} else {
-									picPath = "C:\\Users\\Administrator\\eclipse-workspace\\BomberMan\\src\\ir\\ac\\guilan\\ce\\ap97\\Hendiani\\Gui\\Icon\\Barmaid.png";
+									picPath = "/ir/ac/guilan/ce/ap97/Hendiani/Gui/Icon/Barmaid.png";
 								}
 							} else {
 								picPath = file + "";
