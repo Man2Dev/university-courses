@@ -56,12 +56,12 @@ public class Function {
 	public static String off = "";
 	public static String on = "";
 	public static Double s;
-	
+
 	// name search.
 	public static String setTheNames(Double score) {
 		return (Login.names.get(Login.scores.indexOf(score))+"("+score+")");
 	}
-	
+
 	// calculate score.
 	public static void score(int won) {
 		try {
