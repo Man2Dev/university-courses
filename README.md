@@ -6,6 +6,10 @@ the GUI was made with `swing`
 ## requrment:
 * java-1.8
 
+## switch JAVA version on Linux:
+```
+sudo update-alternatives --config java
+```
 ## run compiled game:
 1. clone my repo:
 ````
