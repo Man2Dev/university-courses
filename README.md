@@ -10,6 +10,16 @@ The "not-BomberMan" repository contains a game inspired by the classic Bomberman
 
 This game was made in 10 days in `eclipse` the GUI was made with `swing`.
 
+## Feature:
+* sign up to get account
+* login to account
+* edit info
+* set profile
+* have ranking list
+* custom screen aspect ratio
+* custom number of enemies
+* overclock (gives you more fps)
+
 ## requrment:
 * java-1.8
 
