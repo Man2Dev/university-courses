@@ -153,7 +153,7 @@ public class SignUp {
 		sl_panel.putConstraint(SpringLayout.WEST, txtName, 6, SpringLayout.EAST, lblNameA);
 		sl_panel.putConstraint(SpringLayout.EAST, txtName, -10, SpringLayout.EAST, panel);
 		sl_panel.putConstraint(SpringLayout.NORTH, txtName, 6, SpringLayout.SOUTH, separator);
-		txtName.setText("NARUTO UZUMAKI");
+		txtName.setText("John Doe");
 		txtName.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -177,7 +177,7 @@ public class SignUp {
 		});
 		sl_panel.putConstraint(SpringLayout.WEST, txtPassword, 6, SpringLayout.EAST, lblPassword);
 		sl_panel.putConstraint(SpringLayout.EAST, txtPassword, -10, SpringLayout.EAST, panel);
-		txtPassword.setText("1377");
+		txtPassword.setText("password");
 		txtPassword.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -215,7 +215,7 @@ public class SignUp {
 		sl_panel.putConstraint(SpringLayout.EAST, passwordField_1, -10, SpringLayout.EAST, panel);
 		sl_panel.putConstraint(SpringLayout.SOUTH, txtPassword, -6, SpringLayout.NORTH, passwordField_1);
 		sl_panel.putConstraint(SpringLayout.SOUTH, passwordField_1, -227, SpringLayout.SOUTH, panel);
-		passwordField_1.setText("1377");
+		passwordField_1.setText("password");
 		passwordField_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -249,7 +249,7 @@ public class SignUp {
 		sl_panel.putConstraint(SpringLayout.NORTH, txtUsername, 6, SpringLayout.SOUTH, txtName);
 		sl_panel.putConstraint(SpringLayout.WEST, txtUsername, 6, SpringLayout.EAST, lblNewLabel_1);
 		sl_panel.putConstraint(SpringLayout.EAST, txtUsername, -10, SpringLayout.EAST, panel);
-		txtUsername.setText("mrh1377");
+		txtUsername.setText("example");
 		txtUsername.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -286,7 +286,7 @@ public class SignUp {
 		sl_panel.putConstraint(SpringLayout.NORTH, txtEmail, 0, SpringLayout.NORTH, lblEmail);
 		sl_panel.putConstraint(SpringLayout.WEST, txtEmail, 6, SpringLayout.EAST, lblEmail);
 		sl_panel.putConstraint(SpringLayout.EAST, txtEmail, -10, SpringLayout.EAST, panel);
-		txtEmail.setText("naruto137777@gmail.com");
+		txtEmail.setText("temp@example.com");
 		txtEmail.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
