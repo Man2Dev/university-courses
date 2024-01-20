@@ -1,6 +1,8 @@
 [submodule "N-Queen"]
 	path = N-Queen
 	url = git@github.com:Man2Dev/N-Queen.git
+	branch = master
 [submodule "Ram-saver"]
 	path = Ram-saver
 	url = git@github.com:Man2Dev/Ram-saver.git
+	branch = master
