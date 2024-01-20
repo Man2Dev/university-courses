@@ -35,7 +35,7 @@ sudo update-alternatives --config java
 
 or just preferably install eclipse
 
-### elcipse flatpak
+### eclipse flatpak
 ```
 flatpak install -y flathub org.eclipse.Java
 ```
