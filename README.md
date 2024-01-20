@@ -10,7 +10,7 @@ the GUI was made with `swing`
 ```
 sudo update-alternatives --config java
 ```
-## run compiled game:
+## run game:
 1. clone my repo:
 ````
 cd ~ && git clone git@github.com:Man2Dev/not-BomberMan.git
