@@ -188,7 +188,7 @@ public class Login {
 		logingUser = new JTextField();
 		sl_panel.putConstraint(SpringLayout.WEST, logingUser, 6, SpringLayout.EAST, lblNewLabel);
 		sl_panel.putConstraint(SpringLayout.EAST, logingUser, -10, SpringLayout.EAST, panel);
-		logingUser.setText("mrh1377");
+		logingUser.setText("example");
 		logingUser.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -207,7 +207,7 @@ public class Login {
 		sl_panel.putConstraint(SpringLayout.SOUTH, loginPass, -67, SpringLayout.NORTH, btnLogin);
 		sl_panel.putConstraint(SpringLayout.EAST, lblNewLabel_1, -6, SpringLayout.WEST, loginPass);
 		sl_panel.putConstraint(SpringLayout.EAST, loginPass, -10, SpringLayout.EAST, panel);
-		loginPass.setText("1377");
+		loginPass.setText("password");
 		loginPass.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
