@@ -3,6 +3,9 @@
 this game was made in 10 days in `eclipse`
 the GUI was made with `swing`
 
+## requrment:
+* java-1.8
+
 ## run compiled game:
 1. clone my repo:
 ````
