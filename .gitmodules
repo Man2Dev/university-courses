@@ -31,3 +31,6 @@
 [submodule "Database-course"]
 	path = Database-course
 	url = git@github.com:Man2Dev/Database-course.git
+[submodule "Electric-Circuits-course"]
+	path = Electric-Circuits-course
+	url = git@github.com:Man2Dev/Electric-Circuits-course.git
