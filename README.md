@@ -1,9 +1,13 @@
 # Some of my Bachelor's Degree University projects
 
 ## Cloning Master
-is just clone of all submodules so just clone normally
+master branch is built with `git subtree` so just clone normally
 
-## Cloning the submodule brach or Repository
+````
+git clone https://github.com/Man2Dev/university-courses.git
+````
+
+## Cloning the submodule brach
 To clone this repository with the --recursive flag, use the following command:
 
 ```
