@@ -28,3 +28,6 @@
 [submodule "Data-Structure-course"]
 	path = Data-Structure-course
 	url = git@github.com:Man2Dev/Data-Structure-course.git
+[submodule "Database-course"]
+	path = Database-course
+	url = git@github.com:Man2Dev/Database-course.git
