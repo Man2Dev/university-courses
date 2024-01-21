@@ -1,0 +1,2 @@
+vhdtdtfi -lib work BUSC.vhd -prj Codes_Project -o BUSC.spl -module BUSC -template D:/Xilinx/ISE/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 BUSC.spl {D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/BUSC.sym} 

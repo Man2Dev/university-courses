@@ -1,0 +1,1 @@
+-w -erf d:/my_designs/sequence/serial/compile/serial.erf -d d:/my_designs/sequence/serial/compile -s d:/my_designs/sequence/library.cfg -j d:/my_designs/sequence/serial/projlib.cfg -work serial -O3 -e 100 -work serial -2002 d:/my_designs/sequence/serial/src/TestBench/serial_TB.vhd 

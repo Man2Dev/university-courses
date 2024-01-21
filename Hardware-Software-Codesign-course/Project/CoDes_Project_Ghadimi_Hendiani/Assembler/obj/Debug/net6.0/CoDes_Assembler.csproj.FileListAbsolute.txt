@@ -1,0 +1,15 @@
+D:\Desktop-Projects\C-console\CoDes_Assembler\bin\Debug\net6.0\CoDes_Assembler.exe
+D:\Desktop-Projects\C-console\CoDes_Assembler\bin\Debug\net6.0\CoDes_Assembler.deps.json
+D:\Desktop-Projects\C-console\CoDes_Assembler\bin\Debug\net6.0\CoDes_Assembler.runtimeconfig.json
+D:\Desktop-Projects\C-console\CoDes_Assembler\bin\Debug\net6.0\CoDes_Assembler.dll
+D:\Desktop-Projects\C-console\CoDes_Assembler\bin\Debug\net6.0\CoDes_Assembler.pdb
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.csproj.AssemblyReference.cache
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.AssemblyInfoInputs.cache
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.AssemblyInfo.cs
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.csproj.CoreCompileInputs.cache
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.dll
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\refint\CoDes_Assembler.dll
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.pdb
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\CoDes_Assembler.genruntimeconfig.cache
+D:\Desktop-Projects\C-console\CoDes_Assembler\obj\Debug\net6.0\ref\CoDes_Assembler.dll

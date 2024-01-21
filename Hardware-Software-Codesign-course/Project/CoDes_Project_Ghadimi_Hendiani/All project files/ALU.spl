@@ -1,0 +1,7 @@
+[Inputs]
+CMD
+=IN1[5:0]=
+=IN2[5:0]=
+[Outputs]
+=RESULT[5:0]=
+[BiDir]
