@@ -40,3 +40,6 @@
 [submodule "Hardware-Software-Codesign-course"]
 	path = Hardware-Software-Codesign-course
 	url = git@github.com:Man2Dev/Hardware-Software-Codesign-course.git
+[submodule "Logic-Circuits-and-Computer-Architecture-Lab-course"]
+	path = Logic-Circuits-and-Computer-Architecture-Lab-course
+	url = git@github.com:Man2Dev/Logic-Circuits-and-Computer-Architecture-Lab-course.git
