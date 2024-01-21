@@ -7,3 +7,6 @@
 [submodule "Basics-of-Computer-and-Programming-course"]
 	path = Basics-of-Computer-and-Programming-course
 	url = git@github.com:Man2Dev/Basics-of-Computer-and-Programming-course.git
+[submodule "Microprocessor-and-Assembly-Language-course"]
+	path = Microprocessor-and-Assembly-Language-course
+	url = git@github.com:Man2Dev/Microprocessor-and-Assembly-Language-course.git
