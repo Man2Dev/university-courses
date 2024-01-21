@@ -4,3 +4,6 @@
 [submodule "Algorithms-Design-course"]
 	path = Algorithms-Design-course
 	url = git@github.com:Man2Dev/Algorithms-Design-course.git
+[submodule "Basics-of-Computer-and-Programming-course"]
+	path = Basics-of-Computer-and-Programming-course
+	url = git@github.com:Man2Dev/Basics-of-Computer-and-Programming-course.git
