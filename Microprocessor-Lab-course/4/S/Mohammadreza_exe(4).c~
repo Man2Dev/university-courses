@@ -1,0 +1,53 @@
+#include <mega16.h>
+#include <delay.h>
+#include <stdio.h>
+#include <lcd.h>
+#asm
+   .equ __lcd_port=0x18;
+#endasm
+
+int t;
+char str[];
+int temp(){
+    ADCSRA = 0b11000000;
+    while (ADCSRA.4==0);
+    ADCSRA.4=1;
+    return ADCW;
+}
+
+void main(void) {
+    int h=23,m=59,s=45;
+    int day=1;
+    char outtime[9];
+    DDRA=0X00;
+    ADMUX=0b11000000;
+    ADCSRA.6=1;
+    lcd_init(16);
+                
+    while (1){
+        s++;
+        if(s==60){
+            m++;
+            s=0;}
+                      
+        if(m==60){
+            h++;
+            m=0;}
+                      
+        if(h==24){
+            h=0;
+            day++;}
+                      
+        if(day==8){
+            day=1;}
+        
+        t=temp()/4;
+        sprintf(str,"temp:%02u ",t); 
+        lcd_puts(str);
+                            
+        sprintf(outtime,"%02d:%02d:%02d",h,m,s);
+        lcd_puts(outtime);
+        delay_ms(1000);
+        lcd_clear();
+    };
+}
