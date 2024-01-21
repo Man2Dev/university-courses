@@ -1,0 +1,12 @@
+[Version]
+Version=12.0
+[Designs]
+ans3=.\ans3\ans3.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+ans3=1

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32_Test_isim_beh.exe" -prj "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32_Test_beh.prj" "work.MUX32_Test" 

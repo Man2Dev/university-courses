@@ -1,0 +1,11 @@
+[Inputs]
+I_FSM_T
+I_FSM_CLK
+=I_FSM_INSTR[31:0]=
+[Outputs]
+O_FSM_IM
+O_FSM_CTL
+O_FSM_ALU
+O_FSM_RAM
+O_FSM_PCREG
+[BiDir]

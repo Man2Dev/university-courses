@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=test1
+
+[Library]
+test1=.\test1\test1.lib
+
+[$LibMap$]
+test1=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=hal1_tb|testbench_for_hal1|1  
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/hal1.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+TestBench/hal1_TB.vhd=-1
+TestBench/hal1_TB_runtest.do=-1
+
+[Files.Data]
+.\src\hal1.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\hal1_TB.vhd=VHDL Test Bench
+.\src\TestBench\hal1_TB_runtest.do=Macro
+
+[Folders]
+Name0=Event Lists
+Directory0=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension0=lst
+Name1=Logs
+Directory1=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension3=mak
+Name4=Memory
+Directory4=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension5=dll
+Name6=PDF
+Directory6=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension6=pdf
+Name7=HTML
+Directory7=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=D:\my_designs\CAD_HW03_Mohammadreza_Hendiani\test1\
+Extension8=alintws

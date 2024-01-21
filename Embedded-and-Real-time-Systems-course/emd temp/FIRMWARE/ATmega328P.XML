@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<PROJECT IID="1" BUILDPATH="C:/Users/sara/AppData/Local/Temp/VSM Studio/983cb2c4228d49e18406ad6ccb755055/ATmega328P" VERSION="830" TYPE="SOURCE" NAME="ATmega328P" CONFIGURATION="Debug">
+ <FILES ATTACH="1">
+  <FILE ATTACH="1" GROUP="Source Files" NAME="ATmega328P/main.ino"/>
+  <FILE ATTACH="1" GROUP="Source Files" NAME="ATmega328P/DHT.cpp"/>
+  <FILE ATTACH="1" GROUP="Header Files" NAME="ATmega328P/DHT.h"/>
+  <FILE ATTACH="1" GROUP="Source Files" NAME="ATmega328P/DAC_MCP49x1.cpp"/>
+  <FILE ATTACH="1" GROUP="Header Files" NAME="ATmega328P/DAC_MCP49x1.h"/>
+  <FILE ATTACH="1" GROUP="Firmware Files" NAME="ATmega328P/Debug/Debug.elf" FIRMWARE="1"/>
+ </FILES>
+ <CONFIGURATION CRC="34f92e82fdffb6a21114d1da2d447d9b" TARGET="Debug" COMPILER="Arduino AVR" NAME="Debug">
+  <CONTROLLER FAMILY="AVR" TYPE="ATmega328P"/>
+  <FILE TOOL="LD" NAME="ATmega328P/Debug/Debug.elf">
+   <FILE TOOL="CC" NAME="ATmega328P/Debug/main.o">
+    <FILE TOOL="APP" NAME="ATmega328P/Debug/main.cpp">
+     <FILE NAME="ATmega328P/main.ino"/>
+    </FILE>
+   </FILE>
+   <FILE TOOL="CC" NAME="ATmega328P/Debug/DHT.o">
+    <FILE NAME="ATmega328P/DHT.cpp"/>
+   </FILE>
+   <FILE TOOL="CC" NAME="ATmega328P/Debug/DAC_MCP49x1.o">
+    <FILE NAME="ATmega328P/DAC_MCP49x1.cpp"/>
+   </FILE>
+  </FILE>
+  <FILE NAME="ATmega328P/Debug/Debug.elf"/>
+  <FILE NAME="ATmega328P/DHT.h"/>
+  <FILE NAME="ATmega328P/DAC_MCP49x1.h"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-Wl," VALUE="--gc-sections"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="" VALUE="-lm"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-W" VALUE="all"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g" VALUE="dwarf-2"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fno-exceptions"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-ffunction-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-fdata-sections"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="F_CPU=%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE=".."/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE="%DRIVERS_DIR_QUOTED%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="ARDUINO_ARCH_AVR"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="@arduino/libs.inc"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="-std=gnu++11"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-O" VALUE="0"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION TOOL="APP" NAME="-C " VALUE="%BOARD%"/>
+  <OPTION TOOL="APP" NAME="-T " VALUE="-std=gnu++11"/>
+  <OPTION TOOL="APP" NAME="-T " VALUE="-fno-threadsafe-statics"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-N " VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-F " VALUE="%CLOCK%"/>
+ </CONFIGURATION>
+ <CONFIGURATION CRC="54cbef7a6e3ad91a6e5eb7b3b4b1bdcc" TARGET="Release" COMPILER="Arduino AVR" NAME="Release">
+  <CONTROLLER FAMILY="AVR" TYPE="ATmega328P"/>
+  <FILE TOOL="LD">
+   <FILE TOOL="CC">
+    <FILE TOOL="APP">
+     <FILE NAME="ATmega328P/main.ino"/>
+    </FILE>
+   </FILE>
+   <FILE TOOL="CC">
+    <FILE NAME="ATmega328P/DHT.cpp"/>
+   </FILE>
+   <FILE TOOL="CC">
+    <FILE NAME="ATmega328P/DAC_MCP49x1.cpp"/>
+   </FILE>
+  </FILE>
+  <FILE NAME="ATmega328P/Debug/Debug.elf"/>
+  <FILE NAME="ATmega328P/DHT.h"/>
+  <FILE NAME="ATmega328P/DAC_MCP49x1.h"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-Wl" VALUE=",--gc-sections"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-W" VALUE="all"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g" VALUE="dwarf-2"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-f" VALUE="signed-char"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-MD"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-MP"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="F_CPU=%CLOCK%"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE="lib"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-I " VALUE=".."/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-D" VALUE="ARDUINO=105"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="" VALUE="@lib/libs.inc"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-O" VALUE="s"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-mmcu=" VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-C " VALUE="%BOARD%"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-N " VALUE="atmega328p"/>
+  <OPTION DEFAULT="1" TOOL="APP" NAME="-F " VALUE="%CLOCK%"/>
+ </CONFIGURATION>
+ <PROPERTY NAME="BOARD" VALUE="pro328"/>
+ <PROPERTY NAME="CLOCK" VALUE="16000000"/>
+</PROJECT>

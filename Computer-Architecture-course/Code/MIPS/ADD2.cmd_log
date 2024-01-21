@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../ADD2/ADD2.vhd -prj MIPS -o ADD2.spl -module ADD2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ADD2.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/ADD2.sym} 

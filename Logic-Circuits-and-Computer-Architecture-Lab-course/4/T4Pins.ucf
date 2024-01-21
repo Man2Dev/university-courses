@@ -1,0 +1,6 @@
+net "port0" loc = "p132";
+net "port1" loc = "p131";
+net "port2" loc = "p127";
+net "port3" loc = "p126";
+NET "clk" LOC = "p75";
+NET "clk" CLOCK_DEDICATED_ROUTE=FALSE;

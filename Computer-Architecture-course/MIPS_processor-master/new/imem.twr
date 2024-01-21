@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml imem.twx imem.ncd -o imem.twr imem.pcf
+
+Design file:              imem.ncd
+Physical constraint file: imem.pcf
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+pc<2>          |Instruction<0> |    5.765|
+pc<2>          |Instruction<1> |    6.301|
+pc<2>          |Instruction<2> |    5.259|
+pc<2>          |Instruction<5> |    5.969|
+pc<2>          |Instruction<6> |    7.717|
+pc<2>          |Instruction<7> |    6.691|
+pc<2>          |Instruction<8> |    6.141|
+pc<2>          |Instruction<9> |    6.477|
+pc<2>          |Instruction<10>|    6.387|
+pc<2>          |Instruction<11>|    6.272|
+pc<2>          |Instruction<12>|    6.738|
+pc<2>          |Instruction<13>|    6.610|
+pc<2>          |Instruction<15>|    7.053|
+pc<2>          |Instruction<16>|    6.309|
+pc<2>          |Instruction<22>|    7.007|
+pc<2>          |Instruction<24>|    7.002|
+pc<2>          |Instruction<26>|    7.499|
+pc<2>          |Instruction<28>|    7.504|
+pc<3>          |Instruction<0> |    6.326|
+pc<3>          |Instruction<1> |    5.962|
+pc<3>          |Instruction<2> |    5.815|
+pc<3>          |Instruction<3> |    6.077|
+pc<3>          |Instruction<4> |    5.854|
+pc<3>          |Instruction<5> |    5.755|
+pc<3>          |Instruction<6> |    7.412|
+pc<3>          |Instruction<7> |    6.386|
+pc<3>          |Instruction<8> |    5.836|
+pc<3>          |Instruction<9> |    6.172|
+pc<3>          |Instruction<10>|    6.082|
+pc<3>          |Instruction<11>|    6.298|
+pc<3>          |Instruction<12>|    6.764|
+pc<3>          |Instruction<13>|    6.305|
+pc<3>          |Instruction<14>|    5.293|
+pc<3>          |Instruction<15>|    6.748|
+pc<3>          |Instruction<19>|    7.180|
+pc<3>          |Instruction<21>|    5.294|
+pc<3>          |Instruction<22>|    6.890|
+pc<3>          |Instruction<24>|    6.947|
+pc<3>          |Instruction<26>|    7.194|
+pc<3>          |Instruction<28>|    7.199|
+pc<3>          |Instruction<29>|    6.961|
+pc<4>          |Instruction<0> |    7.122|
+pc<4>          |Instruction<1> |    5.940|
+pc<4>          |Instruction<2> |    6.582|
+pc<4>          |Instruction<3> |    6.294|
+pc<4>          |Instruction<4> |    6.071|
+pc<4>          |Instruction<5> |    6.484|
+pc<4>          |Instruction<6> |    7.334|
+pc<4>          |Instruction<7> |    6.308|
+pc<4>          |Instruction<8> |    5.758|
+pc<4>          |Instruction<9> |    6.094|
+pc<4>          |Instruction<10>|    6.004|
+pc<4>          |Instruction<11>|    5.456|
+pc<4>          |Instruction<12>|    5.922|
+pc<4>          |Instruction<13>|    6.227|
+pc<4>          |Instruction<14>|    5.454|
+pc<4>          |Instruction<15>|    6.670|
+pc<4>          |Instruction<16>|    5.437|
+pc<4>          |Instruction<19>|    6.262|
+pc<4>          |Instruction<21>|    5.511|
+pc<4>          |Instruction<22>|    6.115|
+pc<4>          |Instruction<24>|    5.817|
+pc<4>          |Instruction<26>|    7.116|
+pc<4>          |Instruction<28>|    7.121|
+pc<4>          |Instruction<29>|    6.048|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jan 19 11:24:48 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4514 MB
+
+
+

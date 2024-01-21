@@ -1,0 +1,8 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" 2021/01/13.23:57:21 P.20131013
+EN work/REG 1610574357 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/REG/Behavioral 1610574358 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.vhd" EN work/REG 1610574357

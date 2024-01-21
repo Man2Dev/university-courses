@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Downloads/Uni Term 10/CoDes/Tamrin/CoDes_Project_Ghadimi_Hendiyani/TB_CPU2_isim_beh2.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_cpu2" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_cpu2/clock" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/reset" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/clock_period" type="other" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R0_component/ld" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R0_component/rin" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rin[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R0_component/rout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rout[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rout[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R0_component/zr" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">zr</obj_property>
+      <obj_property name="ObjectShortName">zr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R0_component/tmp" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tmp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R1_component/ld" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R1_component/rin" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rin[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R1_component/rout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rout[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rout[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R1_component/zr" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">zr</obj_property>
+      <obj_property name="ObjectShortName">zr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R1_component/tmp" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tmp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R2_component/ld" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R2_component/rin" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rin[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R2_component/rout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rout[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rout[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R2_component/zr" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">zr</obj_property>
+      <obj_property name="ObjectShortName">zr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R2_component/tmp" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tmp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R3_component/ld" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R3_component/rin" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rin[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R3_component/rout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rout[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rout[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R3_component/zr" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">zr</obj_property>
+      <obj_property name="ObjectShortName">zr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu2/uut/R3_component/tmp" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">tmp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp[5:0]</obj_property>
+   </wvobject>
+</wave_config>

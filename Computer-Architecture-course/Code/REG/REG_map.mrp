@@ -1,0 +1,273 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'REG'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o REG_map.ncd REG.ngd REG.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Jan 13 23:50:51 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    8
+Logic Utilization:
+  Number of Slice Latches:            1,024 out of   9,312   10%
+  Number of 4 input LUTs:             2,084 out of   9,312   22%
+Logic Distribution:
+  Number of occupied Slices:          1,042 out of   4,656   22%
+    Number of Slices containing only related logic:   1,042 out of   1,042 100%
+    Number of Slices containing unrelated logic:          0 out of   1,042   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,084 out of   9,312   22%
+  Number of bonded IOBs:                113 out of     232   48%
+  Number of BUFGMUXs:                    24 out of      24  100%
+
+Average Fanout of Non-Clock Nets:                4.53
+
+Peak Memory Usage:  4419 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_0_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_1_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_2_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_3_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_4_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_5_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_6_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net temp_7_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+
+Section 5 - Removed Logic
+-------------------------
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| I_REG_DATA_RD<0>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<1>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<2>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<3>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<4>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<5>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<6>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<7>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<8>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<9>                   | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<10>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<11>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<12>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<13>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<14>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<15>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<16>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<17>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<18>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<19>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<20>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<21>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<22>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<23>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<24>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<25>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<26>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<27>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<28>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<29>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<30>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_DATA_RD<31>                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RD<0>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RD<1>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RD<2>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RD<3>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RD<4>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RS<0>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RS<1>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RS<2>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RS<3>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RS<4>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RT<0>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RT<1>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RT<2>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RT<3>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_SEL_RT<4>                    | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_T                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| I_REG_Write                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| O_REG_DATA_A<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<7>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<8>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<9>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<10>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<11>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<12>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<13>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<14>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<15>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<16>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<17>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<18>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<19>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<20>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<21>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<22>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<23>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<24>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<25>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<26>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<27>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<28>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<29>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<30>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_A<31>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<0>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<1>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<2>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<3>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<4>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<5>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<6>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<7>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<8>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<9>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<10>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<11>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<12>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<13>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<14>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<15>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<16>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<17>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<18>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<19>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<20>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<21>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<22>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<23>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<24>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<25>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<26>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<27>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<28>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<29>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<30>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| O_REG_DATA_B<31>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

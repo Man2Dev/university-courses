@@ -1,0 +1,5 @@
+[Inputs]
+=ADDRESS[5:0]=
+[Outputs]
+=DATA[5:0]=
+[BiDir]

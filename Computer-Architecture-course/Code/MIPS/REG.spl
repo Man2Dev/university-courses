@@ -1,0 +1,11 @@
+[Inputs]
+I_REG_T
+I_REG_Write
+=I_REG_SEL_RS[4:0]=
+=I_REG_SEL_RT[4:0]=
+=I_REG_SEL_RD[4:0]=
+=I_REG_DATA_RD[31:0]=
+[Outputs]
+=O_REG_DATA_A[31:0]=
+=O_REG_DATA_B[31:0]=
+[BiDir]

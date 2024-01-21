@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "REG.ngc" REG.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "REG.ngc" REG.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o REG_map.ncd REG.ngd REG.pcf 
+par -w -intstyle ise -ol high -t 1 REG_map.ncd REG.ncd REG.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "REG.ngc" REG.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o REG_map.ncd REG.ngd REG.pcf 
+par -w -intstyle ise -ol high -t 1 REG_map.ncd REG.ncd REG.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml REG.twx REG.ncd -o REG.twr REG.pcf 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/REG/REG.syr" 

@@ -1,0 +1,5 @@
+[Inputs]
+=I_EXT[15:0]=
+[Outputs]
+=O_EXT[31:0]=
+[BiDir]

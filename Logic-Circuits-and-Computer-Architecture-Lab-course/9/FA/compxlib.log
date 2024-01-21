@@ -1,0 +1,70 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.7 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => 'C:/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => 'C:\Users\home\FA'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: spartan3
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe -s mti_se -l vhdl -arch spartan3 -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav
+   C:\Xilinx\14.7\ISE_DS\PlanAhead\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin
+   C:\Xilinx\14.7\ISE_DS\common\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\common\lib\nt64
+   C:\WINDOWS\system32\WBEM
+   C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
+   C:\WINDOWS
+   C:\WINDOWS\system32
+   C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+   C:\Program Files\Java\jdk-12\bin
+   C:\Program Files\Java\jre1.8.0_201\bin
+   C:\Users\home\AppData\Local\Microsoft\WindowsApps
+   C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+   C:\WINDOWS\System32\OpenSSH\
+   C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\
+   C:\Program Files\Microsoft SQL Server\150\Tools\Binn\
+   C:\Program Files\Microsoft SQL Server\150\DTS\Binn\
+   C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\
+   C:\Program Files\dotnet\
+   C:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+   C:\Program Files\nodejs\
+   C:\ProgramData\chocolatey\bin
+   C:\Program Files\OpenVPN\bin
+   C:\Program Files\Git\cmd
+   C:\Program Files\Microsoft VS Code\bin
+   C:\Users\home\AppData\Roaming\npm
+   C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\
+   C:\Program Files\Microsoft SQL Server\100\Tools\Binn\
+   C:\Program Files\Microsoft SQL Server\100\DTS\Binn\
+   C:\Users\home\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\.
+Simulator 'mti_se' is ignored.

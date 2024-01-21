@@ -1,0 +1,8 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" 2021/01/14.03:13:09 P.20131013
+EN work/RAM 1610581590 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/RAM/Behavioral 1610581591 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/RAM/RAM.vhd" EN work/RAM 1610581590

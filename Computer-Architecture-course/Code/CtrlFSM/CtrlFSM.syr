@@ -1,0 +1,388 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.01 secs
+ 
+--> Reading design: CtrlFSM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CtrlFSM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CtrlFSM"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : CtrlFSM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/CtrlFSM is now defined in a different file.  It was defined in "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd", and is now defined in "C:/Users/home/Desktop/temp/CtrlFSM/CtrlFSM.vhd".
+WARNING:HDLParsers:3607 - Unit work/CtrlFSM/Behavioral is now defined in a different file.  It was defined in "E:/Xilinx/Computer Architecture Lab/Project/CtrlFSM/CtrlFSM.vhd", and is now defined in "C:/Users/home/Desktop/temp/CtrlFSM/CtrlFSM.vhd".
+Compiling vhdl file "C:/Users/home/Desktop/temp/CtrlFSM/CtrlFSM.vhd" in Library work.
+Architecture behavioral of Entity ctrlfsm is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CtrlFSM> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CtrlFSM> in library <work> (Architecture <behavioral>).
+Entity <CtrlFSM> analyzed. Unit <CtrlFSM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CtrlFSM>.
+    Related source file is "C:/Users/home/Desktop/temp/CtrlFSM/CtrlFSM.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | I_FSM_CLK                 (rising_edge)        |
+    | Reset              | I_FSM_T                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_if                                           |
+    | Power Up State     | s_if                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <O_FSM_IM>.
+    Found 1-bit register for signal <O_FSM_CTL>.
+    Found 1-bit register for signal <O_FSM_ALU>.
+    Found 1-bit register for signal <O_FSM_RAM>.
+    Found 1-bit register for signal <O_FSM_PCREG>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   5 D-type flip-flop(s).
+Unit <CtrlFSM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 5
+ 1-bit register                                        : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s_if  | 000001
+ s_id  | 000010
+ s_ex  | 001000
+ s_me  | 010000
+ s_wr  | 100000
+ s_end | 000100
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CtrlFSM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CtrlFSM, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CtrlFSM.ngr
+Top Level Output File Name         : CtrlFSM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 12
+#      INV                         : 1
+#      LUT3                        : 1
+#      LUT4                        : 10
+# FlipFlops/Latches                : 10
+#      FDC                         : 4
+#      FDE                         : 5
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 33
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                        6  out of   4656     0%  
+ Number of Slice Flip Flops:             10  out of   9312     0%  
+ Number of 4 input LUTs:                 12  out of   9312     0%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    232    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+I_FSM_CLK                          | BUFGP                  | 10    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------+------------------------+-------+
+Control Signal                                         | Buffer(FF name)        | Load  |
+-------------------------------------------------------+------------------------+-------+
+state_FSM_Acst_FSM_inv(state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(state_FSM_FFd1)   | 5     |
+-------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.804ns (Maximum Frequency: 554.339MHz)
+   Minimum input arrival time before clock: 4.737ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'I_FSM_CLK'
+  Clock period: 1.804ns (frequency: 554.339MHz)
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Delay:               1.804ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd5 (FF)
+  Destination:       state_FSM_FFd3 (FF)
+  Source Clock:      I_FSM_CLK rising
+  Destination Clock: I_FSM_CLK rising
+
+  Data Path: state_FSM_FFd5 to state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.410  state_FSM_FFd5 (state_FSM_FFd5)
+     LUT3:I2->O            1   0.612   0.000  state_FSM_FFd3-In102 (state_FSM_FFd3-In)
+     FDC:D                     0.268          state_FSM_FFd3
+    ----------------------------------------
+    Total                      1.804ns (1.394ns logic, 0.410ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'I_FSM_CLK'
+  Total number of paths / destination ports: 37 / 6
+-------------------------------------------------------------------------
+Offset:              4.737ns (Levels of Logic = 4)
+  Source:            I_FSM_INSTR<24> (PAD)
+  Destination:       state_FSM_FFd3 (FF)
+  Destination Clock: I_FSM_CLK rising
+
+  Data Path: I_FSM_INSTR<24> to state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.509  I_FSM_INSTR_24_IBUF (I_FSM_INSTR_24_IBUF)
+     LUT4:I0->O            1   0.612   0.509  state_FSM_FFd3-In49 (state_FSM_FFd3-In49)
+     LUT4:I0->O            1   0.612   0.509  state_FSM_FFd3-In81 (state_FSM_FFd3-In81)
+     LUT3:I0->O            1   0.612   0.000  state_FSM_FFd3-In102 (state_FSM_FFd3-In)
+     FDC:D                     0.268          state_FSM_FFd3
+    ----------------------------------------
+    Total                      4.737ns (3.210ns logic, 1.527ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'I_FSM_CLK'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            O_FSM_RAM (FF)
+  Destination:       O_FSM_RAM (PAD)
+  Source Clock:      I_FSM_CLK rising
+
+  Data Path: O_FSM_RAM to O_FSM_RAM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  O_FSM_RAM (O_FSM_RAM_OBUF)
+     OBUF:I->O                 3.169          O_FSM_RAM_OBUF (O_FSM_RAM)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.66 secs
+ 
+--> 
+
+Total memory usage is 4536560 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

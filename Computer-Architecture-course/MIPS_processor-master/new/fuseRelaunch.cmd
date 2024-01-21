@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control_isim_beh.exe" -prj "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control_beh.prj" "work.ALU_Control" 

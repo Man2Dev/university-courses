@@ -1,0 +1,5 @@
+vhdl work "SignExtend.vhd"
+vhdl work "Instruction_Memory.vhd"
+vhdl work "corrimiento.vhd"
+vhdl work "ALU_suma.vhd"
+vhdl work "DataPath.vhd"

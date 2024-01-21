@@ -1,0 +1,3 @@
+vhdl isim_temp "HA.vhd"
+vhdl isim_temp "Top.vhd"
+vhdl isim_temp "t.vhd"

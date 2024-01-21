@@ -1,0 +1,13 @@
+acom -O3 -e 100 -work CAD2 -2002  $dsn/src/test.vhd $dsn/src/TestBench/test_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD2/src/test.vhd
+# Compile Entity "test"
+# Compile Architecture "test" of Entity "test"
+# File: D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD2/src/TestBench/test_TB.vhd
+# Compile Entity "test_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "test_tb"
+# Compile Configuration "TESTBENCH_FOR_test"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Design: Design "CAD" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

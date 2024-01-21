@@ -1,0 +1,6 @@
+5
+~E 1 "../src/hal1.vhd" 14 hal1
+~A 1 "../src/hal1.vhd" 23 hal1
+~E 1 "../src/TestBench/hal1_TB.vhd" 5 hal1_tb
+~A 1 "../src/TestBench/hal1_TB.vhd" 8 TB_ARCHITECTURE
+~C 1 "../src/TestBench/hal1_TB.vhd" 59 testbench_for_hal1

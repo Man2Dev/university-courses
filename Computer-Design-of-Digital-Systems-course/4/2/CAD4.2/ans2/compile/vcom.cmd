@@ -1,0 +1,1 @@
+-w -erf D:/my_designs/CAD4.2/ans2/compile/ans2.erf -d D:/my_designs/CAD4.2/ans2/compile -s D:/my_designs/CAD4.2/library.cfg -j D:/my_designs/CAD4.2/ans2/projlib.cfg -work ans2 -O3 -e 100 -work ans2 -2002 D:/my_designs/CAD4.2/ans2/src/TestBench/ans2_TB.vhd 

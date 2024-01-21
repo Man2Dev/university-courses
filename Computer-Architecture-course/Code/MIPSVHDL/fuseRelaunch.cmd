@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/Xilinx/Computer Architecture Lab/Project/MIPSVHDL/MIPS_MIPS_sch_tb_isim_beh.exe" -prj "E:/Xilinx/Computer Architecture Lab/Project/MIPSVHDL/MIPS_MIPS_sch_tb_beh.prj" "work.MIPS_MIPS_sch_tb" 

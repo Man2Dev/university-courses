@@ -1,0 +1,2 @@
+net "input_0" loc = "p58";
+net "output_0" loc = "p194";
