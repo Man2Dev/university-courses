@@ -1,0 +1,1 @@
+-w -erf D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD3/compile/CAD3.erf -d D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD3/compile -s D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/library.cfg -j D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD3/projlib.cfg -work cad3 -dbg -e 100 -work cad3 -2002 D:/my_designs/CAD_HW02_Mohammadreza_Hendiani/CAD3/src/TestBench/top_TB.vhd 

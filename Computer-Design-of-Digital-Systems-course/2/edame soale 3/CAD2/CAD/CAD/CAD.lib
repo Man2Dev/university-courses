@@ -1,0 +1,46 @@
+timestamp=1617820449232
+
+[~A]
+ModifyID=21
+Version=74
+
+[~MFT]
+0=4|0CAD.mgf|14738|11006
+1=4|1CAD.mgf|39202|35932
+3=2|3CAD.mgf|9721|8967
+
+[testbench_for_top]
+Configures=top_tb.TB_ARCHITECTURE
+E=1*39202
+I=0*14738
+M=2|2|ve8|1617820449229|../src/TestBench/top_TB.vhd|0*3378*0x40fc54cbd324e37f7358282176f7458089db7efd|0*3625*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/top_TB.vhd|66
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5af072de0eb681d575b392f1023b48c732bcea737204837f4ebee5a9a618609cb
+
+[top]
+A/top=21|../src/top.vhd|24|1*35932
+BinW64/top=3*8967
+I=0*544
+I/top=0*14213
+M=11|2|ve8|1617817146396|../src/top.vhd|0*192*0xdade31041ff4254fe7b43cbec93bec0e3df0a9a1|0*473*0x23b75c12e3e89f2ef000564498faa8c2
+M/top=21|2|ve8|1617820448997|../src/top.vhd|0*778*0xe9778ac318ac4d2a0cc17619240fbefb42463f22|0*1128*0x20116f55b147878295aeff36dce7fc50
+R=../src/top.vhd|15
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c7fc2687ee3e17274764e513e5b48ba97f
+Version/top=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c7e4bf31c90aa9291abb053fd781d41527
+
+[top_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/top_TB.vhd|9|1*37580
+BinW64/tb_architecture=3*9721
+I=0*1842
+I/tb_architecture=I/TB_ARCHITECTURE 0*14451
+M=11|2|ve8|1617817266906|../src/TestBench/top_TB.vhd|0*1562*0xfe3b7a1ee4d5c2d6cfdcd1696769902f10a78a76|0*1755*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=M/TB_ARCHITECTURE 21|2|ve8|1617820449226|../src/TestBench/top_TB.vhd|0*12081*0x3323221fc4890d749edb348e9d8cf8ea056acdf6|0*12987*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/top_TB.vhd|6
+Version=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|b0d2e10044441fefc12247a6f126cc0c3803c3c2ca00292cdc834f47a0159a2c
+Version/tb_architecture=12.0.118.7745 (Windows64)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea5cbec3ee0f2850fb022ee247156fea5a
+
+[~U]
+testbench_for_top=TESTBENCH_FOR_top 2||
+top=11|0*0|
+top_tb=11|0*1444|
+

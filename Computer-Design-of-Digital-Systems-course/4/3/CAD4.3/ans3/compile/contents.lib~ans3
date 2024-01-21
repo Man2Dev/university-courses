@@ -1,0 +1,6 @@
+12
+~E 1 "../src/ans3.vhd" 15 ans3
+~A 1 "../src/ans3.vhd" 25 ans3
+~E 1 "../src/TestBench/ans3_TB.vhd" 6 ans3_tb
+~A 1 "../src/TestBench/ans3_TB.vhd" 9 TB_ARCHITECTURE
+~C 1 "../src/TestBench/ans3_TB.vhd" 83 testbench_for_ans3

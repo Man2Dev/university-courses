@@ -1,0 +1,48 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=ans3
+
+[Library]
+ans3=.\ans3\ans3.lib
+
+[$LibMap$]
+ans3=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[Groups]
+TestBench=1
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=ans3|ans3|0
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/ans3.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+TestBench/ans3_TB.vhd=-1
+TestBench/ans3_TB_runtest.do=-1
+
+[Files.Data]
+.\src\ans3.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\TestBench\ans3_TB.vhd=VHDL Test Bench
+.\src\TestBench\ans3_TB_runtest.do=Macro
+

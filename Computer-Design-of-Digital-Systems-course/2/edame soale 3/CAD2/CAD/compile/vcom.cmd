@@ -1,0 +1,1 @@
+-w -erf D:/my_designs/CAD2/CAD/compile/CAD.erf -d D:/my_designs/CAD2/CAD/compile -s D:/my_designs/CAD2/library.cfg -j D:/my_designs/CAD2/CAD/projlib.cfg -work CAD -O3 -e 100 -work CAD -2002 D:/my_designs/CAD2/CAD/src/TestBench/top_TB.vhd 

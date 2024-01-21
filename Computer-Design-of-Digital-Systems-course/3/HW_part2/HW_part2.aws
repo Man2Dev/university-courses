@@ -1,0 +1,12 @@
+[Version]
+Version=12.0
+[Designs]
+test2=.\test2\test2.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+test2=1
