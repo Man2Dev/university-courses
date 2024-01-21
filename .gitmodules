@@ -22,3 +22,6 @@
 [submodule "Computer-Networks-course"]
 	path = Computer-Networks-course
 	url = git@github.com:Man2Dev/Computer-Networks-course.git
+[submodule "Computer-Networks-Lab-course"]
+	path = Computer-Networks-Lab-course
+	url = git@github.com:Man2Dev/Computer-Networks-Lab-course.git
