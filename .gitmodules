@@ -25,3 +25,6 @@
 [submodule "Computer-Networks-Lab-course"]
 	path = Computer-Networks-Lab-course
 	url = git@github.com:Man2Dev/Computer-Networks-Lab-course.git
+[submodule "Data-Structure-course"]
+	path = Data-Structure-course
+	url = git@github.com:Man2Dev/Data-Structure-course.git
