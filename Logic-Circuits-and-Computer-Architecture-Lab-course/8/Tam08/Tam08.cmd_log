@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/home/Tam08/Tam08.xst" -ofn "C:/Users/home/Tam08/Tam08.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 Tam08.ngc Tam08.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Tam08_map.ncd Tam08.ngd Tam08.pcf 
+par -w -intstyle ise -ol high -t 1 Tam08_map.ncd Tam08.ncd Tam08.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Tam08.twx Tam08.ncd -o Tam08.twr Tam08.pcf 
+netgen -intstyle ise -ar Structure -tm Tam08 -w -dir netgen/synthesis -ofmt vhdl -sim Tam08.ngc Tam08_synthesis.vhd 
+bitgen -intstyle ise -f Tam08.ut Tam08.ncd 
