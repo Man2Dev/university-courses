@@ -7,5 +7,5 @@ is just clone of all submodules so just clone normally
 To clone this repository with the --recursive flag, use the following command:
 
 ```
-git clone --recurse-submodules https://github.com/Man2Dev/university-courses.git
+git clone --recurse-submodules -b submodule https://github.com/Man2Dev/university-courses.git
 ```
