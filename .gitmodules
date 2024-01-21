@@ -37,3 +37,6 @@
 [submodule "Embedded-and-Real-time-Systems-course"]
 	path = Embedded-and-Real-time-Systems-course
 	url = git@github.com:Man2Dev/Embedded-and-Real-time-Systems-course.git
+[submodule "Hardware-Software-Codesign-course"]
+	path = Hardware-Software-Codesign-course
+	url = git@github.com:Man2Dev/Hardware-Software-Codesign-course.git
