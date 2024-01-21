@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2_Test_isim_beh.exe" -prj "E:/Xilinx/Computer Architecture Lab/Project/ADD2/ADD2_Test_beh.prj" "work.ADD2_Test" 

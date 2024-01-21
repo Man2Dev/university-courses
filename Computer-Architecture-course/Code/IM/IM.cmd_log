@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "IM.ngc" IM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o IM_map.ncd IM.ngd IM.pcf 
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o IM_map.ncd IM.ngd IM.pcf 
+par -w -intstyle ise -ol high -t 1 IM_map.ncd IM.ncd IM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IM.twx IM.ncd -o IM.twr IM.pcf 
+xst -intstyle ise -ifn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.xst" -ofn "E:/Xilinx/Computer Architecture Lab/Project/IM/IM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "IM.ngc" IM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o IM_map.ncd IM.ngd IM.pcf 
+par -w -intstyle ise -ol high -t 1 IM_map.ncd IM.ncd IM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IM.twx IM.ncd -o IM.twr IM.pcf 

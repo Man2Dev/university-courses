@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../IM/IM.vhd -prj MIPS -o IM.spl -module IM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e IM.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/IM.sym} 

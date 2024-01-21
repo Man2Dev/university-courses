@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control.xst" -ofn "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pc.ucf -p xc3s1200e-fg320-5 ALU_Control.ngc ALU_Control.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o ALU_Control_map.ncd ALU_Control.ngd ALU_Control.pcf 
+par -w -intstyle ise -ol high -t 1 ALU_Control_map.ncd ALU_Control.ncd ALU_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALU_Control.twx ALU_Control.ncd -o ALU_Control.twr ALU_Control.pcf -ucf pc.ucf 
+xst -intstyle ise -ifn "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control.xst" -ofn "C:/Users/home/Desktop/MIPS_processor-master/new/ALU_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 ALU_Control.ngc ALU_Control.ngd  

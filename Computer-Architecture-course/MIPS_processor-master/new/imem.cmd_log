@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/home/Desktop/MIPS_processor-master/new/imem.xst" -ofn "C:/Users/home/Desktop/MIPS_processor-master/new/imem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 imem.ngc imem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o imem_map.ncd imem.ngd imem.pcf 
+par -w -intstyle ise -ol high -t 1 imem_map.ncd imem.ncd imem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml imem.twx imem.ncd -o imem.twr imem.pcf 

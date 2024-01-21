@@ -1,0 +1,8 @@
+V3 3
+FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" 2021/01/14.00:59:13 P.20131013
+EN work/MUX32 1610573356 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX32/Behavioral 1610573357 \
+      FL "E:/Xilinx/Computer Architecture Lab/Project/MUX32/MUX32.vhd" \
+      EN work/MUX32 1610573356

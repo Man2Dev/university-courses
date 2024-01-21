@@ -1,0 +1,2 @@
+vhdl work "RAM.vhd"
+vhdl work "RAM_Test.vhd"

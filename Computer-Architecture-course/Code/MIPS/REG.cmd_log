@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../REG/REG.vhd -prj MIPS -o REG.spl -module REG -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e REG.spl {E:/Xilinx/Computer Architecture Lab/Project/MIPS/REG.sym} 

@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml CtrlFSM.twx CtrlFSM.ncd -o CtrlFSM.twr CtrlFSM.pcf
+
+Design file:              CtrlFSM.ncd
+Physical constraint file: CtrlFSM.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock I_FSM_CLK
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+I_FSM_INSTR<0> |    2.658(R)|   -0.999(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<1> |    2.426(R)|   -0.813(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<2> |    3.589(R)|   -1.742(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<3> |    2.949(R)|   -1.230(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<4> |    3.079(R)|   -1.333(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<5> |    2.786(R)|   -1.099(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<6> |    2.735(R)|   -1.060(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<7> |    2.438(R)|   -0.822(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<8> |    2.515(R)|   -0.884(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<9> |    2.737(R)|   -1.061(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<10>|    2.241(R)|   -0.665(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<11>|    2.078(R)|   -0.534(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<12>|    2.035(R)|   -0.500(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<13>|    1.830(R)|   -0.336(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<14>|    2.131(R)|   -0.577(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<15>|    1.762(R)|   -0.282(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<16>|    2.223(R)|   -0.651(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<17>|    1.595(R)|   -0.148(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<18>|    1.638(R)|   -0.182(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<19>|    2.524(R)|   -0.891(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<20>|    2.185(R)|   -0.621(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<21>|    1.497(R)|   -0.070(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<22>|    1.798(R)|   -0.311(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<23>|    1.429(R)|   -0.016(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<24>|    4.009(R)|   -2.079(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<25>|    4.138(R)|   -2.182(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<26>|    4.600(R)|   -2.552(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<27>|    4.056(R)|   -2.116(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<28>|    3.752(R)|   -1.873(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<29>|    4.076(R)|   -2.132(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<30>|    3.546(R)|   -1.708(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_INSTR<31>|    3.882(R)|   -1.976(R)|I_FSM_CLK_BUFGP   |   0.000|
+I_FSM_T        |    1.282(R)|    0.464(R)|I_FSM_CLK_BUFGP   |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock I_FSM_CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+O_FSM_ALU   |    6.940(R)|I_FSM_CLK_BUFGP   |   0.000|
+O_FSM_CTL   |    6.466(R)|I_FSM_CLK_BUFGP   |   0.000|
+O_FSM_IM    |    7.917(R)|I_FSM_CLK_BUFGP   |   0.000|
+O_FSM_PCREG |    7.017(R)|I_FSM_CLK_BUFGP   |   0.000|
+O_FSM_RAM   |    6.957(R)|I_FSM_CLK_BUFGP   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock I_FSM_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+I_FSM_CLK      |    1.587|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Jan 18 02:55:23 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4509 MB
+
+
+
