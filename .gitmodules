@@ -16,3 +16,6 @@
 [submodule "Systems-Analysis-and-Design-course"]
 	path = Systems-Analysis-and-Design-course
 	url = git@github.com:Man2Dev/Systems-Analysis-and-Design-course.git
+[submodule "Computer-Design-of-Digital-Systems-course"]
+	path = Computer-Design-of-Digital-Systems-course
+	url = git@github.com:Man2Dev/Computer-Design-of-Digital-Systems-course.git
